@@ -26,7 +26,7 @@ recall.md unit list
 recall.md browser --port 6421
 ```
 
-Se já tiver o launcher instalado, `recall.md update` baixa a imagem atual antes da importação. O launcher monta a pasta atual e grava nela os dados e o histórico em `recall/`. Importe o arquivo uma vez ao iniciar o estudo. Para retomar, volte à pasta e execute `recall.md browser`. Veja [requisitos, atualização e remoção do launcher](#instalar-recallmd-com-docker).
+Se já tiver o launcher instalado, `recall.md update` baixa a imagem atual antes da importação. O launcher monta a pasta atual e grava nela os dados e o histórico em `recall/`. Em Docker rootless, o launcher usa a identidade do usuário do daemon para gravar na pasta montada. Se já instalou um launcher anterior, execute a linha de instalação novamente para atualizá-lo. Importe o arquivo uma vez ao iniciar o estudo. Para retomar, volte à pasta e execute `recall.md browser`. Veja [requisitos, atualização e remoção do launcher](#instalar-recallmd-com-docker).
 
 Abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **O alfabeto** e confira as abas **Material**, **Quiz** e **Cartões de memorização**. Para testar a gravação, responda ao quiz, reinicie o servidor na mesma pasta e consulte a aba **Tentativas**. Encerre com Ctrl+C. Se a porta estiver ocupada, use `recall.md browser --port 6422` e abra **http://127.0.0.1:6422**.
 

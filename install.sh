@@ -63,7 +63,12 @@ else
   set -- "$image" "$@"
 fi
 if [ -t 0 ] && [ -t 1 ]; then set -- --tty "$@"; fi
-exec docker run --rm --interactive --user "$(id -u):$(id -g)" \
+container_user="$(id -u):$(id -g)"
+security_options=$(docker info --format '{{json .SecurityOptions}}' </dev/null)
+case "$security_options" in
+  *'"name=rootless"'*) container_user=0:0 ;;
+esac
+exec docker run --rm --interactive --user "$container_user" \
   --mount "type=bind,source=$project_dir,target=$project_dir" \
   --workdir "$project_dir" "$@"
 LAUNCHER
