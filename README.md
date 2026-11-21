@@ -10,70 +10,42 @@ Cada estudo é uma pasta sua. O Recall.md grava `recall/` dentro dela. Você pod
 
 Comece pelo estudo de vocabulário em inglês de **Marcelo Henrique Goncalves (@billmask)**. Ele reúne 91 fichas com material, quizzes e cartões de memorização. [Estudo incluído no Recall.md](examples/example-vocabulario/README.md) · [Contribuição original](https://github.com/billmask/Recall.md/tree/7ea324a987e14d08ecc3501f0d2a125dc65ae061/example-vocabulario)
 
-Para obter os arquivos do exemplo, clone o repositório com Git. Se já tiver uma cópia atualizada, use o caminho dela.
-
-```bash
-mkdir -p "$HOME/apps"
-git clone https://github.com/gmrodrigues/Recall.md.git "$HOME/apps/Recall.md"
-```
-
-Copie o estudo para uma pasta nova antes de praticar. A pasta já vem com `recall/` configurado e as 91 fichas prontas.
-
-```bash
-app="$HOME/apps/Recall.md"
-estudo="$HOME/estudos/vocabulario-ingles"
-mkdir -p "$HOME/estudos"
-cp -a "$app/examples/example-vocabulario" "$estudo"
-```
-
-#### Com Docker
-
-Com Docker em execução e acessível ao seu usuário, instale o comando `recall.md` e execute-o **dentro da cópia do estudo**.
+Use Docker em execução, Bash e curl. Instale o launcher e crie uma pasta de estudo vazia.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install.sh | bash
 export PATH="$HOME/.local/bin:$PATH"
-cd "$estudo"
+
+mkdir -p "$HOME/estudos/vocabulario-ingles"
+cd "$HOME/estudos/vocabulario-ingles"
+curl -fsSLo vocabulario-ingles.json \
+  https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/example-vocabulario/vocabulario-ingles.json
+recall.md init
+recall.md unit import vocabulario-ingles.json
 recall.md unit list
 recall.md browser --port 6421
 ```
 
-O launcher monta a pasta atual e grava nela o histórico do estudo. Veja [requisitos, atualização e remoção do launcher](#instalar-recallmd-com-docker).
+Se já tiver o launcher instalado, `recall.md update` baixa a imagem atual antes da importação. O launcher monta a pasta atual e grava nela os dados e o histórico em `recall/`. Importe o arquivo uma vez ao iniciar o estudo. Para retomar, volte à pasta e execute `recall.md browser`. Veja [requisitos, atualização e remoção do launcher](#instalar-recallmd-com-docker).
 
-#### Com Node.js
+Abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **O alfabeto** e confira as abas **Material**, **Quiz** e **Cartões de memorização**. Para testar a gravação, responda ao quiz, reinicie o servidor na mesma pasta e consulte a aba **Tentativas**. Encerre com Ctrl+C. Se a porta estiver ocupada, use `recall.md browser --port 6422` e abra **http://127.0.0.1:6422**.
 
-Use Node.js 22.22.2 ou mais recente na série 22, 24.15.0 ou mais recente na série 24, ou 26 em diante. Instale e compile o aplicativo no clone. Depois, execute a CLI na pasta de estudo.
+### Criar um estudo próprio
 
-```bash
-cd "$app"
-npm ci
-npm run build
-cd "$estudo"
-node "$app/bin/recall.js" unit list
-node "$app/bin/recall.js" browser --port 6421
-```
+Crie outra pasta e rode `recall.md init` nela. Adicione uma ficha pelo botão **Nova ficha de conteúdo** ou gere um JSON com um agente de IA. Exemplo de prompt para copiar:
 
-Na instalação Node.js, `--cwd "$estudo"` também permite selecionar o estudo sem mudar o diretório do terminal. O build gera os recursos web usados pelo Gantt.
+> Use o Recall.md com Docker. Crie um estudo em `~/estudos/arquitetura` a partir dos arquivos `docs/arquitetura.md` e `docs/api.md` deste projeto. Prepare até três fichas no deck Arquitetura, cada uma com material, duas questões com gabarito explicado e três cartões. Cite o arquivo e a seção que sustentam cada ficha. Salve o JSON dentro da pasta do estudo, importe com `recall.md unit import`, confirme os IDs com `recall.md unit list` e abra a interface com `recall.md browser`. Eu vou responder aos quizzes.
 
-#### Conferir no navegador
+Veja o [JSON de uma ficha](examples/primeira-etapa.json) e os [prompts e skills para agentes](AGENTS.md).
 
-Com o servidor rodando, abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **O alfabeto** e confira as abas **Material**, **Quiz** e **Cartões de memorização**. Para testar a gravação, responda ao quiz, reinicie o servidor na mesma pasta e consulte a aba **Tentativas**.
+### Contribuir com o projeto
 
-O comando `browser` imprime a URL e mantém o servidor no terminal. Se a porta estiver ocupada, use `--port 6422` e acesse **http://127.0.0.1:6422**. Encerre com Ctrl+C. Para retomar, volte à mesma pasta e execute `browser`.
+Você pode instalar e usar o Recall.md para estudar. **Contribuir é opcional.**
 
-### Segundo exemplo · Criar um estudo e importar uma ficha
+- Para sugerir uma melhoria ou relatar um problema, abra uma issue. Inclua o comando que usou e o resultado esperado. Use dados de demonstração ao anexar exemplos. [Issues do Recall.md](https://github.com/gmrodrigues/Recall.md/issues)
+- Para enviar um exemplo, melhorar a documentação ou mudar o código, faça um fork e abra um pull request com a mudança e uma descrição de como verificá-la. Exemplo de estudo deve incluir autoria, fontes e passos para reproduzir. [Pull requests do Recall.md](https://github.com/gmrodrigues/Recall.md/pulls)
 
-Use o [JSON de exemplo](examples/primeira-etapa.json) para ver como criar seu próprio estudo. Com Node.js:
-
-```bash
-mkdir -p "$HOME/estudos/recall-demo"
-cd "$HOME/estudos/recall-demo"
-node "$app/bin/recall.js" init
-node "$app/bin/recall.js" unit import "$app/examples/primeira-etapa.json"
-node "$app/bin/recall.js" browser --port 6421
-```
-
-Com Docker, copie o JSON para dentro da pasta do estudo e use `recall.md init`, `recall.md unit import primeira-etapa.json` e `recall.md browser --port 6421`. Cada importação sem `--id` cria uma ficha nova. Você também pode usar **Nova ficha de conteúdo** na web. Veja os [prompts e skills copiáveis](AGENTS.md).
+Para trabalhar no código, use Node.js 22.22.2+, 24.15+ ou 26+, conforme `package.json`. No clone do fork, rode `npm ci`, `npm run check`, `npm test` e `npm run build` antes de enviar mudanças de código.
 
 ## Fluxo
 
@@ -267,7 +239,7 @@ As respostas são um objeto JSON, por ID de questão. Alternativas usam índice 
 {"entrada": 0, "fluxo": "Minha explicação com minhas palavras."}
 ```
 
-A CLI retorna JSON para operações estruturadas; `unit list --json` retorna a lista para automação. `unit view` e `quiz` omitem o gabarito. `unit import arquivo.json --id RCL-1` atualiza uma unidade, inclusive questões e cartões. Preserve os IDs para manter sua continuidade. Campos omitidos são preservados. Conteúdo inválido não é gravado.
+A CLI retorna JSON para operações estruturadas; `unit list --json` retorna a lista para automação. `unit view` e `quiz` omitem o gabarito. `unit import arquivo.json --id RCL-1` atualiza uma unidade, inclusive questões e cartões. Preserve os IDs para manter sua continuidade. Campos omitidos são preservados. Para criar várias fichas em ordem, importe um JSON com uma lista de objetos, sem `--id`. Se uma ficha falhar, a CLI indica a posição e quantas anteriores foram gravadas.
 
 ## IA e agentes
 

@@ -22,6 +22,16 @@ try {
     for(const p of ['/app/recall','/app/.git','/app/node_modules/jsdom']) if(fs.existsSync(p)) throw Error('Conteúdo indevido: '+p);
     console.log('Runtime não-root, sem dados locais, Git ou dependências de desenvolvimento.');
   `]);
+  fs.mkdirSync(path.join(cwd, 'vocabulario'));
+  fs.copyFileSync(new URL('../examples/example-vocabulario/vocabulario-ingles.json', import.meta.url),
+    path.join(cwd, 'vocabulario', 'vocabulario-ingles.json'));
+  const vocabulary = args => cli(['--cwd', '/workspace/vocabulario', ...args]);
+  vocabulary(['init']);
+  const imported = JSON.parse(vocabulary(['unit', 'import', '/workspace/vocabulario/vocabulario-ingles.json']));
+  assert.equal(imported.length, 91);
+  assert.equal(imported[0].unit.title, 'O alfabeto');
+  assert.equal(JSON.parse(vocabulary(['unit', 'list', '--json'])).length, 91);
+  console.log('Vocabulário: importação das 91 fichas em estudo separado.');
   cli(['init']);
   const material = JSON.parse(fs.readFileSync(new URL('../examples/primeira-etapa.json', import.meta.url), 'utf8'));
   material.cards = material.cards.slice(0, 1);

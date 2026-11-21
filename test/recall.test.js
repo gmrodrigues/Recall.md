@@ -128,3 +128,30 @@ test('CLI: init, criação, edição e criação de flashcard do gabarito', t =>
   assert.equal(s.reviewQueue()[0].back, 'Adaptador');
   const help = run(['instructions']); assert.equal(help.status, 0, help.stderr); assert.match(help.stdout, /Gerar um percurso/);
 });
+
+test('CLI: importa o estudo de vocabulário como uma lista ordenada', t => {
+  const s = fixture(t), cli = new URL('../bin/recall.js', import.meta.url).pathname;
+  const source = new URL('../examples/example-vocabulario/vocabulario-ingles.json', import.meta.url).pathname;
+  const run = (...args) => spawnSync(process.execPath, [cli, '--cwd', s.cwd, ...args], { encoding: 'utf8' });
+  const invalidUpdate = run('unit', 'import', source, '--id', 'RCL-1');
+  assert.equal(invalidUpdate.status, 1);
+  assert.match(invalidUpdate.stderr, /--id apenas com uma ficha individual/);
+  assert.equal(s.list().length, 0);
+
+  const imported = run('unit', 'import', source);
+  assert.equal(imported.status, 0, imported.stderr);
+  const results = JSON.parse(imported.stdout);
+  assert.equal(results.length, 91);
+  assert.equal(results[0].unit.id, 'RCL-1');
+  assert.equal(results[0].unit.title, 'O alfabeto');
+  assert.equal(results.at(-1).unit.id, 'RCL-91');
+  assert.equal(s.get('RCL-1').questions[0].answer, 0);
+  assert.equal(s.get('RCL-1').cards[0].back, '26');
+
+  const bad = path.join(s.cwd, 'bad.json');
+  fs.writeFileSync(bad, JSON.stringify([{ title: 'Ficha válida' }, {}]));
+  const partial = run('unit', 'import', bad);
+  assert.equal(partial.status, 1);
+  assert.match(partial.stderr, /Ficha 2:.*1 já importadas/);
+  assert.equal(s.get('RCL-92').title, 'Ficha válida');
+});

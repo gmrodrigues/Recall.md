@@ -12,7 +12,7 @@ recall unit create --title "Assunto" --deck "Deck" [--description "..."] [--file
 recall unit list [--json]                     Mostra unidades e estados
 recall unit view RCL-1                        Mostra material e questões
 recall unit edit RCL-1 --status "Estudando"    Atualiza título, descrição, deck ou estado
-recall unit import arquivo.json [--id RCL-1]  Importa unidade/questões/cartões de memorização de um agente
+recall unit import arquivo.json [--id RCL-1]  Importa uma ficha ou uma lista de fichas
 recall quiz RCL-1                             Mostra questões sem revelar respostas
 recall answer RCL-1 --answers respostas.json  Registra tentativa e feedback
 recall assess ID-TENTATIVA --question q1 --correct true|false
@@ -46,7 +46,23 @@ try {
   else if (a[0] === 'unit' && a[1] === 'create') output(autoLink(store, store.save(input)));
   else if (a[0] === 'unit' && a[1] === 'import') {
     ensure(a[2], 'Informe o arquivo JSON.');
-    output(autoLink(store, store.save(JSON.parse(fs.readFileSync(a[2], 'utf8')), o.id)));
+    const document = JSON.parse(fs.readFileSync(a[2], 'utf8'));
+    if (Array.isArray(document)) {
+      ensure(!o.id, 'Use --id apenas com uma ficha individual.');
+      ensure(document.length > 0 && document.every(unit => unit && typeof unit === 'object' && !Array.isArray(unit)),
+        'O arquivo deve conter uma lista de fichas.');
+      const imported = [];
+      for (const unit of document) {
+        try {
+          imported.push(autoLink(store, store.save(unit)));
+        } catch (error) {
+          throw new Error(`Ficha ${imported.length + 1}: ${error.message} (${imported.length} já importadas).`);
+        }
+      }
+      output(imported);
+    } else {
+      output(autoLink(store, store.save(document, o.id)));
+    }
   }
   else if (a[0] === 'unit' && a[1] === 'edit') output(autoLink(store, store.save(input, a[2])));
   else if (a[0] === 'unit' && a[1] === 'view') output(store.publicUnit(store.get(a[2])));

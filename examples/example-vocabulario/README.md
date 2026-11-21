@@ -8,15 +8,7 @@ Ficaram de fora os links de menu, redes e rodapé (início, gramática, jogos, P
 
 A grafia de estudo é a dos Estados Unidos. Onde o título da fonte usa colour, maths, films ou holiday, a etapa avisa o termo americano.
 
-A partir da raiz do repositório Recall.md, copie a pasta para um novo destino antes de responder.
-
-```bash
-cp -a examples/example-vocabulario ~/vocabulario-ingles
-cd ~/vocabulario-ingles
-node /caminho/Recall.md/bin/recall.js unit list
-node /caminho/Recall.md/bin/recall.js browser
-```
-
+Para iniciar em uma pasta vazia, use o [primeiro exemplo do guia Docker](../../README.md#primeiro-exemplo--vocabulário-em-inglês). O [JSON de importação](vocabulario-ingles.json) reúne as 91 fichas na ordem do percurso.
 
 ## Base
 
