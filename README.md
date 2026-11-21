@@ -4,67 +4,76 @@ Aprendizagem com fichas de conteúdo, com arquivos Markdown, kanban, quizzes e c
 
 ## Instalar e abrir um estudo independente
 
-Cada estudo é uma pasta sua, como `~/estudos/recall-demo`. O Recall.md grava `recall/` dentro dela. Você pode usar o mesmo aplicativo para vários estudos, cada um com seus decks, fichas e histórico. Backlog.md é opcional.
+Cada estudo é uma pasta sua. O Recall.md grava `recall/` dentro dela. Você pode usar o mesmo aplicativo para vários estudos, cada um com seus decks, fichas e histórico. Backlog.md é opcional.
 
-### Com Docker
+### Primeiro exemplo · Vocabulário em inglês
 
-Com Docker em execução e acessível ao seu usuário, instale o comando `recall.md`:
+Comece pelo estudo de vocabulário em inglês de **Marcelo Henrique Goncalves (@billmask)**. Ele reúne 91 fichas com material, quizzes e cartões de memorização. [Estudo incluído no Recall.md](examples/example-vocabulario/README.md) · [Contribuição original](https://github.com/billmask/Recall.md/tree/7ea324a987e14d08ecc3501f0d2a125dc65ae061/example-vocabulario)
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install.sh | bash
-export PATH="$HOME/.local/bin:$PATH"
-recall.md --help
-```
-
-Crie uma pasta nova, baixe uma ficha sintética de exemplo e importe o arquivo:
-
-```bash
-mkdir -p "$HOME/estudos/recall-demo"
-cd "$HOME/estudos/recall-demo"
-curl -fsSLo primeira-etapa.json \
-  https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/primeira-etapa.json
-recall.md init
-recall.md unit import primeira-etapa.json
-recall.md unit list
-recall.md browser --port 6421
-```
-
-O launcher monta a pasta atual. Mantenha nela também os arquivos que serão importados. Veja [requisitos, atualização e remoção do launcher](#instalar-recallmd-com-docker).
-
-### Com Node.js e Git
-
-Use Node.js 22.22.2 ou mais recente na série 22, 24.15.0 ou mais recente na série 24, ou 26 em diante. Clone e compile o aplicativo em uma pasta própria:
+Para obter os arquivos do exemplo, clone o repositório com Git. Se já tiver uma cópia atualizada, use o caminho dela.
 
 ```bash
 mkdir -p "$HOME/apps"
 git clone https://github.com/gmrodrigues/Recall.md.git "$HOME/apps/Recall.md"
-cd "$HOME/apps/Recall.md"
-npm ci
-npm run build
 ```
 
-Inicialize um estudo em outra pasta e importe o exemplo que veio com o código:
+Copie o estudo para uma pasta nova antes de praticar. A pasta já vem com `recall/` configurado e as 91 fichas prontas.
 
 ```bash
 app="$HOME/apps/Recall.md"
-estudo="$HOME/estudos/recall-demo-node"
-mkdir -p "$estudo"
+estudo="$HOME/estudos/vocabulario-ingles"
+mkdir -p "$HOME/estudos"
+cp -a "$app/examples/example-vocabulario" "$estudo"
+```
+
+#### Com Docker
+
+Com Docker em execução e acessível ao seu usuário, instale o comando `recall.md` e execute-o **dentro da cópia do estudo**.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install.sh | bash
+export PATH="$HOME/.local/bin:$PATH"
 cd "$estudo"
-node "$app/bin/recall.js" init
-node "$app/bin/recall.js" unit import "$app/examples/primeira-etapa.json"
+recall.md unit list
+recall.md browser --port 6421
+```
+
+O launcher monta a pasta atual e grava nela o histórico do estudo. Veja [requisitos, atualização e remoção do launcher](#instalar-recallmd-com-docker).
+
+#### Com Node.js
+
+Use Node.js 22.22.2 ou mais recente na série 22, 24.15.0 ou mais recente na série 24, ou 26 em diante. Instale e compile o aplicativo no clone. Depois, execute a CLI na pasta de estudo.
+
+```bash
+cd "$app"
+npm ci
+npm run build
+cd "$estudo"
 node "$app/bin/recall.js" unit list
 node "$app/bin/recall.js" browser --port 6421
 ```
 
 Na instalação Node.js, `--cwd "$estudo"` também permite selecionar o estudo sem mudar o diretório do terminal. O build gera os recursos web usados pelo Gantt.
 
-### Conferir no navegador
+#### Conferir no navegador
 
-Com o servidor rodando, abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **Entender o percurso de uma requisição** e confira as abas **Material**, **Quiz** e **Cartões de memorização**. Para testar a gravação no estudo de demonstração, responda ao quiz, reinicie o servidor na mesma pasta e consulte a aba **Tentativas**.
+Com o servidor rodando, abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **O alfabeto** e confira as abas **Material**, **Quiz** e **Cartões de memorização**. Para testar a gravação, responda ao quiz, reinicie o servidor na mesma pasta e consulte a aba **Tentativas**.
 
-O comando `browser` imprime a URL e mantém o servidor no terminal. Abra a URL manualmente. Se a porta estiver ocupada, use `--port 6422` e acesse **http://127.0.0.1:6422**. Encerre com Ctrl+C. Para retomar, volte à mesma pasta e execute `browser`. Cada importação sem `--id` cria uma ficha nova.
+O comando `browser` imprime a URL e mantém o servidor no terminal. Se a porta estiver ocupada, use `--port 6422` e acesse **http://127.0.0.1:6422**. Encerre com Ctrl+C. Para retomar, volte à mesma pasta e execute `browser`.
 
-Para preparar seu próprio estudo, importe JSON com as suas fontes ou crie uma ficha pela web com **Nova ficha de conteúdo**. Agentes externos têm um roteiro com [prompts e skills copiáveis](AGENTS.md).
+### Segundo exemplo · Criar um estudo e importar uma ficha
+
+Use o [JSON de exemplo](examples/primeira-etapa.json) para ver como criar seu próprio estudo. Com Node.js:
+
+```bash
+mkdir -p "$HOME/estudos/recall-demo"
+cd "$HOME/estudos/recall-demo"
+node "$app/bin/recall.js" init
+node "$app/bin/recall.js" unit import "$app/examples/primeira-etapa.json"
+node "$app/bin/recall.js" browser --port 6421
+```
+
+Com Docker, copie o JSON para dentro da pasta do estudo e use `recall.md init`, `recall.md unit import primeira-etapa.json` e `recall.md browser --port 6421`. Cada importação sem `--id` cria uma ficha nova. Você também pode usar **Nova ficha de conteúdo** na web. Veja os [prompts e skills copiáveis](AGENTS.md).
 
 ## Fluxo
 
