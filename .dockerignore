@@ -1,5 +1,6 @@
 **
 !Dockerfile
+!vite.config.js
 !package.json
 !package-lock.json
 !bin/
