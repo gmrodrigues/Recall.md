@@ -1,5 +1,7 @@
 # Recall.md — contrato para agentes
 
+Para instalar o aplicativo e trabalhar em um estudo fora do repositório do Recall.md, consulte o [guia para agentes externos](https://github.com/gmrodrigues/Recall.md/blob/main/AGENTS.md). Ele inclui exemplos de prompts e skills copiáveis.
+
 Use `recall --help`, `recall unit list --json` e `recall unit view ID` antes de alterar material. CLI, TUI e web têm a mesma semântica; não invente notas ou respostas em nome do estudante.
 
 ## Gerar um percurso de aprendizagem

@@ -2,36 +2,69 @@
 
 Aprendizagem com fichas de conteúdo, com arquivos Markdown, kanban, quizzes e cartões de memorização. CLI, TUI e interface web operam sobre o mesmo diretório `recall/`. Funciona sem Backlog.md; quando existe uma tarefa correspondente, reconhece o vínculo e apresenta seu contexto.
 
-## Começar
+## Instalar e abrir um estudo independente
 
-Requer Node.js 22.22.2+, 24.15+ ou 26+, conforme a compatibilidade da suíte DOM. Validado com Node.js 26.8.1.
+Cada estudo é uma pasta sua, como `~/estudos/recall-demo`. O Recall.md grava `recall/` dentro dela. Você pode usar o mesmo aplicativo para vários estudos, cada um com seus decks, fichas e histórico. Backlog.md é opcional.
+
+### Com Docker
+
+Com Docker em execução e acessível ao seu usuário, instale o comando `recall.md`:
 
 ```bash
+curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install.sh | bash
+export PATH="$HOME/.local/bin:$PATH"
+recall.md --help
+```
+
+Crie uma pasta nova, baixe uma ficha sintética de exemplo e importe o arquivo:
+
+```bash
+mkdir -p "$HOME/estudos/recall-demo"
+cd "$HOME/estudos/recall-demo"
+curl -fsSLo primeira-etapa.json \
+  https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/primeira-etapa.json
+recall.md init
+recall.md unit import primeira-etapa.json
+recall.md unit list
+recall.md browser --port 6421
+```
+
+O launcher monta a pasta atual. Mantenha nela também os arquivos que serão importados. Veja [requisitos, atualização e remoção do launcher](#instalar-recallmd-com-docker).
+
+### Com Node.js e Git
+
+Use Node.js 22.22.2 ou mais recente na série 22, 24.15.0 ou mais recente na série 24, ou 26 em diante. Clone e compile o aplicativo em uma pasta própria:
+
+```bash
+mkdir -p "$HOME/apps"
+git clone https://github.com/gmrodrigues/Recall.md.git "$HOME/apps/Recall.md"
+cd "$HOME/apps/Recall.md"
 npm ci
-node bin/recall.js --help
+npm run build
 ```
 
-Para usar em outro repositório ou pasta de estudo:
+Inicialize um estudo em outra pasta e importe o exemplo que veio com o código:
 
 ```bash
-# Na pasta que você quer estudar:
-node /caminho/Recall.md/bin/recall.js init
-node /caminho/Recall.md/bin/recall.js unit create --title "Entender a entrada da aplicação" --deck "Meu projeto"
-node /caminho/Recall.md/bin/recall.js browser
-# Abra http://127.0.0.1:6421
+app="$HOME/apps/Recall.md"
+estudo="$HOME/estudos/recall-demo-node"
+mkdir -p "$estudo"
+cd "$estudo"
+node "$app/bin/recall.js" init
+node "$app/bin/recall.js" unit import "$app/examples/primeira-etapa.json"
+node "$app/bin/recall.js" unit list
+node "$app/bin/recall.js" browser --port 6421
 ```
 
-Você também pode instalar a CLI localmente com `npm install -g /caminho/Recall.md` e usar `recall`. O comando `browser` inicia o servidor; não abre o navegador automaticamente. Use `--port 6422` se a porta estiver ocupada. `--cwd /caminho/do/estudo` permite escolher a pasta a partir de qualquer diretório.
+Na instalação Node.js, `--cwd "$estudo"` também permite selecionar o estudo sem mudar o diretório do terminal. O build gera os recursos web usados pelo Gantt.
 
-Para experimentar com material de exemplo, em uma pasta de estudo vazia:
+### Conferir no navegador
 
-```bash
-recall init
-recall unit import /caminho/Recall.md/examples/primeira-etapa.json
-recall browser
-```
+Com o servidor rodando, abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **Entender o percurso de uma requisição** e confira as abas **Material**, **Quiz** e **Cartões de memorização**. Para testar a gravação no estudo de demonstração, responda ao quiz, reinicie o servidor na mesma pasta e consulte a aba **Tentativas**.
 
-O exemplo é sintético, não é histórico pessoal de estudo. O código do produto fica neste repositório; os dados ficam na pasta em que você executou `init`.
+O comando `browser` imprime a URL e mantém o servidor no terminal. Abra a URL manualmente. Se a porta estiver ocupada, use `--port 6422` e acesse **http://127.0.0.1:6422**. Encerre com Ctrl+C. Para retomar, volte à mesma pasta e execute `browser`. Cada importação sem `--id` cria uma ficha nova.
+
+Para preparar seu próprio estudo, importe JSON com as suas fontes ou crie uma ficha pela web com **Nova ficha de conteúdo**. Agentes externos têm um roteiro com [prompts e skills copiáveis](AGENTS.md).
 
 ## Fluxo
 
@@ -202,6 +235,8 @@ Não há banco paralelo nem dependência nova para a TUI. O modo de entrada, cur
 
 ## CLI
 
+Nos exemplos a seguir, `recall` representa a CLI. Use `recall.md` com Docker ou substitua por `node /caminho/Recall.md/bin/recall.js` com Node.js.
+
 ```bash
 recall unit list
 recall unit view RCL-1
@@ -227,7 +262,7 @@ A CLI retorna JSON para operações estruturadas; `unit list --json` retorna a l
 
 ## IA e agentes
 
-A primeira versão integra agentes por comandos e importação, sem SDK, conta ou provedor obrigatório. **Não há geração por IA embutida ou chamada automática a um modelo.** Um agente autorizado lê o material, segue `recall instructions`, propõe etapas/questões com fontes e usa `unit import` para criá-las. Veja [contrato para agentes](docs/agents.md) e [exemplo de importação](examples/primeira-etapa.json).
+A primeira versão integra agentes por comandos e importação, sem SDK, conta ou provedor obrigatório. **Não há geração por IA embutida ou chamada automática a um modelo.** Um agente autorizado lê o material, segue `recall instructions`, propõe etapas/questões com fontes e usa `unit import` para criá-las. Veja [prompts e skills para agentes externos](AGENTS.md), [contrato para agentes](docs/agents.md) e [exemplo de importação](examples/primeira-etapa.json).
 
 Cada questão tem fonte opcional para registrar arquivo, revisão, página ou documento. Revise material gerado antes de praticar. O produto não verifica por conta própria se uma afirmação corresponde à fonte indicada.
 
@@ -285,7 +320,7 @@ recall/
   reviews/*.md       # avaliações da recordação e próxima data
 ```
 
-Veja [formato e exemplos](docs/format.md). Esses arquivos podem ser versionados com Git e inspecionados sem executar o produto. Todos os comandos usam os mesmos dados da web; não há banco de dados ou serviço hospedado.
+Veja [formato e exemplos](docs/format.md). Esses arquivos podem ser versionados com Git e inspecionados sem executar o produto. Todos os comandos usam os dados do estudo local. A web também guarda progresso de leitura em SQLite dentro de `recall/`.
 
 A agenda é simples: **Repetir** em 10 minutos; **Difícil** em 1 dia; **Lembrei** em pelo menos 2 dias, dobrando o intervalo; **Fácil** em pelo menos 4 dias, triplicando o intervalo. Alterar frente/verso recoloca o cartão na fila de novos conteúdos, preservando o histórico anterior. Não é uma implementação de FSRS nem uma alegação de eficácia pedagógica validada.
 

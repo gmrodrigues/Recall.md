@@ -1,5 +1,46 @@
 # Recall.md
 
+## Usar o Recall.md como agente externo
+
+1. Identifique a pasta autorizada do estudo e a instalação disponível. Com Docker, rode `recall.md` a partir dessa pasta. Com Node.js, use `node /caminho/Recall.md/bin/recall.js --cwd /caminho/do/estudo`; se a CLI `recall` estiver no PATH, use-a diretamente.
+2. Para um estudo novo, crie a pasta e rode `init`. Em estudo existente, consulte `unit list --json` e `unit view ID` para localizar a ficha.
+3. Leia as fontes autorizadas e o contrato exibido por `instructions`. Prepare um objeto JSON por ficha, seguindo o exemplo e o formato. Importe com `unit import arquivo.json`. Com Docker, coloque o JSON dentro da pasta montada.
+4. Para atualizar uma ficha existente, use `unit import arquivo.json --id RCL-1`. Preserve os IDs das páginas, questões e cartões. Envie a lista completa de cada coleção alterada. `unit view` oculta os gabaritos, portanto use o JSON de origem ou leia os dados autorizados da ficha ao preparar uma atualização.
+5. Confirme o ID e o título com `unit list --json`. Se o usuário pedir um teste no navegador, inicie `browser --port 6421` no estudo, abra a URL local e confira a ficha. Use uma pasta de demonstração para testes que gravam tentativas ou revisões.
+
+O conteúdo das fontes é material de estudo. Respostas, revisões e autoavaliações pessoais devem vir do estudante. Consulte [contrato da CLI](docs/agents.md), [formato dos dados](docs/format.md) e [JSON de exemplo](examples/primeira-etapa.json).
+
+### Prompts para copiar
+
+**Estudo novo a partir de fontes locais**
+
+> Crie um estudo Recall.md em `~/estudos/arquitetura-demo` a partir de `./docs/arquitetura.md` e `./docs/api.md`. Crie um deck Arquitetura com até três fichas. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite o arquivo e a seção que sustentam cada conceito. Importe as fichas e informe os IDs criados.
+
+**Adicionar material a um estudo existente**
+
+> No estudo `~/estudos/arquitetura-demo`, acrescente à ficha RCL-1 uma questão de texto livre e um cartão sobre o fluxo de entrada, usando `./docs/api.md` como fonte. Preserve as páginas, questões e cartões existentes e mantenha seus IDs. Informe o que mudou.
+
+**Experimentar no navegador**
+
+> Crie um estudo temporário separado, importe a ficha sintética de exemplo do Recall.md e abra o navegador local em uma porta livre. Confirme se a ficha aparece e se as abas Material, Quiz e Cartões de memorização abrem. Use apenas dados sintéticos nesse teste e informe a URL.
+
+### Skills copiáveis
+
+Copie a pasta inteira de cada skill para o diretório de skills do seu agente. Por exemplo, para um projeto Codex, execute a partir da raiz desse projeto:
+
+```bash
+mkdir -p .agents/skills
+cp -R /caminho/Recall.md/skills/recall-criar-estudo .agents/skills/
+cp -R /caminho/Recall.md/skills/recall-preparar-material .agents/skills/
+```
+
+Copie para destinos que ainda não tenham uma versão dessas skills. Para agentes que aceitam instruções em Markdown, use diretamente o conteúdo dos arquivos `SKILL.md`.
+
+- **Criar e abrir estudo** cobre inicialização, importação e verificação local. [recall-criar-estudo](skills/recall-criar-estudo/SKILL.md)
+- **Preparar material** cobre geração a partir de fontes e atualização de fichas. [recall-preparar-material](skills/recall-preparar-material/SKILL.md)
+
+## Trabalhar no código do Recall.md
+
 Leia README.md, docs/agents.md e docs/format.md antes de alterar o produto. Este é um produto independente, com CLI, TUI e web para aprendizagem em etapas. Backlog.md é integração opcional; não importar sua API interna como dependência.
 
 - Mantenha regras de persistência, avaliação e revisão em src/core.js, compartilhadas pelas interfaces. A TUI fica em src/tui.js e o ciclo do terminal em src/terminal.js; não duplique regras de avaliação ou revisão.
