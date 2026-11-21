@@ -2,3 +2,5 @@ node_modules/
 *.log
 .DS_Store
 recall/.write-lock
+
+/web/build/

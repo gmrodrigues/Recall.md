@@ -103,7 +103,7 @@ test('TUI: revisão por deck só permite avaliar após revelar, com histórico e
   const unit = s.get(u.id); unit.cards[0].back = 'Nova referência'; s.save({ cards: unit.cards }, u.id);
   key(app, 'return'); key(app, 'return'); key(app, 'space');
   const changed = s.get(u.id); changed.cards[0].back = 'Mudou durante a revisão'; s.save({ cards: changed.cards }, u.id);
-  key(app, '3'); assert.match(app.notice, /flashcard mudou/); assert.equal(s.events('reviews').length, 1);
+  key(app, '3'); assert.match(app.notice, /cartão de memorização mudou/); assert.equal(s.events('reviews').length, 1);
 });
 test('TUI: contexto de Backlog.md no detalhe e conteúdo com escapes não controla o terminal', t => {
   const s = fixture(t), u = s.save({ ...material(), file: 'back-1.md', description: '\x1b[2J\x1b]0;injetado\x07Texto legível' });

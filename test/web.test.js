@@ -6,6 +6,21 @@ import path from 'node:path';
 import { JSDOM } from 'jsdom';
 import { Store } from '../src/core.js';
 import { serve } from '../src/server.js';
+import { confirmedSessions, sessionStatus, stageStatus } from '../web/flow/model.js';
+
+import { DEFAULT_LINK_MINUTES, materialLinkIdentity, materialPageLinks, materialPages } from '../src/material.js';
+import { editReading, playMaterial, renderMaterial, renderStudyTime } from '../web/material-view.js';
+import { readingProgress } from '../web/reading-progress.js';
+import { probeVideo, sampleVideoDurations } from '../web/video-metadata.js';
+
+function runApp(window) {
+  const source = fs.readFileSync(new URL('../web/app.js', import.meta.url), 'utf8');
+  const script = source.replace(/^import .*;\n/gm, '');
+  const imports = { confirmedSessions, sessionStatus, stageStatus, DEFAULT_LINK_MINUTES, materialLinkIdentity, materialPageLinks, materialPages, editReading,
+    playMaterial, renderMaterial, renderStudyTime, readingProgress, probeVideo, sampleVideoDurations };
+  return window.eval('(async (' + Object.keys(imports).join(', ') + ') => { ' + script + '\n})')(
+    ...Object.values(imports));
+}
 
 test('Web DOM: criar etapa, adicionar quiz, responder errado, criar cartão e revisar deck', async t => {
   const cwd = fs.mkdtempSync(path.join(os.tmpdir(), 'recall-web-'));
@@ -19,8 +34,7 @@ test('Web DOM: criar etapa, adicionar quiz, responder errado, criar cartão e re
   w.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
   w.HTMLDialogElement.prototype.close = function () { this.open = false; this.dispatchEvent(new w.Event('close')); };
   t.after(async () => { w.close(); await new Promise(r => server.close(r)); fs.rmSync(cwd, { recursive: true, force: true }); });
-  const script = fs.readFileSync(new URL('../web/app.js', import.meta.url), 'utf8');
-  await w.eval(`(async () => { ${script}\n})()`);
+  await runApp(w);
   const $ = s => w.document.querySelector(s);
   const until = async predicate => {
     const start = Date.now(); while (!predicate()) { if (Date.now() - start > 4000) throw new Error('Tempo esgotado no fluxo DOM. Toast: ' + $('#toast').textContent); await new Promise(r => setTimeout(r, 10)); }
@@ -60,7 +74,7 @@ test('Web DOM: contexto da tarefa, quiz de texto e autoavaliação preservam a t
   w.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
   w.HTMLDialogElement.prototype.close = function () { this.open = false; this.dispatchEvent(new w.Event('close')); };
   t.after(async () => { w.close(); await new Promise(r => server.close(r)); fs.rmSync(cwd, { recursive: true, force: true }); });
-  await w.eval(`(async () => { ${fs.readFileSync(new URL('../web/app.js', import.meta.url), 'utf8')}\n})()`);
+  await runApp(w);
   const $ = s => w.document.querySelector(s);
   const until = async p => { const start = Date.now(); while (!p()) { if (Date.now() - start > 4000) throw new Error('Tempo esgotado: ' + $('#toast').textContent); await new Promise(r => setTimeout(r, 10)); } };
   $('.study-card').click(); await until(() => $('.detail-aside'));
@@ -90,7 +104,7 @@ test('Web DOM: tentativa, correção e estado sobrevivem a reabrir a página', a
     w.fetch = (url, opts) => fetch(base + url, opts);
     w.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
     w.HTMLDialogElement.prototype.close = function () { this.open = false; this.dispatchEvent(new w.Event('close')); };
-    await w.eval(`(async () => { ${fs.readFileSync(new URL('../web/app.js', import.meta.url), 'utf8')}\n})()`);
+    await runApp(w);
   };
   const $ = s => w.document.querySelector(s);
   const until = async p => { const start = Date.now(); while (!p()) { if (Date.now() - start > 5000) throw new Error('Tempo esgotado: ' + $('#toast').textContent); await new Promise(r => setTimeout(r, 10)); } };
@@ -130,7 +144,7 @@ test('Web DOM: alterações externas atualizam cards sem apagar rascunho do quiz
   w.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
   w.HTMLDialogElement.prototype.close = function () { this.open = false; this.dispatchEvent(new w.Event('close')); };
   t.after(async () => { w.close(); await new Promise(r => server.close(r)); fs.rmSync(cwd, { recursive: true, force: true }); });
-  await w.eval(`(async () => { ${fs.readFileSync(new URL('../web/app.js', import.meta.url), 'utf8')}\n})()`);
+  await runApp(w);
   const $ = s => w.document.querySelector(s);
   const until = async p => { const start = Date.now(); while (!p()) { if (Date.now() - start > 5000) throw new Error('Tempo esgotado: ' + $('#toast').textContent); await new Promise(r => setTimeout(r, 10)); } };
   await until(() => $('.study-card'));

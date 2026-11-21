@@ -15,7 +15,9 @@ Não há conector de modelo ou envio automático de material a provedores. O age
 
 ## Importação
 
-Uma unidade por objeto JSON. Campos: `title`, `description`, `deck`, `status`, `sources`, `questions`, `cards`, `file` (opcional na criação). `questions` e `cards` são listas completas quando fornecidas; não acrescente item enviando uma lista parcial que apague os anteriores. Use o JSON de origem revisado ou os dados dos arquivos de estudo; `unit view` omite respostas para a prática.
+Uma unidade por objeto JSON. Campos: `title`, `description`, `deck`, `status`, `sources`, `material`, `questions`, `cards`, `file` (opcional na criação). `questions` e `cards` são listas completas quando fornecidas; não acrescente item enviando uma lista parcial que apague os anteriores. Use o JSON de origem revisado ou os dados dos arquivos de estudo; `unit view` omite respostas para a prática.
+
+Material: lista de páginas com `id`, `title` e `sections`. Cada seção pode ter `title`, `text` e `links`. Um link inclui `url` e pode ter `label` e `type` (`auto`, `link`, `image` ou `video`). Preserve IDs de páginas existentes para manter o progresso associado.
 
 Questão: `id` estável, `type` igual a `choice` ou `text`, `prompt`, `answer`, `explanation` e `source` opcional. Para `choice`, `options` exige ao menos dois textos e `answer` é o índice a partir de zero. Para `text`, `answer` é a resposta de referência; a avaliação é humana.
 

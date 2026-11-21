@@ -33,15 +33,22 @@ export class TuiApp {
   }
   saveUnit(data, id) {
     const result = autoLink(this.store, this.store.save(data, id));
-    this.notice = result.warning || 'Etapa salva.'; this.align(result.unit.id); this.detail(result.unit.id);
+    this.notice = result.warning || 'Ficha de conteúdo salva.'; this.align(result.unit.id); this.detail(result.unit.id);
   }
   edit(create = false) {
     const u = create ? null : this.store.get(this.selected || this.current()?.id);
-    const fields = [field('title', 'Nome da etapa', u?.title), field('deck', 'Deck', u?.deck || 'Geral'), field('description', 'Material / descrição', u?.description, true)];
+    const fields = [field('title', 'Nome da ficha de conteúdo', u?.title), field('deck', 'Plano de estudo', u?.deck || 'Geral'), field('description', 'Material / descrição', u?.description, true)];
     if (!u) fields.push(field('file', 'Arquivo simétrico ao Backlog.md (opcional)'));
-    this.form(create ? 'Nova etapa de estudo' : `Editar ${u.id}`, fields, values => {
+    const agenda = this.store.schedule();
+    if (agenda.schedules.length) {
+      const phases = this.store.unitMilestoneOptions(u?.deck || 'Geral').options
+        .map(item => `${item.name}: ${item.id}`).join(', ');
+      fields.push(field('milestoneId', phases ? `ID do capítulo (${phases})` : 'ID do capítulo (para planos de estudo com cronograma)', u?.milestoneId || ''));
+    }
+    this.form(create ? 'Nova ficha de conteúdo' : `Editar ${u.id}`, fields, values => {
       const data = { ...values, status: u?.status || STATUSES[this.column] };
       if (!data.file) delete data.file;
+      if (!data.milestoneId && u?.deck === data.deck) delete data.milestoneId;
       if (u) data.version = u.version;
       this.saveUnit(data, u?.id);
     });
@@ -49,7 +56,7 @@ export class TuiApp {
   menu(title, options, choose) { this.picker = { title, options, index: 0, choose }; }
   move() {
     const u = this.store.get(this.selected || this.current()?.id);
-    this.menu('Mover etapa para', STATUSES, status => { this.saveUnit({ status, version: u.version }, u.id); });
+    this.menu('Mover ficha para', STATUSES, status => { this.saveUnit({ status, version: u.version }, u.id); });
     this.picker.index = STATUSES.indexOf(u.status);
   }
   addQuestion(type) {
@@ -66,7 +73,7 @@ export class TuiApp {
   }
   addCard() {
     const u = this.unit();
-    this.form('Novo flashcard', [field('front', 'Frente', '', true), field('back', 'Verso', '', true), field('deck', 'Deck', u.deck), field('source', 'Fonte (opcional)')], v => {
+    this.form('Novo cartão de memorização', [field('front', 'Frente', '', true), field('back', 'Verso', '', true), field('deck', 'Plano de estudo', u.deck), field('source', 'Fonte (opcional)')], v => {
       this.saveUnit({ cards: [...u.cards, v], version: u.version }, u.id);
     });
   }
@@ -95,7 +102,7 @@ export class TuiApp {
     const r = this.review, card = r.cards[r.index];
     ensure(r.revealed && card, 'Revele a resposta antes de avaliar.');
     const current = this.store.reviewQueue().find(c => c.unit === card.unit && c.id === card.id);
-    ensure(current?.version === card.version, 'O flashcard mudou. Volte aos decks e reinicie a revisão.');
+    ensure(current?.version === card.version, 'O cartão de memorização mudou. Volte aos planos de estudo e reinicie a revisão.');
     this.store.review(card.unit, card.id, rating); r.index++; r.revealed = false; this.scroll = 0;
     this.notice = 'Revisão registrada.';
   }
@@ -179,7 +186,7 @@ export class TuiApp {
         else if (down(name)) { if (this.page === 'board') this.row = clamp(this.row + 1, this.lane().length - 1); else this.index = clamp(this.index + 1, this.visible().length - 1); }
         else if (up(name)) { if (this.page === 'board') this.row = clamp(this.row - 1, this.lane().length - 1); else this.index = clamp(this.index - 1, this.visible().length - 1); }
         else if (name === '/') this.searching = { value: this.query };
-        else if (name === 'd') this.menu('Filtrar deck', ['Todos os decks', ...this.decks().map(d => d.name)], d => { this.filter = d === 'Todos os decks' ? '' : d; this.row = this.index = 0; });
+        else if (name === 'd') this.menu('Filtrar plano de estudo', ['Todos os planos de estudo', ...this.decks().map(d => d.name)], d => { this.filter = d === 'Todos os planos de estudo' ? '' : d; this.row = this.index = 0; });
         else if (name === 'n') this.edit(true);
         else if (current && ['return', 'enter'].includes(name)) this.detail(current.id);
         else if (current && name === 'e') { this.selected = current.id; this.edit(); }
@@ -225,7 +232,11 @@ export class TuiApp {
         const r = this.attempt.results[this.resultIndex];
         if (right(name)) { this.resultIndex = clamp(this.resultIndex + 1, this.attempt.results.length - 1); this.scroll = 0; }
         else if (left(name)) { this.resultIndex = clamp(this.resultIndex - 1, this.attempt.results.length - 1); this.scroll = 0; }
-        else if (name === 'f') { this.store.cardFromQuestion(this.selected, r.question); this.notice = 'Cartão criado com o gabarito atual.'; this.reload(); }
+        else if (name === 'f') {
+          this.store.cardFromQuestion(this.selected, r.question);
+          this.notice = 'Cartão criado com o gabarito atual.';
+          this.reload();
+        }
         else if (r.type === 'text' && ['1', '2'].includes(str)) { this.store.assess(this.attempt.id, r.question, str === '1'); this.notice = 'Autoavaliação registrada.'; }
         else if (['return', 'enter'].includes(name)) { if (this.resultIndex + 1 === this.attempt.results.length) this.detail(this.selected); else { this.resultIndex++; this.scroll = 0; } }
         else this.scrollKey(name);
@@ -246,11 +257,11 @@ export class TuiApp {
     const lines = [], bodyHeight = height - 7;
     const inputMode = this.dialog || this.searching || this.page === 'quiz' && this.quiz.unit.questions[this.quiz.index].type === 'text';
     lines.push(color(fit(` Recall.md  [${inputMode ? 'Esc cancelar' : '? ajuda'}]  /  ${this.name}`, width), 'title'));
-    lines.push(fit(` Quadro ${this.page === 'board' ? '●' : '○'}   Lista ${this.page === 'list' ? '●' : '○'}   Revisão ${['decks', 'review'].includes(this.page) ? '●' : '○'}     ${this.units.length} etapas`, width));
+    lines.push(fit(` Quadro ${this.page === 'board' ? '●' : '○'}   Lista ${this.page === 'list' ? '●' : '○'}   Revisão ${['decks', 'review'].includes(this.page) ? '●' : '○'}     ${this.units.length} fichas`, width));
     lines.push(color('─'.repeat(width), 'muted'));
     let body = [], footer = 'Esc voltar  ·  ? ajuda  ·  Ctrl+C sair';
     if (this.help) {
-      body = ['ATALHOS DO RECALL.MD', '', 'QUADRO E LISTA', 'Setas ou h/j/k/l: navegar · Enter: abrir etapa', 'Tab: alternar quadro/lista · /: buscar · d: filtrar deck', 'n: nova etapa · e: editar · m: mover · r: revisar decks', 'Ctrl+R: reler arquivos · q ou Ctrl+C: sair', '', 'DETALHES', 'q: responder quiz · a: adicionar questão · f: adicionar flashcard', 'r: revisar deck · t: histórico de tentativas · s: criar vínculos', '↑/↓ ou j/k, PgUp/PgDn: rolar material e contexto', '', 'FORMULÁRIOS E TEXTO', 'Tab ou Enter: próximo campo · Shift+Tab: campo anterior', 'Ctrl+S: salvar · Ctrl+J: inserir linha · Ctrl+U: limpar campo', 'Digite no final do campo; Backspace apaga · Esc cancela', '', 'QUIZ', '↑/↓ ou 1–9: selecionar alternativa · Enter: confirmar resposta', 'Texto: digitar, Ctrl+J para nova linha · Enter: confirmar', 'Tentativa só é gravada ao enviar a última questão', 'Esc: cancelar respostas ainda não enviadas', '', 'RESULTADO', '←/→: questão anterior/próxima · Enter: continuar', '1: autoavaliar texto como correto · 2: preciso retomar', 'f: flashcard do gabarito atual, preservando tentativa original', '', 'REVISÃO', 'Espaço ou Enter: revelar · depois 1 repetir / 2 difícil / 3 lembrei / 4 fácil', 'Esc: voltar aos decks, preservando revisões já gravadas'];
+      body = ['ATALHOS DO RECALL.MD', '', 'QUADRO E LISTA', 'Setas ou h/j/k/l: navegar · Enter: abrir ficha', 'Tab: alternar quadro/lista · /: buscar · d: filtrar plano', 'n: nova ficha · e: editar · m: mover · r: revisar planos', 'Ctrl+R: reler arquivos · q ou Ctrl+C: sair', '', 'DETALHES', 'q: responder quiz · a: adicionar questão · f: adicionar cartão de memorização', 'r: revisar deck · t: histórico de tentativas · s: criar vínculos', '↑/↓ ou j/k, PgUp/PgDn: rolar material e contexto', '', 'FORMULÁRIOS E TEXTO', 'Tab ou Enter: próximo campo · Shift+Tab: campo anterior', 'Ctrl+S: salvar · Ctrl+J: inserir linha · Ctrl+U: limpar campo', 'Digite no final do campo; Backspace apaga · Esc cancela', '', 'QUIZ', '↑/↓ ou 1–9: selecionar alternativa · Enter: confirmar resposta', 'Texto: digitar, Ctrl+J para nova linha · Enter: confirmar', 'Tentativa só é gravada ao enviar a última questão', 'Esc: cancelar respostas ainda não enviadas', '', 'RESULTADO', '←/→: questão anterior/próxima · Enter: continuar', '1: autoavaliar texto como correto · 2: preciso retomar', 'f: cartão de memorização do gabarito atual, preservando tentativa original', '', 'REVISÃO', 'Espaço ou Enter: revelar · depois 1 repetir / 2 difícil / 3 lembrei / 4 fácil', 'Esc: voltar aos planos de estudo, preservando revisões já gravadas'];
       footer = '? ou Esc fechar ajuda · ↑/↓ rolar';
     } else if (this.dialog) {
       const d = this.dialog;
@@ -270,26 +281,26 @@ export class TuiApp {
     } else if (this.page === 'board') {
       const count = Math.min(5, Math.max(1, Math.floor((width - 1) / 25))), cell = Math.floor((width - (count - 1)) / count);
       const first = clamp(this.column - Math.floor(count / 2), STATUSES.length - count);
-      body.push(fit(` Busca: ${this.query || 'todas'}  ·  Deck: ${this.filter || 'todos'}  ·  Colunas ${first + 1}–${first + count} de 5`, width));
+      body.push(fit(` Busca: ${this.query || 'todas'}  ·  Plano: ${this.filter || 'todos'}  ·  Colunas ${first + 1}–${first + count} de 5`, width));
       body.push(Array.from({ length: count }, (_, n) => { const c = first + n; return color(fit(` ${STATUSES[c]} (${this.lane(c).length})`, cell), c === this.column ? 'title' : 'muted'); }).join('│'));
       const visibleCards = Math.max(1, Math.floor((bodyHeight - 2) / 4));
       const start = Math.max(0, this.row - visibleCards + 1);
       for (let r = start; r < start + visibleCards; r++) {
         const columns = Array.from({ length: count }, (_, n) => { const c = first + n, u = this.lane(c)[r]; return { u, active: c === this.column && r === this.row }; });
         for (let sub = 0; sub < 4; sub++) body.push(columns.map(({ u, active }) => {
-          const values = u ? [` ${u.id}`, ` ${u.title}`, ` ${u.deck} · ${u.questions.length}Q ${u.cards.length}F`, ''] : r === start ? [' —', ' Nenhuma etapa', '', ''] : ['', '', '', ''];
+          const values = u ? [` ${u.id}`, ` ${u.title}`, ` ${u.deck} · ${u.questions.length}Q ${u.cards.length}F`, ''] : r === start ? [' —', ' Nenhuma ficha de conteúdo', '', ''] : ['', '', '', ''];
           const value = fit(values[sub], cell); return active && sub !== 3 ? color(value, 'selected') : value;
         }).join('│'));
       }
-      footer = '←→ colunas · ↑↓ etapas · Enter abrir · Tab lista · n nova · / busca · r decks · ?';
+      footer = '←→ colunas · ↑↓ fichas · Enter abrir · Tab lista · n nova · / busca · r planos · ?';
     } else if (this.page === 'list') {
       const units = this.visible(); this.index = clamp(this.index, units.length - 1);
-      body = [`ETAPAS · busca: ${this.query || 'todas'} · deck: ${this.filter || 'todos'}`, '', ...units.map((u, i) => `${i === this.index ? '›' : ' '} ${u.id} · ${u.title} [${u.status}]`)];
-      if (!units.length) body.push('Nenhuma etapa. Pressione n para criar.');
-      this.scroll = Math.max(0, this.index - bodyHeight + 4); footer = '↑/↓ selecionar · Enter abrir · Tab quadro · n nova · e editar · m mover · / busca · r decks';
+      body = [`FICHAS DE CONTEÚDO · busca: ${this.query || 'todas'} · plano: ${this.filter || 'todos'}`, '', ...units.map((u, i) => `${i === this.index ? '›' : ' '} ${u.id} · ${u.title} [${u.status}]`)];
+      if (!units.length) body.push('Nenhuma ficha de conteúdo. Pressione n para criar.');
+      this.scroll = Math.max(0, this.index - bodyHeight + 4); footer = '↑/↓ selecionar · Enter abrir · Tab quadro · n nova · e editar · m mover · / busca · r planos';
     } else if (this.page === 'detail') {
       const u = this.unit(), ctx = this.context;
-      body = [`${u.id} · ${u.title}`, `${u.status}  /  Deck: ${u.deck}`, '', 'MATERIAL', ...wrap(u.description || 'Sem descrição. Pressione e para editar.', width - 2), '', 'REFERÊNCIAS', ...(u.sources.length ? u.sources.flatMap(s => wrap(s, width - 2)) : ['Nenhuma fonte cadastrada.']), '', `QUIZ · ${u.questions.length} questões (q para responder)`, ...u.questions.flatMap(q => wrap(`• ${q.prompt}`, width - 2)), '', `FLASHCARDS · ${u.cards.length} cartões (r para revisar)`, ...u.cards.flatMap(c => wrap(`• ${c.front} [${c.deck}]`, width - 2)), '', 'CONTEXTO DO BACKLOG.MD'];
+      body = [`${u.id} · ${u.title}`, `${u.status}  /  Plano de estudo: ${u.deck}`, '', 'MATERIAL', ...wrap(u.description || 'Sem descrição. Pressione e para editar.', width - 2), '', 'REFERÊNCIAS', ...(u.sources.length ? u.sources.flatMap(s => wrap(s, width - 2)) : ['Nenhuma fonte cadastrada.']), '', `QUIZ · ${u.questions.length} questões (q para responder)`, ...u.questions.flatMap(q => wrap(`• ${q.prompt}`, width - 2)), '', `FLASHCARDS · ${u.cards.length} cartões (r para revisar)`, ...u.cards.flatMap(c => wrap(`• ${c.front} [${c.deck}]`, width - 2)), '', 'CONTEXTO DO BACKLOG.MD'];
       if (ctx?.id) body.push(...wrap(`${ctx.id} · ${ctx.title} [${ctx.status}]`, width - 2), ...wrap(ctx.description || 'Sem descrição na tarefa.', width - 2), ...wrap(ctx.file, width - 2), ...(ctx.acceptance ? ['', 'CRITÉRIOS DE ACEITE', ...wrap(ctx.acceptance, width - 2)] : []), ctx.state === 'pending' ? 'Link de retorno pendente: pressione s.' : 'Vínculo nos dois sentidos.');
       else body.push(...wrap(ctx?.error || (ctx?.state === 'missing' ? 'Tarefa vinculada não encontrada no caminho esperado.' : 'Sem tarefa vinculada. O Recall.md funciona independentemente.'), width - 2));
       footer = 'Esc voltar · q quiz · r revisar · e editar · m mover · a questão · f cartão · ?';
@@ -310,14 +321,14 @@ export class TuiApp {
       footer = `${r.type === 'text' ? '1 entendi · 2 retomar · ' : ''}←/→ questão · f cartão do gabarito atual · Enter continuar · Esc`;
     } else if (this.page === 'decks') {
       const decks = this.decks(); this.index = clamp(this.index, decks.length - 1);
-      body = ['DECKS PARA REVISÃO', '', ...decks.map((d, i) => `${i === this.index ? '›' : ' '} ${d.name} · ${d.cards.length} cartões · ${d.cards.filter(c => !c.due || Date.parse(c.due) <= Date.now()).length} para revisar`)];
-      if (!decks.length) body.push('Nenhum deck. Crie etapas e flashcards para começar.');
-      this.scroll = Math.max(0, this.index - bodyHeight + 4); footer = '↑/↓ selecionar deck · Enter revisar cartões pendentes · Esc voltar';
+      body = ['PLANOS DE ESTUDO PARA REVISÃO', '', ...decks.map((d, i) => `${i === this.index ? '›' : ' '} ${d.name} · ${d.cards.length} cartões · ${d.cards.filter(c => !c.due || Date.parse(c.due) <= Date.now()).length} para revisar`)];
+      if (!decks.length) body.push('Nenhum plano de estudo. Crie fichas de conteúdo e cartões de memorização para começar.');
+      this.scroll = Math.max(0, this.index - bodyHeight + 4); footer = '↑/↓ selecionar plano · Enter revisar cartões pendentes · Esc voltar';
     } else if (this.page === 'review') {
       const r = this.review, c = r.cards[r.index];
-      if (!c) body = [`DECK · ${r.deck}`, '', 'REVISÃO EM DIA', r.cards.length ? `${r.index} cartões revisados nesta sessão.` : 'Nenhum cartão pendente neste deck.', '', 'Enter para voltar aos decks.'];
-      else body = [`REVISÃO · ${r.deck} · ${r.index + 1}/${r.cards.length}`, ...wrap(`Etapa: ${c.title}`, width - 2), '', 'TENTE LEMBRAR', ...wrap(c.front, width - 2), '', ...(r.revealed ? ['RESPOSTA', ...wrap(c.back, width - 2), '', '1 Repetir · 2 Difícil · 3 Lembrei · 4 Fácil'] : ['Resposta oculta. Espaço ou Enter para revelar.'])];
-      footer = c ? r.revealed ? '1 repetir · 2 difícil · 3 lembrei · 4 fácil · ↑/↓ rolar · Esc decks' : 'Espaço/Enter revelar · ↑/↓ rolar · Esc decks' : 'Enter ou Esc voltar aos decks';
+      if (!c) body = [`PLANO DE ESTUDO · ${r.deck}`, '', 'REVISÃO EM DIA', r.cards.length ? `${r.index} cartões revisados nesta sessão.` : 'Nenhum cartão pendente neste plano de estudo.', '', 'Enter para voltar aos planos de estudo.'];
+      else body = [`REVISÃO · ${r.deck} · ${r.index + 1}/${r.cards.length}`, ...wrap(`Ficha: ${c.title}`, width - 2), '', 'TENTE LEMBRAR', ...wrap(c.front, width - 2), '', ...(r.revealed ? ['RESPOSTA', ...wrap(c.back, width - 2), '', '1 Repetir · 2 Difícil · 3 Lembrei · 4 Fácil'] : ['Resposta oculta. Espaço ou Enter para revelar.'])];
+      footer = c ? r.revealed ? '1 repetir · 2 difícil · 3 lembrei · 4 fácil · ↑/↓ rolar · Esc planos' : 'Espaço/Enter revelar · ↑/↓ rolar · Esc planos' : 'Enter ou Esc voltar aos planos de estudo';
     } else if (this.page === 'history') {
       body = ['TENTATIVAS PRESERVADAS', '', ...this.attempts.map((a, i) => `${i === this.index ? '›' : ' '} ${new Date(a.created).toLocaleString('pt-BR')} · ${a.results.length} questões`)];
       if (!this.attempts.length) body.push('Nenhuma tentativa registrada.');
@@ -329,7 +340,7 @@ export class TuiApp {
     while (lines.length < height - 4) lines.push('');
     lines.push(color('─'.repeat(width), 'muted'));
     const scrollInfo = !grid && body.length > bodyHeight ? `↑↓ ${this.scroll + 1}–${Math.min(body.length, this.scroll + bodyHeight)}/${body.length} · ` : '';
-    lines.push(this.searching ? fit(` / ${this.searching.value} ▏  [Enter buscar · Esc cancelar]`, width) : color(fit(` ${scrollInfo}${this.notice || (this.page === 'board' ? 'Markdown local · mesmas etapas, tentativas e revisões da CLI e web.' : '')}`, width), 'warning'));
+    lines.push(this.searching ? fit(` / ${this.searching.value} ▏  [Enter buscar · Esc cancelar]`, width) : color(fit(` ${scrollInfo}${this.notice || (this.page === 'board' ? 'Markdown local · mesmas fichas, tentativas e revisões da CLI e web.' : '')}`, width), 'warning'));
     lines.push(fit(' ' + footer, width));
     return lines.join('\r\n');
   }

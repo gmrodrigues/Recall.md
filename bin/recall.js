@@ -5,18 +5,18 @@ import { Store, STATUSES, ensure } from '../src/core.js';
 import { backlogContext, synchronize, autoLink } from '../src/backlog.js';
 import { serve } from '../src/server.js';
 import { startTui } from '../src/tui.js';
-const usage = `Recall.md • aprendizagem em etapas
+const usage = `Recall.md • aprendizagem com fichas de conteúdo
 
 recall init                                  Inicializa recall/ no diretório atual
 recall unit create --title "Assunto" --deck "Deck" [--description "..."] [--file "mesmo-nome.md"]
 recall unit list [--json]                     Mostra unidades e estados
 recall unit view RCL-1                        Mostra material e questões
 recall unit edit RCL-1 --status "Estudando"    Atualiza título, descrição, deck ou estado
-recall unit import arquivo.json [--id RCL-1]  Importa unidade/questões/flashcards de um agente
+recall unit import arquivo.json [--id RCL-1]  Importa unidade/questões/cartões de memorização de um agente
 recall quiz RCL-1                             Mostra questões sem revelar respostas
 recall answer RCL-1 --answers respostas.json  Registra tentativa e feedback
 recall assess ID-TENTATIVA --question q1 --correct true|false
-recall card from-question RCL-1 --question q1 Cria cartão a partir do gabarito
+recall card from-question RCL-1 --question q1  Cria cartão de memorização do gabarito
 recall review [--deck "Deck"] [--due]         Lista cartões para revisão
 recall review RCL-1 --card ID --rating again|hard|good|easy
 recall sync [RCL-1]                           Detecta simetria e cria links nos dois sentidos
@@ -33,12 +33,13 @@ try {
     cwd: { type: 'string' }, json: { type: 'boolean' }, help: { type: 'boolean', short: 'h' },
     title: { type: 'string' }, description: { type: 'string' }, deck: { type: 'string' }, file: { type: 'string' },
     status: { type: 'string' }, id: { type: 'string' }, answers: { type: 'string' }, question: { type: 'string' },
-    correct: { type: 'string' }, card: { type: 'string' }, rating: { type: 'string' }, due: { type: 'boolean' }, port: { type: 'string' }, host: { type: 'string' }
+    correct: { type: 'string' }, card: { type: 'string' }, rating: { type: 'string' }, due: { type: 'boolean' }, milestone: { type: 'string' }, port: { type: 'string' }, host: { type: 'string' }
   } });
   if (o.help || !a.length) { console.log(usage); process.exit(0); }
   const store = new Store(o.cwd);
   const output = v => console.log(JSON.stringify(v, null, 2));
   const input = Object.fromEntries(['title', 'description', 'deck', 'file', 'status'].filter(k => o[k] !== undefined).map(k => [k, o[k]]));
+  if (o.milestone) input.milestoneId = o.milestone;
   if (a[0] === 'init') output(store.init());
   else if (a[0] === 'instructions') console.log(fs.readFileSync(new URL('../docs/agents.md', import.meta.url), 'utf8'));
   else if (a[0] === 'unit' && a[1] === 'create') output(autoLink(store, store.save(input)));

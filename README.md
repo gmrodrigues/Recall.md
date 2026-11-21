@@ -1,6 +1,6 @@
 # Recall.md
 
-Aprendizagem em etapas, com arquivos Markdown, kanban, quizzes e flashcards. CLI, TUI e interface web operam sobre o mesmo diretório `recall/`. Funciona sem Backlog.md; quando existe uma tarefa correspondente, reconhece o vínculo e apresenta seu contexto.
+Aprendizagem com fichas de conteúdo, com arquivos Markdown, kanban, quizzes e cartões de memorização. CLI, TUI e interface web operam sobre o mesmo diretório `recall/`. Funciona sem Backlog.md; quando existe uma tarefa correspondente, reconhece o vínculo e apresenta seu contexto.
 
 ## Começar
 
@@ -39,7 +39,7 @@ O exemplo é sintético, não é histórico pessoal de estudo. O código do prod
 2. Adicione material, questões de múltipla escolha ou texto livre, e cartões. Web e TUI têm formulários; agentes podem importar JSON pela CLI.
 3. Organize o kanban por arrastar e soltar ou pelo estado no formulário de edição.
 4. Responda ao quiz. A tentativa registra as respostas e uma cópia da referência daquela versão. Múltipla escolha tem correção automática; texto livre mostra a referência e permite autoavaliação explícita.
-5. Crie flashcards manualmente ou a partir do **gabarito atual** de uma questão. Uma resposta incorreta não vira gabarito.
+5. Crie cartões de memorização manualmente ou a partir do **gabarito atual** de uma questão. Uma resposta incorreta não vira gabarito.
 6. Revise por deck: tente lembrar, revele o verso e avalie a recordação. Cada revisão é preservada.
 
 Estados iniciais: **A estudar → Estudando → Praticando → Em revisão → Concluído**. São organização do trabalho, não demonstração de domínio; esta versão não exige nota mínima para mudar de coluna.
@@ -70,7 +70,7 @@ recall.md tui
 recall.md browser
 # Outra porta local:
 recall.md browser --port 6422
-# Ajuda com os demais comandos, quizzes, importação e flashcards:
+# Ajuda com os demais comandos, quizzes, importação e cartões de memorização:
 recall.md --help
 ```
 
@@ -196,7 +196,7 @@ O quadro mostra colunas por estado, seleção destacada e rolagem de etapas. Em 
 
 Na tela principal, `q` também encerra. Nos detalhes, `q` inicia o quiz. Em campos de texto, letras continuam sendo texto, não atalhos. Enter confirma a resposta e avança; a tentativa só é gravada ao enviar a última questão. Esc cancela respostas ainda não enviadas. Se o material mudar enquanto você responde, reinicie o quiz para não misturar versões.
 
-A revisão exige revelar o verso antes de registrar uma avaliação. Encerrar uma sessão conserva as revisões já gravadas. O resultado permite criar flashcard do gabarito **atual**; a referência da tentativa histórica permanece intacta. O contexto da tarefa vinculada aparece ao final dos detalhes; `s` tenta atualizar os vínculos pela CLI oficial do Backlog.md. Ao criar/editar na TUI, a associação é tentada automaticamente, como nas outras interfaces.
+A revisão exige revelar o verso antes de registrar uma avaliação. Encerrar uma sessão conserva as revisões já gravadas. O resultado permite criar cartão de memorização do gabarito **atual**; a referência da tentativa histórica permanece intacta. O contexto da tarefa vinculada aparece ao final dos detalhes; `s` tenta atualizar os vínculos pela CLI oficial do Backlog.md. Ao criar/editar na TUI, a associação é tentada automaticamente, como nas outras interfaces.
 
 Não há banco paralelo nem dependência nova para a TUI. O modo de entrada, cursor e tela anterior são restaurados ao sair normalmente, por Ctrl+C/SIGTERM/SIGHUP ou por erro capturado. Como em qualquer aplicação, encerramento forçado com SIGKILL não permite limpeza.
 
@@ -293,3 +293,62 @@ RECALL_IMAGE=recall-md:local node scripts/smoke-web-browser.mjs /caminho/do/chro
 Testes incluem controlador da TUI e um ensaio em pseudo-terminal POSIX real (requer Python 3) com redimensionamento, navegação, formulário, quiz, revisão, Ctrl+C/SIGTERM e restauração dos atributos do terminal, além de quatro ensaios DOM dos formulários, quiz, autoavaliação, persistência, atualização ao vivo e revisão da web. Também cobrem histórico, conflitos, CLI, HTTP e integração idempotente com a CLI real do Backlog.md quando fornecida. O servidor escuta por padrão em `127.0.0.1`; `--host 0.0.0.0` é uma opção explícita para o contêiner, cuja porta deve ser publicada no localhost. Não há autenticação para acesso remoto. O smoke no Chrome valida interação e persistência, inclusive no Docker, mas não substitui revisão visual do layout.
 
 Referência de produto: [Backlog.md](https://github.com/MrLesk/Backlog.md). Recall.md é uma implementação independente, sem importar seus módulos internos.
+
+## Links da interface web
+
+O plano selecionado, a ficha, a aba e a página de material têm URLs que
+podem ser copiadas ou recarregadas. As telas de Arquivados, Cartões de memorização,
+Histórico e Cronogramas também têm rotas próprias. O botão Voltar do
+navegador acompanha a navegação. Rascunhos de edição e confirmações são
+temporários.
+
+## Material de estudo na web
+
+Abra uma ficha e use **Editar material** para cadastrar páginas, seções e
+anexos. Imagens e vídeos reconhecidos aparecem no fim da página. Vídeos do
+YouTube, Vimeo e Dailymotion usam seus próprios players. Vídeos por URL
+direta usam o player do navegador. O material preserva um link para a fonte.
+
+O indicador conta páginas visitadas e retoma a última página aberta.
+O progresso é guardado no navegador e gravado em
+`recall/reading-progress.sqlite` após dez minutos. Na agenda compartilhada,
+ajuste os minutos de leitura por domínio. A estimativa da ficha inclui
+páginas, links de leitura e a média da amostra de vídeos. A aba **Material**
+mostra o tempo previsto e o realizado para a ficha.
+
+## Cronogramas na web
+
+A tela **Cronogramas** mostra a agenda acima da lista quando há cronogramas.
+Use a engrenagem para editar as configurações gerais e **Sessões** para acompanhar
+e confirmar estudos. Em **Novo cronograma**, a primeiro passo mostra a agenda
+compartilhada já preenchida. No passo **Conteúdo**, selecione os planos de estudo ou capítulos e informe os minutos-base por ficha em cada linha. Informe nome, prioridade, início e prazo no último passo antes da revisão.
+Se nenhum capítulo servir ao conteúdo, aplicar a prévia cria um capítulo com o
+nome do cronograma. Use **Novo capítulo** ou o filtro de capítulos no quadro. Ao incluir
+uma ficha em um plano de estudo agendado, selecione a fase a que ela pertence. Cada ficha do quadro é uma unidade de planejamento, com a própria estimativa.
+No último passo antes da revisão, o Recall.md sugere um prazo ao encaixar o
+esforço restante mais 50% de margem nas janelas regulares. Você pode informar
+uma data diferente.
+Em **Janelas semanais**, o modelo começa com 1 hora por dia, das 20h às 21h,
+de segunda a sexta. Ajuste a duração, o início e os dias, aplique o modelo e
+edite as janelas geradas. Use **Redefinir por um modelo** para substituí-las.
+A tolerância semanal é registrada em horas e minutos e começa em 0 h 20 min
+nas agendas novas. Revise o percentual de esforço que cabe até o prazo e o efeito nas
+sessões antes de aplicar. O modal de revisão mostra o antes e o depois com
+conexões entre horários alterados. Cada dia tem colunas **Antes** e **Depois**,
+com totais de fichas e tempo de estudo. O Gantt cobre todas as datas até o
+prazo, com navegação por intervalos. A folga pode ocupar até 50% do tempo de
+estudo, em blocos de duração média de uma ficha, dentro das janelas livres.
+A prévia tenta preservar as folgas dos outros
+cronogramas e informa qualquer folga usada. Sessões realizadas aparecem em
+verde-claro no dia efetivo, programadas em amarelo-claro e vencidas em
+vermelho-claro até serem reprogramadas. No quadro, o filtro de sessão agendada lista as sessões pendentes em ordem de data e hora. **Pegar próxima ficha programada** abre a ficha pendente mais antiga entre as que passam pelos filtros.
+
+Confirme sessões com o tempo real. O Recall.md usa a média das capítulos realizadas
+nas próximas propostas e registra **Estudo concluído** quando todos os
+fichas passam por **Em estudo**. A cobertura mede o encaixe do esforço
+previsto. Quando a busca termina sem poder determinar a viabilidade, a prévia
+exibe **Viabilidade não confirmada**.
+
+Ao mover uma ficha planejada para **Em revisão** ou **Concluído**, ela
+aparece em verde no cronograma como estudada no quadro. A
+movimentação não registra duração nem cria uma sessão no histórico.
