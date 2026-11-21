@@ -33,6 +33,16 @@ recall browser
 
 O exemplo é sintético, não é histórico pessoal de estudo. O código do produto fica neste repositório; os dados ficam na pasta em que você executou `init`.
 
+O diretório `example/` já é um espaço de estudo: um curso curto de inglês americano. Copie a pasta antes de responder, para as tentativas não ficarem no repositório do produto. Veja [example/README.md](example/README.md).
+
+O diretório `example-vocabulario/` é outra sequência: 91 etapas, uma para cada lição de vocabulário listada no índice de <https://www.learnenglish.com/english-vocabulary-page/>. As páginas ligadas não foram copiadas. Veja [example-vocabulario/README.md](example-vocabulario/README.md).
+
+```bash
+cp -a example ~/estudo-ingles
+cd ~/estudo-ingles
+node /caminho/Recall.md/bin/recall.js browser
+```
+
 ## Fluxo
 
 1. Crie uma etapa, descreva seu objetivo e escolha um deck.
