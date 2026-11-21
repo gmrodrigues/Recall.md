@@ -8,7 +8,7 @@ Ficaram de fora os links de menu, redes e rodapé (início, gramática, jogos, P
 
 A grafia de estudo é a dos Estados Unidos. Onde o título da fonte usa colour, maths, films ou holiday, a etapa avisa o termo americano.
 
-Para iniciar em uma pasta vazia, use o [primeiro exemplo do guia Docker](../../README.md#primeiro-exemplo--vocabulário-em-inglês). O [JSON de importação](vocabulario-ingles.json) reúne as 91 fichas na ordem do percurso.
+Para iniciar em uma pasta vazia, use o [primeiro exemplo do guia AppImage](../../README.md#primeiro-exemplo--vocabulário-em-inglês). O [JSON de importação](vocabulario-ingles.json) reúne as 91 fichas na ordem do percurso.
 
 ## Base
 

@@ -2,7 +2,7 @@
 
 ## Usar o Recall.md como agente externo
 
-1. Identifique a pasta autorizada do estudo e a instalação disponível. Com Docker, rode `recall.md` a partir dessa pasta. Com Node.js, use `node /caminho/Recall.md/bin/recall.js --cwd /caminho/do/estudo`; se a CLI `recall` estiver no PATH, use-a diretamente.
+1. Identifique a pasta autorizada do estudo e a instalação disponível. No Linux x86_64, use `recall-appimage` com a AppImage. Com Docker, rode `recall.md` a partir dessa pasta. Com Node.js, use `node /caminho/Recall.md/bin/recall.js --cwd /caminho/do/estudo`; se a CLI `recall` estiver no PATH, use-a diretamente.
 2. Para um estudo novo, crie a pasta e rode `init`. Em estudo existente, consulte `unit list --json` e `unit view ID` para localizar a ficha.
 3. Leia as fontes autorizadas e o contrato exibido por `instructions`. Prepare um objeto JSON por ficha, seguindo o exemplo e o formato. Importe com `unit import arquivo.json`. Com Docker, coloque o JSON dentro da pasta montada.
 4. Para atualizar uma ficha existente, use `unit import arquivo.json --id RCL-1`. Preserve os IDs das páginas, questões e cartões. Envie a lista completa de cada coleção alterada. `unit view` oculta os gabaritos, portanto use o JSON de origem ou leia os dados autorizados da ficha ao preparar uma atualização.

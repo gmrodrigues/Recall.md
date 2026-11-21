@@ -19,7 +19,7 @@ with tempfile.TemporaryDirectory(prefix='recall-install-') as tmp:
     project = tmp / 'study with spaces'
     project.mkdir()
     installer = ['bash', '-s', '--', '--bin-dir', str(bindir)]
-    script = (root / 'install.sh').read_text()
+    script = (root / 'scripts' / 'install-docker.sh').read_text()
     subprocess.run(installer, input=script, text=True, check=True)
     recall = str(bindir / 'recall.md')
     subprocess.run(installer, input=script, text=True, check=True)  # Updating our own launcher is allowed.
@@ -42,7 +42,7 @@ with tempfile.TemporaryDirectory(prefix='recall-install-') as tmp:
     # An unrelated launcher must remain untouched.
     other = tmp / 'other'; other.mkdir(); target = other / 'recall.md'
     target.write_text('#!/bin/sh\necho existing\n')
-    result = subprocess.run(['sh', str(root / 'install.sh'), '--bin-dir', str(other)], capture_output=True)
+    result = subprocess.run(['sh', str(root / 'scripts' / 'install-docker.sh'), '--bin-dir', str(other)], capture_output=True)
     assert result.returncode != 0 and target.read_text().endswith('echo existing\n')
     # A real TTY must start and restore the TUI.
     master, slave = pty.openpty()

@@ -6,35 +6,37 @@ Aprendizagem com fichas de conteúdo, com arquivos Markdown, kanban, quizzes e c
 
 Cada estudo é uma pasta sua. O Recall.md grava `recall/` dentro dela. Você pode usar o mesmo aplicativo para vários estudos, cada um com seus decks, fichas e histórico. Backlog.md é opcional.
 
-Para Linux x86_64, também há uma [AppImage com o Recall.md completo](#instalar-com-appimage-no-linux).
+A **AppImage para Linux x86_64** inclui Node.js, CLI, TUI e a interface web compilada. O instalador verifica o SHA-256 da release `latest` antes de instalar ou atualizar `recall-appimage`. [Baixar AppImage](https://github.com/gmrodrigues/Recall.md/releases/latest) · [Opção Docker](#instalar-recallmd-com-docker)
 
 ### Primeiro exemplo · Vocabulário em inglês
 
 Comece pelo estudo de vocabulário em inglês de **Marcelo Henrique Goncalves (@billmask)**. Ele reúne 91 fichas com material, quizzes e cartões de memorização. [Estudo incluído no Recall.md](examples/example-vocabulario/README.md) · [Contribuição original](https://github.com/billmask/Recall.md/tree/7ea324a987e14d08ecc3501f0d2a125dc65ae061/example-vocabulario)
 
-Use Docker em execução, Bash e curl. Instale o launcher e crie uma pasta de estudo vazia.
+Instale a AppImage com o comando abaixo e crie uma pasta vazia para o estudo.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install.sh | sh
 export PATH="$HOME/.local/bin:$PATH"
 
 mkdir -p "$HOME/estudos/vocabulario-ingles"
 cd "$HOME/estudos/vocabulario-ingles"
 curl -fsSLo vocabulario-ingles.json \
   https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/example-vocabulario/vocabulario-ingles.json
-recall.md init
-recall.md unit import vocabulario-ingles.json
-recall.md unit list
-recall.md browser --port 6421
+recall-appimage init
+recall-appimage unit import vocabulario-ingles.json
+recall-appimage unit list
+recall-appimage browser --port 6421
 ```
 
-Se já tiver o launcher instalado, `recall.md update` baixa a imagem atual antes da importação. O launcher monta a pasta atual e grava nela os dados e o histórico em `recall/`. Em Docker rootless, o launcher usa a identidade do usuário do daemon para gravar na pasta montada. Se já instalou um launcher anterior, execute a linha de instalação novamente para atualizá-lo. Importe o arquivo uma vez ao iniciar o estudo. Para retomar, volte à pasta e execute `recall.md browser`. Veja [requisitos, atualização e remoção do launcher](#instalar-recallmd-com-docker).
+Rode a primeira linha novamente para atualizar. Importe o arquivo uma vez ao iniciar o estudo. Para retomar, volte à mesma pasta e execute `recall-appimage browser`. Fora de um estudo, `recall-appimage` sem argumentos abre o servidor com o estudo padrão na pasta de dados local.
 
-Abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **O alfabeto** e confira as abas **Material**, **Quiz** e **Cartões de memorização**. Para testar a gravação, responda ao quiz, reinicie o servidor na mesma pasta e consulte a aba **Tentativas**. Encerre com Ctrl+C. Se a porta estiver ocupada, use `recall.md browser --port 6422` e abra **http://127.0.0.1:6422**.
+Se faltar FUSE, execute `export APPIMAGE_EXTRACT_AND_RUN=1` no mesmo terminal antes de rodar os comandos `recall-appimage`.
+
+Abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **O alfabeto** e confira as abas **Material**, **Quiz** e **Cartões de memorização**. Para testar a gravação, responda ao quiz, reinicie o servidor na mesma pasta e consulte a aba **Tentativas**. Encerre com Ctrl+C. Se a porta estiver ocupada, use `recall-appimage browser --port 6422` e abra **http://127.0.0.1:6422**.
 
 ### Criar um estudo próprio
 
-Crie outra pasta e rode `recall.md init` nela. Adicione uma ficha pelo botão **Nova ficha de conteúdo** ou gere um JSON com um agente de IA. Use um dos prompts abaixo.
+Crie outra pasta e rode `recall-appimage init` nela. Adicione uma ficha pelo botão **Nova ficha de conteúdo** ou gere um JSON com um agente de IA. Use um dos prompts abaixo.
 
 #### Prompt 1 · Como funciona o Recall.md
 
@@ -44,17 +46,17 @@ Crie outra pasta e rode `recall.md init` nela. Adicione uma ficha pelo botão **
 > - Formato das fichas: https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/docs/format.md
 > - Modelo JSON: https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/primeira-etapa.json
 >
-> Use Docker. Se o comando `recall.md` ainda não estiver no PATH, siga a instalação com Docker do README público. Se já estiver instalado, rode `recall.md update` para obter a versão que importa listas de fichas. Crie `~/estudos/como-funciona-o-recall`, entre nessa pasta e rode `recall.md init`.
+> Use a AppImage e o instalador público indicado no início do README. Execute a instalação novamente se precisar atualizar `recall-appimage`. Crie `~/estudos/como-funciona-o-recall`, entre nessa pasta e rode `recall-appimage init`.
 >
-> Crie três fichas no deck **Como funciona o Recall.md**, uma para cada assunto. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite a URL raw e a seção de cada fonte de conteúdo. Salve a lista em `estudo.json` dentro da pasta do estudo. Nessa mesma pasta, rode `recall.md unit import estudo.json`, confirme os IDs com `recall.md unit list` e inicie a interface com `recall.md browser`. Informe os IDs e a URL local. Eu vou responder aos quizzes.
+> Crie três fichas no deck **Como funciona o Recall.md**, uma para cada assunto. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite a URL raw e a seção de cada fonte de conteúdo. Salve a lista em `estudo.json` dentro da pasta do estudo. Nessa mesma pasta, rode `recall-appimage unit import estudo.json`, confirme os IDs com `recall-appimage unit list` e inicie a interface com `recall-appimage browser`. Informe os IDs e a URL local. Eu vou responder aos quizzes.
 
 #### Prompt 2 · Documentação completa do Godot
 
 > Quero criar um estudo no Recall.md sobre **toda a documentação estável do Godot** em https://docs.godotengine.org/en/stable/. Use o índice oficial para mapear as seções, incluindo tutoriais e referência da API, e registre a versão do Godot indicada pela documentação. Divida o percurso em decks temáticos e fichas de tamanho manejável. Acompanhe quais seções já foram cobertas e quais faltam.
 >
-> Parta de uma pasta vazia e leia o [guia para agentes](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/AGENTS.md), o [README](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md), o [formato das fichas](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/docs/format.md) e o [modelo JSON](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/primeira-etapa.json) pelas URLs públicas raw. Use Docker conforme as instruções do README. Crie `~/estudos/godot-documentacao`, entre nessa pasta e execute `recall.md init`.
+> Parta de uma pasta vazia e leia o [guia para agentes](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/AGENTS.md), o [README](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md), o [formato das fichas](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/docs/format.md) e o [modelo JSON](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/primeira-etapa.json) pelas URLs públicas raw. Instale a AppImage conforme as instruções no início do README. Crie `~/estudos/godot-documentacao`, entre nessa pasta e execute `recall-appimage init`.
 >
-> Para cada ficha, escreva um objetivo, um resumo, questões com gabarito explicado e cartões de memorização. Cite as URLs e as seções oficiais. Gere os arquivos JSON dentro da pasta de estudo e importe por tema com `recall.md unit import arquivo.json`. Confirme os IDs com `recall.md unit list` e abra o navegador com `recall.md browser`. Informe a URL local e o progresso da cobertura. Eu vou responder aos quizzes.
+> Para cada ficha, escreva um objetivo, um resumo, questões com gabarito explicado e cartões de memorização. Cite as URLs e as seções oficiais. Gere os arquivos JSON dentro da pasta de estudo e importe por tema com `recall-appimage unit import arquivo.json`. Confirme os IDs com `recall-appimage unit list` e abra o navegador com `recall-appimage browser`. Informe a URL local e o progresso da cobertura. Eu vou responder aos quizzes.
 
 Veja o [JSON de uma ficha](examples/primeira-etapa.json) e os [prompts e skills para agentes](AGENTS.md).
 
@@ -77,143 +79,6 @@ Para trabalhar no código, use Node.js 22.22.2+, 24.15+ ou 26+, conforme `packag
 6. Revise por deck: tente lembrar, revele o verso e avalie a recordação. Cada revisão é preservada.
 
 Estados iniciais: **A estudar → Estudando → Praticando → Em revisão → Concluído**. São organização do trabalho, não demonstração de domínio; esta versão não exige nota mínima para mudar de coluna.
-
-## Instalar com AppImage no Linux
-
-No Linux x86_64, a AppImage inclui Node.js, CLI, TUI e interface web compilada. O instalador baixa e verifica a AppImage da release marcada como `latest` antes de trocar a cópia instalada. Execute a instalação novamente para atualizar. [Release mais recente](https://github.com/gmrodrigues/Recall.md/releases/latest)
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install-appimage.sh | sh
-export PATH="$HOME/.local/bin:$PATH"
-mkdir -p "$HOME/estudos/meu-estudo"
-cd "$HOME/estudos/meu-estudo"
-recall-appimage init
-recall-appimage browser
-```
-
-Abra **http://127.0.0.1:6421**. Os dados ficam em `recall/` dentro da pasta do estudo. Execute `recall-appimage tui` para abrir a interface de terminal. Ao executar sem argumentos, a AppImage inicia a interface web com um estudo na pasta de dados local do usuário.
-
-Se o sistema não disponibilizar FUSE, execute `APPIMAGE_EXTRACT_AND_RUN=1 recall-appimage browser` na pasta do estudo. O workflow do GitHub Actions gera, testa e publica a versão para cada revisão aplicável da `main`. [Workflow AppImage](.github/workflows/appimage.yml)
-
-## Instalar `recall.md` com Docker
-
-Requer Docker instalado e acessível ao usuário, Bash e curl. Funciona em Linux/macOS; no Windows, use WSL com integração Docker. Não requer clonar o repositório nem instalar Node.js:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install.sh | bash
-```
-
-O instalador baixa a imagem pública `ghcr.io/gmrodrigues/recall.md:latest` e cria `~/.local/bin/recall.md`, sem sudo. Se essa pasta ainda não estiver no PATH, adicione ao arquivo de configuração do shell:
-
-```bash
-export PATH="$HOME/.local/bin:$PATH"
-```
-
-Na pasta que deve guardar o estudo, use todos os comandos da CLI através de `recall.md`:
-
-```bash
-recall.md init
-recall.md unit create --title "Entender o projeto" --deck "Arquitetura"
-recall.md unit list
-recall.md quiz RCL-1
-recall.md review
-recall.md tui
-recall.md browser
-# Outra porta local:
-recall.md browser --port 6422
-# Ajuda com os demais comandos, quizzes, importação e cartões de memorização:
-recall.md --help
-```
-
-A web fica em `http://127.0.0.1:6421` (ou na porta escolhida), publicada somente no localhost. Ctrl+C encerra o contêiner. O launcher monta a pasta atual, preserva os arquivos `recall/` e usa seu UID/GID; TTY é ativado apenas quando entrada e saída são terminais. Execute a partir da pasta que contém os dados e os arquivos a importar; caminhos fora dessa pasta não ficam disponíveis no contêiner. Para estudar outro projeto, mude de diretório antes de executar `recall.md`.
-
-### Atualizar
-
-```bash
-recall.md update
-```
-
-Atualiza a imagem Docker selecionada, sem alterar os materiais, respostas ou revisões. As próximas execuções usam a imagem baixada; reinicie uma web/TUI já aberta para usar a nova versão. Para atualizar também o launcher, execute novamente o comando de instalação. Ele preserva comandos existentes que não tenham sido criados por este instalador.
-
-Para selecionar outra imagem na execução ou atualização:
-
-```bash
-RECALL_IMAGE=ghcr.io/gmrodrigues/recall.md:sha-<commit> recall.md unit list
-RECALL_IMAGE=ghcr.io/gmrodrigues/recall.md:sha-<commit> recall.md update
-```
-
-### Diretório personalizado e remoção
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install.sh | bash -s -- --bin-dir "$HOME/bin"
-# Remover o launcher padrão, preservando os dados dos estudos:
-rm "$HOME/.local/bin/recall.md"
-```
-
-Em uma cópia local, `sh install.sh` faz a mesma instalação. O comando usa as mesmas limitações da imagem descritas abaixo, incluindo a integração opcional com Backlog.md. Para validar o instalador em diretórios temporários com Docker real: `python3 scripts/smoke-install-docker.py` (requer Python 3). O ensaio cobre pipe, instalação/reinstalação, atualização, CLI, argumentos, persistência, TUI em PTY, web local e proteção de comandos existentes.
-
-## Docker / GHCR
-
-Imagem pública no **GitHub Container Registry (GHCR)**: [`ghcr.io/gmrodrigues/recall.md:latest`](https://github.com/gmrodrigues/Recall.md/pkgs/container/recall.md).
-
-Publicação inicial verificada em **14/11/2026**, com download sem credenciais:
-
-| Referência | Endereço |
-| --- | --- |
-| Versão mais recente | `ghcr.io/gmrodrigues/recall.md:latest` |
-| Tag da entrega inicial | `ghcr.io/gmrodrigues/recall.md:sha-4917012a5818a6f1175efef146851cc63a97756c` |
-| Artefato imutável da entrega inicial | `ghcr.io/gmrodrigues/recall.md@sha256:c5e18d193efad447a3757efee608734d9714fcf430aa129e7028f71bf6304825` |
-
-[Workflow da publicação inicial](https://github.com/gmrodrigues/Recall.md/actions/runs/43653578247). A tag `latest` acompanha novas publicações; use o digest acima para reproduzir exatamente esta entrega. Cada publicação também recebe `sha-<SHA completo do commit>`. A primeira versão da imagem é Linux/amd64.
-
-Na pasta de estudo, inicialize os arquivos uma vez:
-
-```bash
-docker pull ghcr.io/gmrodrigues/recall.md:latest
-docker run --rm --user "$(id -u):$(id -g)" \
-  --mount "type=bind,source=$PWD,target=/workspace" \
-  ghcr.io/gmrodrigues/recall.md:latest init
-```
-
-Abra a web:
-
-```bash
-docker run --rm --name recall --user "$(id -u):$(id -g)" \
-  --mount "type=bind,source=$PWD,target=/workspace" \
-  -p 127.0.0.1:6421:6421 \
-  ghcr.io/gmrodrigues/recall.md:latest
-```
-
-Acesse **http://127.0.0.1:6421**. O comando padrão é `browser --host 0.0.0.0`: a aplicação escuta nas interfaces do contêiner e a porta é publicada apenas no localhost da máquina. O padrão fora do Docker continua sendo `127.0.0.1`. Outra porta local, como `-p 127.0.0.1:6422:6421`, também funciona. Ctrl+C encerra a web; os arquivos permanecem na pasta montada.
-
-Para CLI e TUI:
-
-```bash
-docker run --rm --user "$(id -u):$(id -g)" \
-  --mount "type=bind,source=$PWD,target=/workspace" \
-  ghcr.io/gmrodrigues/recall.md:latest unit list
-
-docker run --rm -it --user "$(id -u):$(id -g)" \
-  --mount "type=bind,source=$PWD,target=/workspace" \
-  ghcr.io/gmrodrigues/recall.md:latest tui
-```
-
-Os exemplos de UID/GID usam shell POSIX. A imagem usa o usuário `node` por padrão; `--user` permite gravar no diretório montado com a identidade do usuário local. O material não fica embutido na imagem. Monte a pasta que deve guardar `recall/`; sem essa montagem, arquivos criados no contêiner são efêmeros. Para projetos com Backlog.md, monte a pasta que contém as duas raízes. O contexto da tarefa pode ser lido, mas a imagem não inclui a CLI do Backlog.md para criar o link de retorno; essa integração requer um executável configurado disponível no ambiente.
-
-O serviço continua sem autenticação: os comandos acima publicam a porta somente no localhost. A distribuição da imagem não hospeda uma instância pública da aplicação.
-
-### Build e publicação
-
-```bash
-docker build --build-arg VCS_REF="$(git rev-parse HEAD)" -t recall-md:local .
-npm run test:container -- recall-md:local
-```
-
-O Dockerfile fixa a base oficial Node.js por digest, instala apenas dependências de produção e copia uma lista explícita de arquivos. `.dockerignore` exclui os dados locais, Git, credenciais e dependências da máquina por padrão.
-
-O workflow **Container** executa checagens, testes, build e smoke real de CLI/TUI/web antes de publicar no GHCR. Publica em push de `main` ou disparo manual; pull requests testam sem publicar. Usa `GITHUB_TOKEN` com `packages: write`, sem secret adicional. A imagem testada é a que recebe as tags de SHA e `latest`. Actions são fixadas por SHA. O smoke usa pasta temporária, valida persistência e rejeição de Host/Origin inválidos, e percorre a TUI por pseudo-terminal (Python 3).
-
-Na primeira publicação, confira a visibilidade em **Packages → recall.md → Package settings → Change visibility → Public**. A visibilidade do pacote é independente da do repositório. O acesso público só está demonstrado depois de um pull sem credenciais.
 
 ## TUI — terminal interativo
 
@@ -253,7 +118,7 @@ Não há banco paralelo nem dependência nova para a TUI. O modo de entrada, cur
 
 ## CLI
 
-Nos exemplos a seguir, `recall` representa a CLI. Use `recall.md` com Docker ou substitua por `node /caminho/Recall.md/bin/recall.js` com Node.js.
+Nos exemplos a seguir, `recall` representa a CLI. Use `recall-appimage` com a AppImage ou `node /caminho/Recall.md/bin/recall.js` com Node.js.
 
 ```bash
 recall unit list
@@ -359,11 +224,9 @@ npm test
 RECALL_BACKLOG_BIN=/caminho/do/backlog npm test
 # Chrome real, com dados sintéticos temporários:
 node scripts/smoke-web-browser.mjs /caminho/do/chrome
-# O mesmo fluxo contra uma imagem Docker local:
-RECALL_IMAGE=recall-md:local node scripts/smoke-web-browser.mjs /caminho/do/chrome
 ```
 
-Testes incluem controlador da TUI e um ensaio em pseudo-terminal POSIX real (requer Python 3) com redimensionamento, navegação, formulário, quiz, revisão, Ctrl+C/SIGTERM e restauração dos atributos do terminal, além de cinco ensaios DOM dos formulários, quiz, autoavaliação, persistência, alternância de abas com rascunho, atualização ao vivo e revisão da web. Também cobrem histórico, conflitos, CLI, HTTP e integração idempotente com a CLI real do Backlog.md quando fornecida. O servidor escuta por padrão em `127.0.0.1`; `--host 0.0.0.0` é uma opção explícita para o contêiner, cuja porta deve ser publicada no localhost. Não há autenticação para acesso remoto. O smoke no Chrome valida interação, persistência e alternância quiz/flashcard, inclusive no Docker, mas não substitui revisão visual do layout.
+Testes incluem controlador da TUI e um ensaio em pseudo-terminal POSIX real (requer Python 3) com redimensionamento, navegação, formulário, quiz, revisão, Ctrl+C/SIGTERM e restauração dos atributos do terminal, além de cinco ensaios DOM dos formulários, quiz, autoavaliação, persistência, alternância de abas com rascunho, atualização ao vivo e revisão da web. Também cobrem histórico, conflitos, CLI, HTTP e integração idempotente com a CLI real do Backlog.md quando fornecida. O servidor escuta por padrão em `127.0.0.1`. O smoke no Chrome valida interação, persistência e alternância entre quiz e cartões. A revisão visual do layout é uma verificação separada.
 
 Referência de produto: [Backlog.md](https://github.com/MrLesk/Backlog.md). Recall.md é uma implementação independente, sem importar seus módulos internos.
 
@@ -425,3 +288,125 @@ exibe **Viabilidade não confirmada**.
 Ao mover uma ficha planejada para **Em revisão** ou **Concluído**, ela
 aparece em verde no cronograma como estudada no quadro. A
 movimentação não registra duração nem cria uma sessão no histórico.
+
+## Instalar `recall.md` com Docker
+
+Requer Docker instalado e acessível ao usuário, Bash e curl. Funciona em Linux/macOS; no Windows, use WSL com integração Docker. Não requer clonar o repositório nem instalar Node.js:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/scripts/install-docker.sh | bash
+```
+
+O instalador baixa a imagem pública `ghcr.io/gmrodrigues/recall.md:latest` e cria `~/.local/bin/recall.md`, sem sudo. Se essa pasta ainda não estiver no PATH, adicione ao arquivo de configuração do shell:
+
+```bash
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+Na pasta que deve guardar o estudo, use todos os comandos da CLI através de `recall.md`:
+
+```bash
+recall.md init
+recall.md unit create --title "Entender o projeto" --deck "Arquitetura"
+recall.md unit list
+recall.md quiz RCL-1
+recall.md review
+recall.md tui
+recall.md browser
+# Outra porta local:
+recall.md browser --port 6422
+# Ajuda com os demais comandos, quizzes, importação e cartões de memorização:
+recall.md --help
+```
+
+A web fica em `http://127.0.0.1:6421` (ou na porta escolhida), publicada somente no localhost. Ctrl+C encerra o contêiner. Em Docker rootless, o launcher usa a identidade do usuário do daemon para gravar na pasta montada. O launcher monta a pasta atual, preserva os arquivos `recall/` e usa seu UID/GID; TTY é ativado apenas quando entrada e saída são terminais. Execute a partir da pasta que contém os dados e os arquivos a importar; caminhos fora dessa pasta não ficam disponíveis no contêiner. Para estudar outro projeto, mude de diretório antes de executar `recall.md`.
+
+### Atualizar
+
+```bash
+recall.md update
+```
+
+Atualiza a imagem Docker selecionada, sem alterar os materiais, respostas ou revisões. As próximas execuções usam a imagem baixada; reinicie uma web/TUI já aberta para usar a nova versão. Para atualizar também o launcher, execute novamente o comando de instalação. Ele preserva comandos existentes que não tenham sido criados por este instalador.
+
+Para selecionar outra imagem na execução ou atualização:
+
+```bash
+RECALL_IMAGE=ghcr.io/gmrodrigues/recall.md:sha-<commit> recall.md unit list
+RECALL_IMAGE=ghcr.io/gmrodrigues/recall.md:sha-<commit> recall.md update
+```
+
+### Diretório personalizado e remoção
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/scripts/install-docker.sh | bash -s -- --bin-dir "$HOME/bin"
+# Remover o launcher padrão, preservando os dados dos estudos:
+rm "$HOME/.local/bin/recall.md"
+```
+
+Em uma cópia local, `sh scripts/install-docker.sh` faz a mesma instalação. O comando usa as mesmas limitações da imagem descritas abaixo, incluindo a integração opcional com Backlog.md. Para validar o instalador em diretórios temporários com Docker real: `python3 scripts/smoke-install-docker.py` (requer Python 3). O ensaio cobre pipe, instalação/reinstalação, atualização, CLI, argumentos, persistência, TUI em PTY, web local e proteção de comandos existentes.
+
+## Docker / GHCR
+
+Imagem pública no **GitHub Container Registry (GHCR)**: [`ghcr.io/gmrodrigues/recall.md:latest`](https://github.com/gmrodrigues/Recall.md/pkgs/container/recall.md).
+
+Publicação inicial verificada em **14/11/2026**, com download sem credenciais:
+
+| Referência | Endereço |
+| --- | --- |
+| Versão mais recente | `ghcr.io/gmrodrigues/recall.md:latest` |
+| Tag da entrega inicial | `ghcr.io/gmrodrigues/recall.md:sha-4917012a5818a6f1175efef146851cc63a97756c` |
+| Artefato imutável da entrega inicial | `ghcr.io/gmrodrigues/recall.md@sha256:c5e18d193efad447a3757efee608734d9714fcf430aa129e7028f71bf6304825` |
+
+[Workflow da publicação inicial](https://github.com/gmrodrigues/Recall.md/actions/runs/43653578247). A tag `latest` acompanha novas publicações; use o digest acima para reproduzir exatamente esta entrega. Cada publicação também recebe `sha-<SHA completo do commit>`. A primeira versão da imagem é Linux/amd64.
+
+Na pasta de estudo, inicialize os arquivos uma vez:
+
+```bash
+docker pull ghcr.io/gmrodrigues/recall.md:latest
+docker run --rm --user "$(id -u):$(id -g)" \
+  --mount "type=bind,source=$PWD,target=/workspace" \
+  ghcr.io/gmrodrigues/recall.md:latest init
+```
+
+Abra a web:
+
+```bash
+docker run --rm --name recall --user "$(id -u):$(id -g)" \
+  --mount "type=bind,source=$PWD,target=/workspace" \
+  -p 127.0.0.1:6421:6421 \
+  ghcr.io/gmrodrigues/recall.md:latest
+```
+
+Acesse **http://127.0.0.1:6421**. O comando padrão é `browser --host 0.0.0.0`: a aplicação escuta nas interfaces do contêiner e a porta é publicada apenas no localhost da máquina. O padrão fora do Docker continua sendo `127.0.0.1`. Outra porta local, como `-p 127.0.0.1:6422:6421`, também funciona. Ctrl+C encerra a web; os arquivos permanecem na pasta montada.
+
+Para CLI e TUI:
+
+```bash
+docker run --rm --user "$(id -u):$(id -g)" \
+  --mount "type=bind,source=$PWD,target=/workspace" \
+  ghcr.io/gmrodrigues/recall.md:latest unit list
+
+docker run --rm -it --user "$(id -u):$(id -g)" \
+  --mount "type=bind,source=$PWD,target=/workspace" \
+  ghcr.io/gmrodrigues/recall.md:latest tui
+```
+
+Os exemplos de UID/GID usam shell POSIX. A imagem usa o usuário `node` por padrão; `--user` permite gravar no diretório montado com a identidade do usuário local. O material não fica embutido na imagem. Monte a pasta que deve guardar `recall/`; sem essa montagem, arquivos criados no contêiner são efêmeros. Para projetos com Backlog.md, monte a pasta que contém as duas raízes. O contexto da tarefa pode ser lido, mas a imagem não inclui a CLI do Backlog.md para criar o link de retorno; essa integração requer um executável configurado disponível no ambiente.
+
+O serviço continua sem autenticação: os comandos acima publicam a porta somente no localhost. A distribuição da imagem não hospeda uma instância pública da aplicação.
+
+### Build e publicação
+
+```bash
+docker build --build-arg VCS_REF="$(git rev-parse HEAD)" -t recall-md:local .
+npm run test:container -- recall-md:local
+# Ensaio interativo no Chrome contra a imagem local:
+RECALL_IMAGE=recall-md:local node scripts/smoke-web-browser.mjs /caminho/do/chrome
+```
+
+O Dockerfile fixa a base oficial Node.js por digest, instala apenas dependências de produção e copia uma lista explícita de arquivos. `.dockerignore` exclui os dados locais, Git, credenciais e dependências da máquina por padrão.
+
+O workflow **Container** executa checagens, testes, build e smoke real de CLI/TUI/web antes de publicar no GHCR. Publica em push de `main` ou disparo manual; pull requests testam sem publicar. Usa `GITHUB_TOKEN` com `packages: write`, sem secret adicional. A imagem testada é a que recebe as tags de SHA e `latest`. Actions são fixadas por SHA. O smoke usa pasta temporária, valida persistência e rejeição de Host/Origin inválidos, e percorre a TUI por pseudo-terminal (Python 3).
+
+Na primeira publicação, confira a visibilidade em **Packages → recall.md → Package settings → Change visibility → Public**. A visibilidade do pacote é independente da do repositório. O acesso público só está demonstrado depois de um pull sem credenciais.

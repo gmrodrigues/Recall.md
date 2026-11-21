@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/appimage.yml'
       - 'scripts/build-appimage.sh'
+      - 'install.sh'
       - 'install-appimage.sh'
       - 'bin/**'
       - 'src/**'
