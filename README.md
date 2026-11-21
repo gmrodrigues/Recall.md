@@ -40,7 +40,7 @@ Crie outra pasta e rode `recall-appimage init` nela. Crie um único plano de est
 
 #### Prompt 1 · Como funciona o Recall.md
 
-> Quero estudar como o Recall.md organiza fichas, quizzes e cartões. O repositório público oficial é https://github.com/gmrodrigues/Recall.md. Parta de uma pasta vazia e leia os arquivos desse repositório pelos links raw abaixo, sem clonar:
+> Quero estudar como o Recall.md organiza fichas, quizzes, cartões e cronogramas. O repositório público oficial é https://github.com/gmrodrigues/Recall.md. Parta de uma pasta vazia e leia os arquivos desse repositório pelos links raw abaixo, sem clonar:
 > - Guia para agentes: https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/AGENTS.md
 > - Instalação e uso: https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md
 > - Formato das fichas: https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/docs/format.md
@@ -48,7 +48,9 @@ Crie outra pasta e rode `recall-appimage init` nela. Crie um único plano de est
 >
 > Use a AppImage e o instalador público indicado no início do README. Execute a instalação novamente se precisar atualizar `recall-appimage`. Crie `~/estudos/como-funciona-o-recall`, entre nessa pasta e rode `recall-appimage init`.
 >
-> Crie um único plano **Como funciona o Recall.md** com os capítulos **Fichas**, **Quizzes** e **Cartões**, uma ficha em cada capítulo. Use `deck: "Como funciona o Recall.md"` em todas as fichas e o nome correspondente em `chapter`. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite a URL raw e a seção de cada fonte de conteúdo. Salve a lista em `estudo.json` dentro da pasta do estudo. Nessa mesma pasta, rode `recall-appimage unit import estudo.json`, confirme os IDs com `recall-appimage unit list` e inicie a interface com `recall-appimage browser`. Informe os IDs e a URL local. Eu vou responder aos quizzes.
+> Crie um único plano **Como funciona o Recall.md** com quatro capítulos, **Fichas**, **Quizzes**, **Cartões** e **Cronogramas**, com uma ficha em cada capítulo. Use `deck: "Como funciona o Recall.md"` em todas as fichas e o nome correspondente em `chapter`. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite a URL raw e a seção de cada fonte de conteúdo. Salve a lista em `estudo.json` dentro da pasta do estudo. Nessa mesma pasta, rode `recall-appimage unit import estudo.json`, confirme os IDs com `recall-appimage unit list` e inicie a interface com `recall-appimage browser`. Informe os IDs e a URL local. Eu vou responder aos quizzes.
+>
+> No capítulo **Cronogramas**, leia a seção **Cronogramas na web** do README público. Explique como definir as janelas semanais, incluir o plano inteiro ou capítulos, estimar o tempo com o mínimo de cinco minutos-base por ficha, escolher um prazo, revisar e aplicar a prévia e acompanhar as sessões no Gantt. Mostre como confirmar o tempo realizado depois de estudar. Inclua um exercício para eu criar um cronograma para esse próprio plano com horários de exemplo.
 
 #### Prompt 2 · Documentação completa do Godot
 
