@@ -15,7 +15,7 @@ Comece pelo estudo de vocabulário em inglês de **Marcelo Henrique Goncalves (@
 Instale a AppImage com o comando abaixo e crie uma pasta vazia para o estudo.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/22a10c01a99a3b0d91e730e835c4fdc3cd5ac85b/install.sh | sh
 export PATH="$HOME/.local/bin:$PATH"
 
 mkdir -p "$HOME/estudos/vocabulario-ingles"
@@ -28,7 +28,7 @@ recall-appimage unit list
 recall-appimage browser --port 6421
 ```
 
-Rode a primeira linha novamente para atualizar. Importe o arquivo uma vez ao iniciar o estudo. Para retomar, volte à mesma pasta e execute `recall-appimage browser`. Fora de um estudo, `recall-appimage` sem argumentos abre o servidor com o estudo padrão na pasta de dados local.
+Rode a primeira linha novamente para atualizar. A URL fixa a revisão do instalador, que sempre busca o pacote na release `latest`. Importe o arquivo uma vez ao iniciar o estudo. Para retomar, volte à mesma pasta e execute `recall-appimage browser`. Fora de um estudo, `recall-appimage` sem argumentos abre o servidor com o estudo padrão na pasta de dados local.
 
 Se faltar FUSE, execute `export APPIMAGE_EXTRACT_AND_RUN=1` no mesmo terminal antes de rodar os comandos `recall-appimage`.
 
