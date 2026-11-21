@@ -36,7 +36,7 @@ Abra **http://127.0.0.1:6421**. No **Quadro de estudos**, selecione o plano **Vo
 
 ### Criar um estudo próprio
 
-Crie outra pasta e rode `recall-appimage init` nela. Adicione uma ficha pelo botão **Nova ficha de conteúdo** ou gere um JSON com um agente de IA. Use um dos prompts abaixo.
+Crie outra pasta e rode `recall-appimage init` nela. Crie um único plano de estudo e organize os assuntos em capítulos. Na lista JSON, use o mesmo `deck` em todas as fichas e indique o capítulo de cada ficha em `chapter`. Adicione uma ficha pelo botão **Nova ficha de conteúdo** ou gere um JSON com um agente de IA. Use um dos prompts abaixo.
 
 #### Prompt 1 · Como funciona o Recall.md
 
@@ -48,15 +48,15 @@ Crie outra pasta e rode `recall-appimage init` nela. Adicione uma ficha pelo bot
 >
 > Use a AppImage e o instalador público indicado no início do README. Execute a instalação novamente se precisar atualizar `recall-appimage`. Crie `~/estudos/como-funciona-o-recall`, entre nessa pasta e rode `recall-appimage init`.
 >
-> Crie três fichas no deck **Como funciona o Recall.md**, uma para cada assunto. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite a URL raw e a seção de cada fonte de conteúdo. Salve a lista em `estudo.json` dentro da pasta do estudo. Nessa mesma pasta, rode `recall-appimage unit import estudo.json`, confirme os IDs com `recall-appimage unit list` e inicie a interface com `recall-appimage browser`. Informe os IDs e a URL local. Eu vou responder aos quizzes.
+> Crie um único plano **Como funciona o Recall.md** com os capítulos **Fichas**, **Quizzes** e **Cartões**, uma ficha em cada capítulo. Use `deck: "Como funciona o Recall.md"` em todas as fichas e o nome correspondente em `chapter`. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite a URL raw e a seção de cada fonte de conteúdo. Salve a lista em `estudo.json` dentro da pasta do estudo. Nessa mesma pasta, rode `recall-appimage unit import estudo.json`, confirme os IDs com `recall-appimage unit list` e inicie a interface com `recall-appimage browser`. Informe os IDs e a URL local. Eu vou responder aos quizzes.
 
 #### Prompt 2 · Documentação completa do Godot
 
-> Quero criar um estudo no Recall.md sobre **toda a documentação estável do Godot** em https://docs.godotengine.org/en/stable/. Use o índice oficial para mapear as seções, incluindo tutoriais e referência da API, e registre a versão do Godot indicada pela documentação. Divida o percurso em decks temáticos e fichas de tamanho manejável. Acompanhe quais seções já foram cobertas e quais faltam.
+> Quero criar um estudo no Recall.md sobre **toda a documentação estável do Godot** em https://docs.godotengine.org/en/stable/. Use o índice oficial para mapear as seções, incluindo tutoriais e referência da API, e registre a versão do Godot indicada pela documentação. Mantenha um único plano **Godot — documentação estável** e divida o percurso em capítulos temáticos, com fichas de tamanho manejável. Use o mesmo `deck` em todas as fichas e indique o capítulo em `chapter`. Acompanhe quais seções já foram cobertas e quais faltam.
 >
 > Parta de uma pasta vazia e leia o [guia para agentes](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/AGENTS.md), o [README](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md), o [formato das fichas](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/docs/format.md) e o [modelo JSON](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/primeira-etapa.json) pelas URLs públicas raw. Instale a AppImage conforme as instruções no início do README. Crie `~/estudos/godot-documentacao`, entre nessa pasta e execute `recall-appimage init`.
 >
-> Para cada ficha, escreva um objetivo, um resumo, questões com gabarito explicado e cartões de memorização. Cite as URLs e as seções oficiais. Gere os arquivos JSON dentro da pasta de estudo e importe por tema com `recall-appimage unit import arquivo.json`. Confirme os IDs com `recall-appimage unit list` e abra o navegador com `recall-appimage browser`. Informe a URL local e o progresso da cobertura. Eu vou responder aos quizzes.
+> Para cada ficha, escreva um objetivo, um resumo, questões com gabarito explicado e cartões de memorização. Cite as URLs e as seções oficiais. Salve as fichas em listas JSON na pasta do estudo. Se importar em lotes, coloque todas as fichas de cada capítulo no mesmo lote. Importe com `recall-appimage unit import arquivo.json` e confira os capítulos no Quadro de estudos. Confirme os IDs com `recall-appimage unit list` e abra o navegador com `recall-appimage browser`. Informe a URL local e o progresso da cobertura. Eu vou responder aos quizzes.
 
 Veja o [JSON de uma ficha](examples/primeira-etapa.json) e os [prompts e skills para agentes](AGENTS.md).
 
