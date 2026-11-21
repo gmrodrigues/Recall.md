@@ -34,7 +34,11 @@ Abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **O alfabeto** e 
 
 Crie outra pasta e rode `recall.md init` nela. Adicione uma ficha pelo botão **Nova ficha de conteúdo** ou gere um JSON com um agente de IA. Exemplo de prompt para copiar:
 
-> Use o Recall.md com Docker. Crie um estudo em `~/estudos/arquitetura` a partir dos arquivos `docs/arquitetura.md` e `docs/api.md` deste projeto. Prepare até três fichas no deck Arquitetura, cada uma com material, duas questões com gabarito explicado e três cartões. Cite o arquivo e a seção que sustentam cada ficha. Salve o JSON dentro da pasta do estudo, importe com `recall.md unit import`, confirme os IDs com `recall.md unit list` e abra a interface com `recall.md browser`. Eu vou responder aos quizzes.
+> Quero estudar como o Recall.md organiza fichas, quizzes e cartões. Comece mesmo que o diretório atual esteja vazio. Clone `https://github.com/gmrodrigues/Recall.md.git` em uma pasta temporária. No clone, leia `AGENTS.md`, `README.md`, `docs/format.md` e `examples/primeira-etapa.json`. Use o README e o documento de formato como fontes e o JSON como modelo.
+>
+> Use Docker. Se o comando `recall.md` ainda não estiver disponível, instale-o com as instruções do README remoto. Crie um diretório novo em `~/estudos/como-funciona-o-recall`, separado do clone, e execute `recall.md init` nessa pasta.
+>
+> Crie três fichas no deck **Como funciona o Recall.md**, uma para cada assunto. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite o caminho e a seção da fonte. Salve a lista em `estudo.json` dentro da pasta do estudo. Nessa mesma pasta, rode `recall.md unit import estudo.json`, confirme os IDs com `recall.md unit list` e inicie a interface com `recall.md browser`. Informe a revisão do clone, os IDs e a URL. Eu vou responder aos quizzes.
 
 Veja o [JSON de uma ficha](examples/primeira-etapa.json) e os [prompts e skills para agentes](AGENTS.md).
 
