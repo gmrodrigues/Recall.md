@@ -6,6 +6,8 @@ Aprendizagem com fichas de conteúdo, com arquivos Markdown, kanban, quizzes e c
 
 Cada estudo é uma pasta sua. O Recall.md grava `recall/` dentro dela. Você pode usar o mesmo aplicativo para vários estudos, cada um com seus decks, fichas e histórico. Backlog.md é opcional.
 
+Para Linux x86_64, também há uma [AppImage com o Recall.md completo](#instalar-com-appimage-no-linux).
+
 ### Primeiro exemplo · Vocabulário em inglês
 
 Comece pelo estudo de vocabulário em inglês de **Marcelo Henrique Goncalves (@billmask)**. Ele reúne 91 fichas com material, quizzes e cartões de memorização. [Estudo incluído no Recall.md](examples/example-vocabulario/README.md) · [Contribuição original](https://github.com/billmask/Recall.md/tree/7ea324a987e14d08ecc3501f0d2a125dc65ae061/example-vocabulario)
@@ -75,6 +77,23 @@ Para trabalhar no código, use Node.js 22.22.2+, 24.15+ ou 26+, conforme `packag
 6. Revise por deck: tente lembrar, revele o verso e avalie a recordação. Cada revisão é preservada.
 
 Estados iniciais: **A estudar → Estudando → Praticando → Em revisão → Concluído**. São organização do trabalho, não demonstração de domínio; esta versão não exige nota mínima para mudar de coluna.
+
+## Instalar com AppImage no Linux
+
+No Linux x86_64, a AppImage inclui Node.js, CLI, TUI e interface web compilada. O instalador baixa e verifica a AppImage da release marcada como `latest` antes de trocar a cópia instalada. Execute a instalação novamente para atualizar. [Release mais recente](https://github.com/gmrodrigues/Recall.md/releases/latest)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/install-appimage.sh | sh
+export PATH="$HOME/.local/bin:$PATH"
+mkdir -p "$HOME/estudos/meu-estudo"
+cd "$HOME/estudos/meu-estudo"
+recall-appimage init
+recall-appimage browser
+```
+
+Abra **http://127.0.0.1:6421**. Os dados ficam em `recall/` dentro da pasta do estudo. Execute `recall-appimage tui` para abrir a interface de terminal. Ao executar sem argumentos, a AppImage inicia a interface web com um estudo na pasta de dados local do usuário.
+
+Se o sistema não disponibilizar FUSE, execute `APPIMAGE_EXTRACT_AND_RUN=1 recall-appimage browser` na pasta do estudo. O workflow do GitHub Actions gera, testa e publica a versão para cada revisão aplicável da `main`. [Workflow AppImage](.github/workflows/appimage.yml)
 
 ## Instalar `recall.md` com Docker
 

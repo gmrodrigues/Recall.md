@@ -1,0 +1,80 @@
+name: AppImage
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/appimage.yml'
+      - 'scripts/build-appimage.sh'
+      - 'install-appimage.sh'
+      - 'bin/**'
+      - 'src/**'
+      - 'web/**'
+      - 'examples/**'
+      - 'docs/agents.md'
+      - 'package*.json'
+      - 'vite.config.js'
+  workflow_dispatch:
+
+concurrency:
+  group: recall-appimage-release
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: bash scripts/build-appimage.sh dist
+      - name: Test the packaged application
+        run: |
+          export APPIMAGE_EXTRACT_AND_RUN=1
+          app="$PWD/dist/Recall.md-x86_64.AppImage"
+          study=$(mktemp -d)
+          "$app" --cwd "$study" init
+          "$app" --cwd "$study" unit import examples/example-vocabulario/vocabulario-ingles.json > "$study/imported.json"
+          node -e 'const r=require(process.argv[1]); if(r.length!==91 || r[0].unit.title!=="O alfabeto") process.exit(1)' "$study/imported.json"
+          "$app" --cwd "$study" browser --port 16421 > "$study/server.log" 2>&1 &
+          server=$!
+          trap 'kill "$server" 2>/dev/null || true' EXIT
+          curl -fsSL --retry 15 --retry-connrefused --retry-delay 1 http://127.0.0.1:16421/api/state -o "$study/state.json"
+          node -e 'if(require(process.argv[1]).units.length!==91) process.exit(1)' "$study/state.json"
+          curl -fsSL http://127.0.0.1:16421/schedule-flow.js -o "$study/gantt.js"
+          test -s "$study/gantt.js"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recall-appimage
+          path: dist/Recall.md-x86_64.AppImage*
+          if-no-files-found: error
+  publish:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: recall-appimage
+          path: dist
+      - name: Publish the tested revision as latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="appimage-${GITHUB_SHA:0:12}"
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            exit 0
+          fi
+          gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --latest \
+            --title "Recall.md AppImage ${GITHUB_SHA:0:12}" \
+            --notes "AppImage Linux x86_64, compilada e testada a partir de $GITHUB_SHA." \
+            dist/Recall.md-x86_64.AppImage dist/Recall.md-x86_64.AppImage.sha256
