@@ -32,7 +32,9 @@ Abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **O alfabeto** e 
 
 ### Criar um estudo próprio
 
-Crie outra pasta e rode `recall.md init` nela. Adicione uma ficha pelo botão **Nova ficha de conteúdo** ou gere um JSON com um agente de IA. Exemplo de prompt para copiar:
+Crie outra pasta e rode `recall.md init` nela. Adicione uma ficha pelo botão **Nova ficha de conteúdo** ou gere um JSON com um agente de IA. Use um dos prompts abaixo.
+
+#### Prompt 1 · Como funciona o Recall.md
 
 > Quero estudar como o Recall.md organiza fichas, quizzes e cartões. Parta de uma pasta vazia e leia estas fontes públicas diretamente pelas URLs raw, sem clonar o repositório:
 > - Guia para agentes: https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/AGENTS.md
@@ -43,6 +45,14 @@ Crie outra pasta e rode `recall.md init` nela. Adicione uma ficha pelo botão **
 > Use Docker. Se o comando `recall.md` ainda não estiver no PATH, siga a instalação com Docker do README público. Se já estiver instalado, rode `recall.md update` para obter a versão que importa listas de fichas. Crie `~/estudos/como-funciona-o-recall`, entre nessa pasta e rode `recall.md init`.
 >
 > Crie três fichas no deck **Como funciona o Recall.md**, uma para cada assunto. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite a URL raw e a seção de cada fonte de conteúdo. Salve a lista em `estudo.json` dentro da pasta do estudo. Nessa mesma pasta, rode `recall.md unit import estudo.json`, confirme os IDs com `recall.md unit list` e inicie a interface com `recall.md browser`. Informe os IDs e a URL local. Eu vou responder aos quizzes.
+
+#### Prompt 2 · Documentação completa do Godot
+
+> Quero criar um estudo no Recall.md sobre **toda a documentação estável do Godot** em https://docs.godotengine.org/en/stable/. Use o índice oficial para mapear as seções, incluindo tutoriais e referência da API, e registre a versão do Godot indicada pela documentação. Divida o percurso em decks temáticos e fichas de tamanho manejável. Acompanhe quais seções já foram cobertas e quais faltam.
+>
+> Parta de uma pasta vazia e leia o [guia para agentes](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/AGENTS.md), o [README](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md), o [formato das fichas](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/docs/format.md) e o [modelo JSON](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/primeira-etapa.json) pelas URLs públicas raw. Use Docker conforme as instruções do README. Crie `~/estudos/godot-documentacao`, entre nessa pasta e execute `recall.md init`.
+>
+> Para cada ficha, escreva um objetivo, um resumo, questões com gabarito explicado e cartões de memorização. Cite as URLs e as seções oficiais. Gere os arquivos JSON dentro da pasta de estudo e importe por tema com `recall.md unit import arquivo.json`. Confirme os IDs com `recall.md unit list` e abra o navegador com `recall.md browser`. Informe a URL local e o progresso da cobertura. Eu vou responder aos quizzes.
 
 Veja o [JSON de uma ficha](examples/primeira-etapa.json) e os [prompts e skills para agentes](AGENTS.md).
 
