@@ -2,7 +2,7 @@
 id: RCL-84
 title: História
 status: A estudar
-deck: Estudos e sociedade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:15.294Z
 updated: 2026-11-21T15:44:15.294Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: História, nesta etapa, trata principalmente de
     back: the past
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "História"?
     back: https://www.learnenglish.com/vocabulary/history/learn-history-vocabulary-in-english/
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Falar do passado com o vocabulário do tema.
 
-Sequência: etapa 84 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 84 de 91, capítulo Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: History Expressions in English
 https://www.learnenglish.com/vocabulary/history/learn-history-vocabulary-in-english/

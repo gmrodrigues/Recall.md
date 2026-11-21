@@ -2,7 +2,7 @@
 id: RCL-18
 title: Rotina do dia
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.510Z
 updated: 2026-11-21T15:44:12.510Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual frase diz que a pessoa acorda?
     back: I wake up.
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Rotina do dia"?
     back: https://www.learnenglish.com/vocabulary/daily-routines/learn-daily-routines-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Dizer ações do dia, da manhã à noite.
 
-Sequência: etapa 18 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 18 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Daily Routines in English Everyday activities with Images
 https://www.learnenglish.com/vocabulary/daily-routines/learn-daily-routines-in-english/

@@ -2,7 +2,7 @@
 id: RCL-75
 title: Programas
 status: A estudar
-deck: Telas e trabalho
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.718Z
 updated: 2026-11-21T15:44:14.718Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra americana nomeia um programa de uso comum?
     back: app
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Programas"?
     back: https://www.learnenglish.com/vocabulary/computer-software/learn-computer-and-software-vocabulary-in-english/
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear software, não as peças.
 
-Sequência: etapa 75 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 75 de 91, capítulo Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Computer and Software Vocabulary
 https://www.learnenglish.com/vocabulary/computer-software/learn-computer-and-software-vocabulary-in-english/

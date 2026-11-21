@@ -2,7 +2,7 @@
 id: RCL-83
 title: Geografia
 status: A estudar
-deck: Estudos e sociedade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:15.226Z
 updated: 2026-11-21T15:44:15.226Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o mapa?
     back: map
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Geografia"?
     back: https://www.learnenglish.com/vocabulary/geography/learn-geography-vocabulary-in-english/
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear o que se lê num mapa.
 
-Sequência: etapa 83 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 83 de 91, capítulo Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Geography Expressions
 https://www.learnenglish.com/vocabulary/geography/learn-geography-vocabulary-in-english/

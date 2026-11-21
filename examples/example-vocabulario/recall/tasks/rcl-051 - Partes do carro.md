@@ -2,7 +2,7 @@
 id: RCL-51
 title: Partes do carro
 status: A estudar
-deck: Cidade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.497Z
 updated: 2026-11-21T15:44:13.497Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a roda?
     back: wheel
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Partes do carro"?
     back: https://www.learnenglish.com/vocabulary/car-parts/learn-car-parts-vocabulary-in-english/
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear partes do carro.
 
-Sequência: etapa 51 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 51 de 91, capítulo Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Learn Car Parts in English
 https://www.learnenglish.com/vocabulary/car-parts/learn-car-parts-vocabulary-in-english/

@@ -2,7 +2,7 @@
 id: RCL-2
 title: Os números
 status: A estudar
-deck: Base
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.324Z
 updated: 2026-11-21T15:44:12.324Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual é o inglês de 10?
     back: ten
-    deck: Base
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Os números"?
     back: https://www.learnenglish.com/vocabulary/numbers/learn-numbers-in-english/
-    deck: Base
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Ler e dizer números em inglês.
 
-Sequência: etapa 2 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 2 de 91, capítulo Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Numbers in English: Games Tests Examples
 https://www.learnenglish.com/vocabulary/numbers/learn-numbers-in-english/

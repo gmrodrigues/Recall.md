@@ -2,7 +2,7 @@
 id: RCL-71
 title: Aparelhos eletrônicos
 status: A estudar
-deck: Telas e trabalho
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.477Z
 updated: 2026-11-21T15:44:14.477Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o telefone?
     back: phone
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Aparelhos eletrônicos"?
     back: https://www.learnenglish.com/vocabulary/electronic-devices/learn-electronic-devices-vocabulary-in-english/
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear aparelhos do dia a dia.
 
-Sequência: etapa 71 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 71 de 91, capítulo Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Electronic Devices in English with Images and Quizzes
 https://www.learnenglish.com/vocabulary/electronic-devices/learn-electronic-devices-vocabulary-in-english/

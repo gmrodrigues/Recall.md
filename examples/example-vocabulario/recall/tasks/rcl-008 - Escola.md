@@ -2,7 +2,7 @@
 id: RCL-8
 title: Escola
 status: A estudar
-deck: Base
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.369Z
 updated: 2026-11-21T15:44:12.369Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Quem conduz a aula?
     back: a teacher
-    deck: Base
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Escola"?
     back: https://www.learnenglish.com/vocabulary/school-education/learn-school-and-education-vocabulary-in-english/
-    deck: Base
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Falar de pessoas e partes da vida escolar.
 
-Sequência: etapa 8 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 8 de 91, capítulo Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: School and Education Words
 https://www.learnenglish.com/vocabulary/school-education/learn-school-and-education-vocabulary-in-english/

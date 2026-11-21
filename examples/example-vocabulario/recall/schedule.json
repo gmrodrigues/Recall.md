@@ -1,0 +1,166 @@
+{
+  "version": 2,
+  "revision": 10,
+  "availability": {
+    "timeZone": "America/Sao_Paulo",
+    "windows": [],
+    "overtimeHours": 0,
+    "overtimeMinutes": 20
+  },
+  "milestones": [
+    {
+      "id": "aabebd9e-c88c-4701-a4e2-5d9ef4eebdd4",
+      "name": "Base",
+      "units": [
+        "RCL-1",
+        "RCL-2",
+        "RCL-3",
+        "RCL-4",
+        "RCL-5",
+        "RCL-6",
+        "RCL-7",
+        "RCL-8",
+        "RCL-9"
+      ]
+    },
+    {
+      "id": "af95373e-58b0-4e89-b0dc-971c1b52fceb",
+      "name": "Pessoas",
+      "units": [
+        "RCL-10",
+        "RCL-11",
+        "RCL-12",
+        "RCL-13",
+        "RCL-14",
+        "RCL-15",
+        "RCL-16",
+        "RCL-17",
+        "RCL-18",
+        "RCL-19",
+        "RCL-20"
+      ]
+    },
+    {
+      "id": "e27b99f3-d45f-4192-95f6-db7d54b92f00",
+      "name": "Casa",
+      "units": [
+        "RCL-21",
+        "RCL-22",
+        "RCL-23",
+        "RCL-24",
+        "RCL-25",
+        "RCL-26",
+        "RCL-27",
+        "RCL-28"
+      ]
+    },
+    {
+      "id": "22a450d9-2f6d-46a9-967a-1cb083500df5",
+      "name": "Comida",
+      "units": [
+        "RCL-29",
+        "RCL-30",
+        "RCL-31",
+        "RCL-32",
+        "RCL-33",
+        "RCL-34",
+        "RCL-35"
+      ]
+    },
+    {
+      "id": "261596d7-ecbb-4994-9f56-a0c019ca90e1",
+      "name": "Natureza",
+      "units": [
+        "RCL-36",
+        "RCL-37",
+        "RCL-38",
+        "RCL-39",
+        "RCL-40",
+        "RCL-41",
+        "RCL-42",
+        "RCL-43",
+        "RCL-44",
+        "RCL-45",
+        "RCL-46",
+        "RCL-47"
+      ]
+    },
+    {
+      "id": "61527977-f916-408e-a6e4-05acca972938",
+      "name": "Cidade",
+      "units": [
+        "RCL-48",
+        "RCL-49",
+        "RCL-50",
+        "RCL-51",
+        "RCL-52",
+        "RCL-53",
+        "RCL-54",
+        "RCL-55",
+        "RCL-56"
+      ]
+    },
+    {
+      "id": "c3d07c45-7922-4ece-81d8-8762ed662ceb",
+      "name": "Língua",
+      "units": [
+        "RCL-57",
+        "RCL-58",
+        "RCL-59",
+        "RCL-60",
+        "RCL-61",
+        "RCL-62"
+      ]
+    },
+    {
+      "id": "ffcec2e0-46f7-4c30-abd2-89d0288bf75e",
+      "name": "Lazer",
+      "units": [
+        "RCL-63",
+        "RCL-64",
+        "RCL-65",
+        "RCL-66",
+        "RCL-67",
+        "RCL-68",
+        "RCL-69",
+        "RCL-70"
+      ]
+    },
+    {
+      "id": "dc4c3529-151b-499b-825b-61874d82ef3a",
+      "name": "Telas e trabalho",
+      "units": [
+        "RCL-71",
+        "RCL-72",
+        "RCL-73",
+        "RCL-74",
+        "RCL-75",
+        "RCL-76",
+        "RCL-77",
+        "RCL-78",
+        "RCL-79"
+      ]
+    },
+    {
+      "id": "86f97826-8ccd-4998-a143-8e10eb8851ae",
+      "name": "Estudos e sociedade",
+      "units": [
+        "RCL-80",
+        "RCL-81",
+        "RCL-82",
+        "RCL-83",
+        "RCL-84",
+        "RCL-85",
+        "RCL-86",
+        "RCL-87",
+        "RCL-88",
+        "RCL-89",
+        "RCL-90",
+        "RCL-91"
+      ]
+    }
+  ],
+  "schedules": [],
+  "sessions": [],
+  "confirmations": []
+}

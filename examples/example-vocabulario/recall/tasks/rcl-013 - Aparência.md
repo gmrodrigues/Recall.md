@@ -2,7 +2,7 @@
 id: RCL-13
 title: Aparência
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.427Z
 updated: 2026-11-21T15:44:12.427Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra descreve uma pessoa alta?
     back: tall
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Aparência"?
     back: https://www.learnenglish.com/vocabulary/appearance/learn-appearance-vocabulary-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Descrever altura, cabelo e traços visíveis.
 
-Sequência: etapa 13 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 13 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Personal Appearance Learn with Flashcards and Tests
 https://www.learnenglish.com/vocabulary/appearance/learn-appearance-vocabulary-in-english/

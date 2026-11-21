@@ -2,7 +2,7 @@
 id: RCL-35
 title: Cozinhar
 status: A estudar
-deck: Comida
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.910Z
 updated: 2026-11-21T15:44:12.910Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: O que significa to boil?
     back: Cozinhar em água fervente.
-    deck: Comida
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Cozinhar"?
     back: https://www.learnenglish.com/vocabulary/cooking/learn-cooking-vocabulary-in-english/
-    deck: Comida
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Dizer modos de cozinhar.
 
-Sequência: etapa 35 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 35 de 91, capítulo Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Cooking Expressions: Learn English with Activities
 https://www.learnenglish.com/vocabulary/cooking/learn-cooking-vocabulary-in-english/

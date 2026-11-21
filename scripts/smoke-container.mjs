@@ -30,6 +30,9 @@ try {
   const imported = JSON.parse(vocabulary(['unit', 'import', '/workspace/vocabulario/vocabulario-ingles.json']));
   assert.equal(imported.length, 91);
   assert.equal(imported[0].unit.title, 'O alfabeto');
+  assert.ok(imported.every(result => result.unit.deck === 'Vocabulário em inglês'));
+  const vocabularySchedule = JSON.parse(fs.readFileSync(path.join(cwd, 'vocabulario', 'recall', 'schedule.json')));
+  assert.equal(vocabularySchedule.milestones.length, 10);
   assert.equal(JSON.parse(vocabulary(['unit', 'list', '--json'])).length, 91);
   console.log('Vocabulário: importação das 91 fichas em estudo separado.');
   cli(['init']);

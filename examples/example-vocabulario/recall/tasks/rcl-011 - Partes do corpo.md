@@ -2,7 +2,7 @@
 id: RCL-11
 title: Partes do corpo
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.402Z
 updated: 2026-11-21T15:44:12.402Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a mão?
     back: hand
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Partes do corpo"?
     back: https://www.learnenglish.com/vocabulary/body-parts/learn-body-parts-vocabulary-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear partes do corpo.
 
-Sequência: etapa 11 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 11 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Body Parts in English With Games and Listed Images
 https://www.learnenglish.com/vocabulary/body-parts/learn-body-parts-vocabulary-in-english/

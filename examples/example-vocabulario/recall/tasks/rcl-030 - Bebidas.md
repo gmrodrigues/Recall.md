@@ -2,7 +2,7 @@
 id: RCL-30
 title: Bebidas
 status: A estudar
-deck: Comida
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.775Z
 updated: 2026-11-21T15:44:12.775Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a água?
     back: water
-    deck: Comida
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Bebidas"?
     back: https://www.learnenglish.com/vocabulary/drinks/learn-drinks-vocabulary-in-english/
-    deck: Comida
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear bebidas.
 
-Sequência: etapa 30 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 30 de 91, capítulo Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Names of Drinks in English with Games and Flashcards
 https://www.learnenglish.com/vocabulary/drinks/learn-drinks-vocabulary-in-english/

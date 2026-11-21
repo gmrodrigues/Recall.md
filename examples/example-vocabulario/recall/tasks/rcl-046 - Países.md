@@ -2,7 +2,7 @@
 id: RCL-46
 title: Países
 status: A estudar
-deck: Natureza
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.287Z
 updated: 2026-11-21T15:44:13.287Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual é o nome em inglês dos Estados Unidos?
     back: the United States
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Países"?
     back: https://www.learnenglish.com/vocabulary/countries/learn-countries-vocabulary-in-english/
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Dizer nomes de países em inglês.
 
-Sequência: etapa 46 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 46 de 91, capítulo Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Countries in English Learn with Flags and Games
 https://www.learnenglish.com/vocabulary/countries/learn-countries-vocabulary-in-english/

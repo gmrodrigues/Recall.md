@@ -2,7 +2,7 @@
 id: RCL-47
 title: Nacionalidades
 status: A estudar
-deck: Natureza
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.335Z
 updated: 2026-11-21T15:44:13.336Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual é a nacionalidade de quem é do Brasil, em inglês?
     back: Brazilian
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Nacionalidades"?
     back: https://www.learnenglish.com/vocabulary/nationalities/learn-nationalities-in-english/
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Dizer de onde a pessoa é, com o adjetivo.
 
-Sequência: etapa 47 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 47 de 91, capítulo Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Nationalities in English Learn with Worksheets and Quizzes
 https://www.learnenglish.com/vocabulary/nationalities/learn-nationalities-in-english/

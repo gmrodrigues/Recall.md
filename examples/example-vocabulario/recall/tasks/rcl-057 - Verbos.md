@@ -2,7 +2,7 @@
 id: RCL-57
 title: Verbos
 status: A estudar
-deck: Língua
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.757Z
 updated: 2026-11-21T15:44:13.757Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual destas palavras é verbo?
     back: go
-    deck: Língua
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Verbos"?
     back: https://www.learnenglish.com/vocabulary/verbs/learn-verbs-vocabulary-in-english/
-    deck: Língua
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Reconhecer verbos de ação.
 
-Sequência: etapa 57 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 57 de 91, capítulo Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Verbs in English – Learn with Games and Activities
 https://www.learnenglish.com/vocabulary/verbs/learn-verbs-vocabulary-in-english/

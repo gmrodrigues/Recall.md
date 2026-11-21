@@ -2,7 +2,7 @@
 id: RCL-65
 title: Brinquedos e jogos
 status: A estudar
-deck: Lazer
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.148Z
 updated: 2026-11-21T15:44:14.148Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a bola?
     back: ball
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Brinquedos e jogos"?
     back: https://www.learnenglish.com/vocabulary/toys-games/learn-toys-and-games-vocabulary-in-english/
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear brinquedos e jogos.
 
-Sequência: etapa 65 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 65 de 91, capítulo Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Toys and Games Vocabulary with online activities
 https://www.learnenglish.com/vocabulary/toys-games/learn-toys-and-games-vocabulary-in-english/

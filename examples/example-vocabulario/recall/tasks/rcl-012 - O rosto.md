@@ -2,7 +2,7 @@
 id: RCL-12
 title: O rosto
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.414Z
 updated: 2026-11-21T15:44:12.414Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o olho?
     back: eye
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "O rosto"?
     back: https://www.learnenglish.com/vocabulary/face/learn-face-vocabulary-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear as partes do rosto.
 
-Sequência: etapa 12 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 12 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Face Parts in English
 https://www.learnenglish.com/vocabulary/face/learn-face-vocabulary-in-english/

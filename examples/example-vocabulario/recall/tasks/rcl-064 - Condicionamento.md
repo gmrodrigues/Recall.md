@@ -2,7 +2,7 @@
 id: RCL-64
 title: Condicionamento
 status: A estudar
-deck: Lazer
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.096Z
 updated: 2026-11-21T15:44:14.096Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: O que significa to stretch?
     back: Alongar o corpo.
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Condicionamento"?
     back: https://www.learnenglish.com/vocabulary/fitness/learn-fitness-vocabulary-in-english/
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear ações de exercício.
 
-Sequência: etapa 64 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 64 de 91, capítulo Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Most Used Fitness Words in English
 https://www.learnenglish.com/vocabulary/fitness/learn-fitness-vocabulary-in-english/

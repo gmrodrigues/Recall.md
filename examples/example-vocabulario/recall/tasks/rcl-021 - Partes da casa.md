@@ -2,7 +2,7 @@
 id: RCL-21
 title: Partes da casa
 status: A estudar
-deck: Casa
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.564Z
 updated: 2026-11-21T15:44:12.564Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual cômodo é a cozinha?
     back: kitchen
-    deck: Casa
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Partes da casa"?
     back: https://www.learnenglish.com/vocabulary/house-parts/learn-house-parts-vocabulary-in-english/
-    deck: Casa
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear cômodos e partes da casa.
 
-Sequência: etapa 21 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 21 de 91, capítulo Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Names of House Parts in English with Games and Tests
 https://www.learnenglish.com/vocabulary/house-parts/learn-house-parts-vocabulary-in-english/

@@ -2,7 +2,7 @@
 id: RCL-17
 title: Personalidade
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.489Z
 updated: 2026-11-21T15:44:12.489Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra descreve alguém amável?
     back: kind
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Personalidade"?
     back: https://www.learnenglish.com/vocabulary/personality-character/learn-personality-and-character-vocabulary-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Descrever jeitos de ser.
 
-Sequência: etapa 17 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 17 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Personality and Character Types: Word List and Worksheets
 https://www.learnenglish.com/vocabulary/personality-character/learn-personality-and-character-vocabulary-in-english/

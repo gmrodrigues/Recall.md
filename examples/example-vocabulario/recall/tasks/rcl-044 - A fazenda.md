@@ -2,7 +2,7 @@
 id: RCL-44
 title: A fazenda
 status: A estudar
-deck: Natureza
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.203Z
 updated: 2026-11-21T15:44:13.203Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual animal é típico de fazenda nesta etapa?
     back: a cow
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "A fazenda"?
     back: https://www.learnenglish.com/vocabulary/farm-life/learn-farm-life-vocabulary-in-english/
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear animais, lugares e trabalhos da fazenda.
 
-Sequência: etapa 44 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 44 de 91, capítulo Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Farm Vocabulary: What are the words about Farming?
 https://www.learnenglish.com/vocabulary/farm-life/learn-farm-life-vocabulary-in-english/

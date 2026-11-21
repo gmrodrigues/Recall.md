@@ -48,7 +48,7 @@ jobs:
           server=$!
           trap 'kill "$server" 2>/dev/null || true' EXIT
           curl -fsSL --retry 15 --retry-connrefused --retry-delay 1 http://127.0.0.1:16421/api/state -o "$study/state.json"
-          node -e 'if(require(process.argv[1]).units.length!==91) process.exit(1)' "$study/state.json"
+          node -e 'const state=require(process.argv[1]); if(state.units.length!==91 || state.decks.length!==1 || state.schedule.milestones.length!==10) process.exit(1)' "$study/state.json"
           curl -fsSL http://127.0.0.1:16421/schedule-flow.js -o "$study/gantt.js"
           test -s "$study/gantt.js"
       - uses: actions/upload-artifact@v4

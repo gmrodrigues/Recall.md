@@ -2,7 +2,7 @@
 id: RCL-20
 title: Profissões
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.545Z
 updated: 2026-11-21T15:44:12.545Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia quem atende pacientes?
     back: a doctor
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Profissões"?
     back: https://www.learnenglish.com/vocabulary/jobs-occupations/learn-jobs-and-occupations-vocabulary-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear trabalhos.
 
-Sequência: etapa 20 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 20 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Jobs and Occupations in English with Flashcards
 https://www.learnenglish.com/vocabulary/jobs-occupations/learn-jobs-and-occupations-vocabulary-in-english/

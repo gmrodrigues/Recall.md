@@ -1,7 +1,7 @@
 [
   {
     "title": "O alfabeto",
-    "deck": "Base",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Reconhecer as 26 letras e o nome de cada uma.\n\nSequência: etapa 1 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: English Alphabet – Letters with Pronunciations and Games\nhttps://www.learnenglish.com/vocabulary/alphabet/learn-english-alphabet-online/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Quantas letras tem o alfabeto inglês usado nos Estados Unidos? 26.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, percorra as letras e repita o nome de cada uma.",
     "sources": [
@@ -35,21 +35,22 @@
         "id": "exemplo",
         "front": "Quantas letras tem o alfabeto inglês usado nos Estados Unidos?",
         "back": "26",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"O alfabeto\"?",
         "back": "https://www.learnenglish.com/vocabulary/alphabet/learn-english-alphabet-online/",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Base"
   },
   {
     "title": "Os números",
-    "deck": "Base",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Ler e dizer números em inglês.\n\nSequência: etapa 2 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Numbers in English: Games Tests Examples\nhttps://www.learnenglish.com/vocabulary/numbers/learn-numbers-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual é o inglês de 10? ten.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, cubra os números e diga o nome antes de olhar.",
     "sources": [
@@ -83,21 +84,22 @@
         "id": "exemplo",
         "front": "Qual é o inglês de 10?",
         "back": "ten",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Os números\"?",
         "back": "https://www.learnenglish.com/vocabulary/numbers/learn-numbers-in-english/",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Base"
   },
   {
     "title": "As cores",
-    "deck": "Base",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear cores com a grafia americana.\n\nSequência: etapa 3 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Colour Names in English with Tests and Images\nhttps://www.learnenglish.com/vocabulary/colours/learn-colours-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nO título da fonte escreve colour. Neste curso a grafia é a dos Estados Unidos: color e gray.\n\nExemplo deste repositório, não tirado da página ligada: Qual é a grafia americana de cinza? gray.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, anote cada cor e reescreva colour como color quando aparecer.",
     "sources": [
@@ -131,21 +133,22 @@
         "id": "exemplo",
         "front": "Qual é a grafia americana de cinza?",
         "back": "gray",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"As cores\"?",
         "back": "https://www.learnenglish.com/vocabulary/colours/learn-colours-vocabulary-in-english/",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Base"
   },
   {
     "title": "Dias, meses e estações",
-    "deck": "Base",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Dizer os dias, os meses e as quatro estações.\n\nSequência: etapa 4 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Days Months and Seasons in English\nhttps://www.learnenglish.com/vocabulary/days-months-seasons/learn-days-months-and-seasons-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Quantos dias tem uma semana? seven.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, leia os sete dias, os doze meses e as estações em voz alta.",
     "sources": [
@@ -179,21 +182,22 @@
         "id": "exemplo",
         "front": "Quantos dias tem uma semana?",
         "back": "seven",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Dias, meses e estações\"?",
         "back": "https://www.learnenglish.com/vocabulary/days-months-seasons/learn-days-months-and-seasons-in-english/",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Base"
   },
   {
     "title": "Palavras de pergunta",
-    "deck": "Base",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Escolher a palavra que abre cada tipo de pergunta.\n\nSequência: etapa 5 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Question words (Wh- questions) in English\nhttps://www.learnenglish.com/vocabulary/question-words/learn-question-words-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra pede uma coisa? what.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, junte cada palavra de pergunta ao tipo de resposta.",
     "sources": [
@@ -227,21 +231,22 @@
         "id": "exemplo",
         "front": "Qual palavra pede uma coisa?",
         "back": "what",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Palavras de pergunta\"?",
         "back": "https://www.learnenglish.com/vocabulary/question-words/learn-question-words-in-english/",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Base"
   },
   {
     "title": "Objetos da sala",
-    "deck": "Base",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear objetos usados na sala de aula.\n\nSequência: etapa 6 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Classroom Objects Vocabulary in English with Games\nhttps://www.learnenglish.com/vocabulary/classroom-objects/learn-classroom-objects-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: O que se usa para escrever à mão? a pen.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, aponte o objeto e diga o nome antes de ler a legenda.",
     "sources": [
@@ -275,21 +280,22 @@
         "id": "exemplo",
         "front": "O que se usa para escrever à mão?",
         "back": "a pen",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Objetos da sala\"?",
         "back": "https://www.learnenglish.com/vocabulary/classroom-objects/learn-classroom-objects-vocabulary-in-english/",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Base"
   },
   {
     "title": "Falas da aula",
-    "deck": "Base",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Pedir e responder durante uma aula.\n\nSequência: etapa 7 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Classroom Language: Learn how to speak during a lesson\nhttps://www.learnenglish.com/vocabulary/classroom-language/learn-classroom-language-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual frase pede repetição? Can you repeat that, please?.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, escolha frases para usar em aula e leia em voz alta.",
     "sources": [
@@ -323,21 +329,22 @@
         "id": "exemplo",
         "front": "Qual frase pede repetição?",
         "back": "Can you repeat that, please?",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Falas da aula\"?",
         "back": "https://www.learnenglish.com/vocabulary/classroom-language/learn-classroom-language-in-english/",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Base"
   },
   {
     "title": "Escola",
-    "deck": "Base",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Falar de pessoas e partes da vida escolar.\n\nSequência: etapa 8 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: School and Education Words\nhttps://www.learnenglish.com/vocabulary/school-education/learn-school-and-education-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Quem conduz a aula? a teacher.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe pessoas, lugares e momentos da escola.",
     "sources": [
@@ -371,21 +378,22 @@
         "id": "exemplo",
         "front": "Quem conduz a aula?",
         "back": "a teacher",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Escola\"?",
         "back": "https://www.learnenglish.com/vocabulary/school-education/learn-school-and-education-vocabulary-in-english/",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Base"
   },
   {
     "title": "Matérias",
-    "deck": "Base",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear matérias com o termo americano quando houver.\n\nSequência: etapa 9 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Names of School Subjects in English with Flashcards\nhttps://www.learnenglish.com/vocabulary/school-subjects/learn-school-subjects-vocabulary/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual é o nome americano usual da matemática na escola? math.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, liste as matérias e troque maths por math.",
     "sources": [
@@ -419,21 +427,22 @@
         "id": "exemplo",
         "front": "Qual é o nome americano usual da matemática na escola?",
         "back": "math",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Matérias\"?",
         "back": "https://www.learnenglish.com/vocabulary/school-subjects/learn-school-subjects-vocabulary/",
-        "deck": "Base",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Base"
   },
   {
     "title": "Família",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear pessoas da família.\n\nSequência: etapa 10 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Family Members Vocabulary in English\nhttps://www.learnenglish.com/vocabulary/family-members/learn-family-members-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a mãe? mother.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, monte a família a partir de uma pessoa e diga o parentesco.",
     "sources": [
@@ -467,21 +476,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a mãe?",
         "back": "mother",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Família\"?",
         "back": "https://www.learnenglish.com/vocabulary/family-members/learn-family-members-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "Partes do corpo",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear partes do corpo.\n\nSequência: etapa 11 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Body Parts in English With Games and Listed Images\nhttps://www.learnenglish.com/vocabulary/body-parts/learn-body-parts-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a mão? hand.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, toque a parte do corpo e diga o nome.",
     "sources": [
@@ -515,21 +525,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a mão?",
         "back": "hand",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Partes do corpo\"?",
         "back": "https://www.learnenglish.com/vocabulary/body-parts/learn-body-parts-vocabulary-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "O rosto",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear as partes do rosto.\n\nSequência: etapa 12 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Face Parts in English\nhttps://www.learnenglish.com/vocabulary/face/learn-face-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o olho? eye.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, percorra o rosto de cima para baixo.",
     "sources": [
@@ -563,21 +574,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o olho?",
         "back": "eye",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"O rosto\"?",
         "back": "https://www.learnenglish.com/vocabulary/face/learn-face-vocabulary-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "Aparência",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Descrever altura, cabelo e traços visíveis.\n\nSequência: etapa 13 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Personal Appearance Learn with Flashcards and Tests\nhttps://www.learnenglish.com/vocabulary/appearance/learn-appearance-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra descreve uma pessoa alta? tall.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, escolha palavras que descrevem o que se vê, sem julgar a pessoa.",
     "sources": [
@@ -611,21 +623,22 @@
         "id": "exemplo",
         "front": "Qual palavra descreve uma pessoa alta?",
         "back": "tall",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Aparência\"?",
         "back": "https://www.learnenglish.com/vocabulary/appearance/learn-appearance-vocabulary-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "Roupas",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear peças de roupa.\n\nSequência: etapa 14 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Clothes Vocabulary in English Learn with Images and Flashcards\nhttps://www.learnenglish.com/vocabulary/clothes/learn-clothes-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia uma camisa? shirt.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe o que se veste no tronco, nas pernas e nos pés.",
     "sources": [
@@ -659,21 +672,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia uma camisa?",
         "back": "shirt",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Roupas\"?",
         "back": "https://www.learnenglish.com/vocabulary/clothes/learn-clothes-vocabulary-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "Acessórios",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que se usa junto da roupa.\n\nSequência: etapa 15 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Accessories Vocabulary Exercises Pictures Audio\nhttps://www.learnenglish.com/vocabulary/accessories/learn-accessories-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia os óculos? glasses.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, distinga acessório de peça de roupa.",
     "sources": [
@@ -707,21 +721,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia os óculos?",
         "back": "glasses",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Acessórios\"?",
         "back": "https://www.learnenglish.com/vocabulary/accessories/learn-accessories-vocabulary-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "Sentimentos",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear sentimentos comuns.\n\nSequência: etapa 16 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Feelings and Emotions with Images and Pronunciations\nhttps://www.learnenglish.com/vocabulary/feelings/learn-feelings-and-emotions-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra diz que a pessoa está feliz? happy.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga o sentimento e uma situação em que ele cabe.",
     "sources": [
@@ -755,21 +770,22 @@
         "id": "exemplo",
         "front": "Qual palavra diz que a pessoa está feliz?",
         "back": "happy",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Sentimentos\"?",
         "back": "https://www.learnenglish.com/vocabulary/feelings/learn-feelings-and-emotions-vocabulary-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "Personalidade",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Descrever jeitos de ser.\n\nSequência: etapa 17 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Personality and Character Types: Word List and Worksheets\nhttps://www.learnenglish.com/vocabulary/personality-character/learn-personality-and-character-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra descreve alguém amável? kind.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, escolha traços e use cada um numa frase curta sobre uma pessoa.",
     "sources": [
@@ -803,21 +819,22 @@
         "id": "exemplo",
         "front": "Qual palavra descreve alguém amável?",
         "back": "kind",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Personalidade\"?",
         "back": "https://www.learnenglish.com/vocabulary/personality-character/learn-personality-and-character-vocabulary-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "Rotina do dia",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Dizer ações do dia, da manhã à noite.\n\nSequência: etapa 18 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Daily Routines in English Everyday activities with Images\nhttps://www.learnenglish.com/vocabulary/daily-routines/learn-daily-routines-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual frase diz que a pessoa acorda? I wake up..\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, ponha as ações na ordem de um dia comum.",
     "sources": [
@@ -851,21 +868,22 @@
         "id": "exemplo",
         "front": "Qual frase diz que a pessoa acorda?",
         "back": "I wake up.",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Rotina do dia\"?",
         "back": "https://www.learnenglish.com/vocabulary/daily-routines/learn-daily-routines-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "Tempo livre",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Dizer o que a pessoa faz no tempo livre.\n\nSequência: etapa 19 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Free Time Activities in English with Flashcards Quizzes Audio\nhttps://www.learnenglish.com/vocabulary/free-time-activities/learn-free-time-activities-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual frase fala de leitura no tempo livre? I read..\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, escolha atividades e diga I like to mais o verbo.",
     "sources": [
@@ -899,21 +917,22 @@
         "id": "exemplo",
         "front": "Qual frase fala de leitura no tempo livre?",
         "back": "I read.",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Tempo livre\"?",
         "back": "https://www.learnenglish.com/vocabulary/free-time-activities/learn-free-time-activities-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "Profissões",
-    "deck": "Pessoas",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear trabalhos.\n\nSequência: etapa 20 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Jobs and Occupations in English with Flashcards\nhttps://www.learnenglish.com/vocabulary/jobs-occupations/learn-jobs-and-occupations-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia quem atende pacientes? a doctor.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga a profissão e o lugar onde essa pessoa trabalha.",
     "sources": [
@@ -947,21 +966,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia quem atende pacientes?",
         "back": "a doctor",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Profissões\"?",
         "back": "https://www.learnenglish.com/vocabulary/jobs-occupations/learn-jobs-and-occupations-vocabulary-in-english/",
-        "deck": "Pessoas",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Pessoas"
   },
   {
     "title": "Partes da casa",
-    "deck": "Casa",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear cômodos e partes da casa.\n\nSequência: etapa 21 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Names of House Parts in English with Games and Tests\nhttps://www.learnenglish.com/vocabulary/house-parts/learn-house-parts-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual cômodo é a cozinha? kitchen.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, caminhe pela casa e nomeie cada cômodo.",
     "sources": [
@@ -995,21 +1015,22 @@
         "id": "exemplo",
         "front": "Qual cômodo é a cozinha?",
         "back": "kitchen",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Partes da casa\"?",
         "back": "https://www.learnenglish.com/vocabulary/house-parts/learn-house-parts-vocabulary-in-english/",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Casa"
   },
   {
     "title": "O quarto",
-    "deck": "Casa",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear objetos do quarto.\n\nSequência: etapa 22 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Bedroom Objects Vocabulary ️ with Pictures\nhttps://www.learnenglish.com/vocabulary/bedroom/learn-bedroom-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Onde a pessoa dorme? a bed.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga para que serve cada objeto do quarto.",
     "sources": [
@@ -1043,21 +1064,22 @@
         "id": "exemplo",
         "front": "Onde a pessoa dorme?",
         "back": "a bed",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"O quarto\"?",
         "back": "https://www.learnenglish.com/vocabulary/bedroom/learn-bedroom-vocabulary-in-english/",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Casa"
   },
   {
     "title": "O banheiro",
-    "deck": "Casa",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear objetos do banheiro.\n\nSequência: etapa 23 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Bathroom Objects Vocabulary with Online Activities\nhttps://www.learnenglish.com/vocabulary/bathroom/learn-bathroom-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Onde a pessoa toma banho em pé? a shower.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, ligue cada objeto à ação de se lavar ou se arrumar.",
     "sources": [
@@ -1091,21 +1113,22 @@
         "id": "exemplo",
         "front": "Onde a pessoa toma banho em pé?",
         "back": "a shower",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"O banheiro\"?",
         "back": "https://www.learnenglish.com/vocabulary/bathroom/learn-bathroom-vocabulary-in-english/",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Casa"
   },
   {
     "title": "A sala de estar",
-    "deck": "Casa",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear móveis da sala de estar.\n\nSequência: etapa 24 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Living Room Vocabulary with Pronunciations and Worksheets\nhttps://www.learnenglish.com/vocabulary/living-room/learn-living-room-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual móvel é o sofá? a sofa.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga onde cada móvel fica na sala.",
     "sources": [
@@ -1139,21 +1162,22 @@
         "id": "exemplo",
         "front": "Qual móvel é o sofá?",
         "back": "a sofa",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"A sala de estar\"?",
         "back": "https://www.learnenglish.com/vocabulary/living-room/learn-living-room-vocabulary-in-english/",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Casa"
   },
   {
     "title": "A sala de jantar",
-    "deck": "Casa",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que se usa na refeição.\n\nSequência: etapa 25 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Dining Room Items in English\nhttps://www.learnenglish.com/vocabulary/dining-room/learn-dining-room-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Em que móvel se come? a table.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, ponha a mesa nomeando cada item.",
     "sources": [
@@ -1187,21 +1211,22 @@
         "id": "exemplo",
         "front": "Em que móvel se come?",
         "back": "a table",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"A sala de jantar\"?",
         "back": "https://www.learnenglish.com/vocabulary/dining-room/learn-dining-room-vocabulary-in-english/",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Casa"
   },
   {
     "title": "Utensílios de cozinha",
-    "deck": "Casa",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear ferramentas de cozinhar e comer.\n\nSequência: etapa 26 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Kitchen Tools in English with Worksheets\nhttps://www.learnenglish.com/vocabulary/kitchen-utensils/learn-kitchen-utensils-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual utensílio corta? a knife.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe o que corta, o que mexe e o que contém.",
     "sources": [
@@ -1235,21 +1260,22 @@
         "id": "exemplo",
         "front": "Qual utensílio corta?",
         "back": "a knife",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Utensílios de cozinha\"?",
         "back": "https://www.learnenglish.com/vocabulary/kitchen-utensils/learn-kitchen-utensils-vocabulary-in-english/",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Casa"
   },
   {
     "title": "O jardim",
-    "deck": "Casa",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que há no jardim.\n\nSequência: etapa 27 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Names of Things around Garden in English\nhttps://www.learnenglish.com/vocabulary/garden/learn-garden-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: O que cresce no jardim e tem pétalas? a flower.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diferencie planta, ferramenta e parte do terreno.",
     "sources": [
@@ -1283,21 +1309,22 @@
         "id": "exemplo",
         "front": "O que cresce no jardim e tem pétalas?",
         "back": "a flower",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"O jardim\"?",
         "back": "https://www.learnenglish.com/vocabulary/garden/learn-garden-vocabulary-in-english/",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Casa"
   },
   {
     "title": "Ferramentas",
-    "deck": "Casa",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear ferramentas de trabalho manual.\n\nSequência: etapa 28 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Tools and Equipment Word List with Images\nhttps://www.learnenglish.com/vocabulary/tools-equipment/learn-tools-and-equipments-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual ferramenta bate no prego? a hammer.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga a ferramenta e o material em que ela atua.",
     "sources": [
@@ -1331,21 +1358,22 @@
         "id": "exemplo",
         "front": "Qual ferramenta bate no prego?",
         "back": "a hammer",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Ferramentas\"?",
         "back": "https://www.learnenglish.com/vocabulary/tools-equipment/learn-tools-and-equipments-vocabulary-in-english/",
-        "deck": "Casa",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Casa"
   },
   {
     "title": "Comidas",
-    "deck": "Comida",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear comidas.\n\nSequência: etapa 29 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Food Names in English with Pictures and Pronunciation\nhttps://www.learnenglish.com/vocabulary/foods/learn-foods-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o pão? bread.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, agrupe comidas que vão numa mesma refeição.",
     "sources": [
@@ -1379,21 +1407,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o pão?",
         "back": "bread",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Comidas\"?",
         "back": "https://www.learnenglish.com/vocabulary/foods/learn-foods-vocabulary-in-english/",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Comida"
   },
   {
     "title": "Bebidas",
-    "deck": "Comida",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear bebidas.\n\nSequência: etapa 30 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Names of Drinks in English with Games and Flashcards\nhttps://www.learnenglish.com/vocabulary/drinks/learn-drinks-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a água? water.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe bebidas quentes e frias.",
     "sources": [
@@ -1427,21 +1456,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a água?",
         "back": "water",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Bebidas\"?",
         "back": "https://www.learnenglish.com/vocabulary/drinks/learn-drinks-vocabulary-in-english/",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Comida"
   },
   {
     "title": "Legumes e verduras",
-    "deck": "Comida",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear legumes e verduras.\n\nSequência: etapa 31 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Names of Vegetables in English with Pictures and Flashcards\nhttps://www.learnenglish.com/vocabulary/vegetables/learn-vegetables-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a cenoura? carrot.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga a cor de cada verdura junto do nome.",
     "sources": [
@@ -1475,21 +1505,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a cenoura?",
         "back": "carrot",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Legumes e verduras\"?",
         "back": "https://www.learnenglish.com/vocabulary/vegetables/learn-vegetables-vocabulary-in-english/",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Comida"
   },
   {
     "title": "Frutas",
-    "deck": "Comida",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear frutas.\n\nSequência: etapa 32 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Fruits Names in English with Images and Tests\nhttps://www.learnenglish.com/vocabulary/fruits/learn-fruits-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a maçã? apple.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga a fruta e se ela se come com casca.",
     "sources": [
@@ -1523,21 +1554,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a maçã?",
         "back": "apple",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Frutas\"?",
         "back": "https://www.learnenglish.com/vocabulary/fruits/learn-fruits-vocabulary-in-english/",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Comida"
   },
   {
     "title": "Ervas e temperos",
-    "deck": "Comida",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear ervas e temperos.\n\nSequência: etapa 33 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: List of Herbs and Spices in English\nhttps://www.learnenglish.com/vocabulary/herbs-spices/learn-herbs-spices-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual erva é o manjericão? basil.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga se o item é erva ou tempero seco.",
     "sources": [
@@ -1571,21 +1603,22 @@
         "id": "exemplo",
         "front": "Qual erva é o manjericão?",
         "back": "basil",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Ervas e temperos\"?",
         "back": "https://www.learnenglish.com/vocabulary/herbs-spices/learn-herbs-spices-vocabulary-in-english/",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Comida"
   },
   {
     "title": "Comida rápida",
-    "deck": "Comida",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear lanches comuns nos Estados Unidos.\n\nSequência: etapa 34 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Fast Food Vocabulary with Activities and Images\nhttps://www.learnenglish.com/vocabulary/fast-food/learn-fast-food-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o hambúrguer? hamburger.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, monte um pedido curto com Can I get e o nome do lanche.",
     "sources": [
@@ -1619,21 +1652,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o hambúrguer?",
         "back": "hamburger",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Comida rápida\"?",
         "back": "https://www.learnenglish.com/vocabulary/fast-food/learn-fast-food-vocabulary-in-english/",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Comida"
   },
   {
     "title": "Cozinhar",
-    "deck": "Comida",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Dizer modos de cozinhar.\n\nSequência: etapa 35 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Cooking Expressions: Learn English with Activities\nhttps://www.learnenglish.com/vocabulary/cooking/learn-cooking-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: O que significa to boil? Cozinhar em água fervente..\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, ligue cada verbo de cozinha ao que acontece com o alimento.",
     "sources": [
@@ -1667,21 +1701,22 @@
         "id": "exemplo",
         "front": "O que significa to boil?",
         "back": "Cozinhar em água fervente.",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Cozinhar\"?",
         "back": "https://www.learnenglish.com/vocabulary/cooking/learn-cooking-vocabulary-in-english/",
-        "deck": "Comida",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Comida"
   },
   {
     "title": "O tempo",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Descrever o tempo lá fora.\n\nSequência: etapa 36 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Weather Vocabulary in English How to say air conditions\nhttps://www.learnenglish.com/vocabulary/weather/learn-weather-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a chuva? rain.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga It is mais a condição do tempo.",
     "sources": [
@@ -1715,21 +1750,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a chuva?",
         "back": "rain",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"O tempo\"?",
         "back": "https://www.learnenglish.com/vocabulary/weather/learn-weather-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Animais",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear animais.\n\nSequência: etapa 37 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Names of Animals in English: Flashcards Tests Pronunciations\nhttps://www.learnenglish.com/vocabulary/animals/learn-animals-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o leão? lion.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe animais que voam, andam e nadam.",
     "sources": [
@@ -1763,21 +1799,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o leão?",
         "back": "lion",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Animais\"?",
         "back": "https://www.learnenglish.com/vocabulary/animals/learn-animals-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Animais de estimação",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear animais que vivem em casa.\n\nSequência: etapa 38 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Pets in English\nhttps://www.learnenglish.com/vocabulary/pets/learn-pets-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual animal de estimação late? a dog.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga o animal e o cuidado que ele pede.",
     "sources": [
@@ -1811,21 +1848,22 @@
         "id": "exemplo",
         "front": "Qual animal de estimação late?",
         "back": "a dog",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Animais de estimação\"?",
         "back": "https://www.learnenglish.com/vocabulary/pets/learn-pets-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Aves",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear aves.\n\nSequência: etapa 39 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Names of Birds with Images Pronunciation\nhttps://www.learnenglish.com/vocabulary/birds/learn-birds-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o pato? duck.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, note o que a ave faz: voa, nada ou as duas coisas.",
     "sources": [
@@ -1859,21 +1897,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o pato?",
         "back": "duck",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Aves\"?",
         "back": "https://www.learnenglish.com/vocabulary/birds/learn-birds-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Insetos",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear insetos.\n\nSequência: etapa 40 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Insect Names in English\nhttps://www.learnenglish.com/vocabulary/insects/learn-insects-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a formiga? ant.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga onde esse inseto costuma aparecer.",
     "sources": [
@@ -1907,21 +1946,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a formiga?",
         "back": "ant",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Insetos\"?",
         "back": "https://www.learnenglish.com/vocabulary/insects/learn-insects-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Animais do mar",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear animais do mar.\n\nSequência: etapa 41 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Sea Animals in English: Pictures Tests Examples\nhttps://www.learnenglish.com/vocabulary/sea-animals/learn-sea-animals-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a baleia? whale.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diferencie peixe, mamífero marinho e outro animal da água.",
     "sources": [
@@ -1955,21 +1995,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a baleia?",
         "back": "whale",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Animais do mar\"?",
         "back": "https://www.learnenglish.com/vocabulary/sea-animals/learn-sea-animals-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Plantas",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear partes e tipos de planta.\n\nSequência: etapa 42 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Common Words about Plants in English\nhttps://www.learnenglish.com/vocabulary/plants/learn-plants-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a folha? leaf.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, aponte folha, caule, flor e raiz quando a fonte mostrar.",
     "sources": [
@@ -2003,21 +2044,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a folha?",
         "back": "leaf",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Plantas\"?",
         "back": "https://www.learnenglish.com/vocabulary/plants/learn-plants-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Natureza",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear elementos da paisagem natural.\n\nSequência: etapa 43 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Words Related to Nature in English\nhttps://www.learnenglish.com/vocabulary/nature/learn-nature-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o rio? river.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe água, terra e vegetação.",
     "sources": [
@@ -2051,21 +2093,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o rio?",
         "back": "river",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Natureza\"?",
         "back": "https://www.learnenglish.com/vocabulary/nature/learn-nature-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "A fazenda",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear animais, lugares e trabalhos da fazenda.\n\nSequência: etapa 44 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Farm Vocabulary: What are the words about Farming?\nhttps://www.learnenglish.com/vocabulary/farm-life/learn-farm-life-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual animal é típico de fazenda nesta etapa? a cow.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, ligue o animal ou a planta ao trabalho da fazenda.",
     "sources": [
@@ -2099,21 +2142,22 @@
         "id": "exemplo",
         "front": "Qual animal é típico de fazenda nesta etapa?",
         "back": "a cow",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"A fazenda\"?",
         "back": "https://www.learnenglish.com/vocabulary/farm-life/learn-farm-life-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Paisagem",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear formas do terreno.\n\nSequência: etapa 45 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Landscape Vocabulary with Flashcards\nhttps://www.learnenglish.com/vocabulary/landscape/learn-landscape-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a montanha? mountain.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga se a forma é alta, plana ou de água.",
     "sources": [
@@ -2147,21 +2191,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a montanha?",
         "back": "mountain",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Paisagem\"?",
         "back": "https://www.learnenglish.com/vocabulary/landscape/learn-landscape-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Países",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Dizer nomes de países em inglês.\n\nSequência: etapa 46 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Countries in English Learn with Flags and Games\nhttps://www.learnenglish.com/vocabulary/countries/learn-countries-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual é o nome em inglês dos Estados Unidos? the United States.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, leia o país e diga I am from com um exemplo.",
     "sources": [
@@ -2195,21 +2240,22 @@
         "id": "exemplo",
         "front": "Qual é o nome em inglês dos Estados Unidos?",
         "back": "the United States",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Países\"?",
         "back": "https://www.learnenglish.com/vocabulary/countries/learn-countries-vocabulary-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Nacionalidades",
-    "deck": "Natureza",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Dizer de onde a pessoa é, com o adjetivo.\n\nSequência: etapa 47 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Nationalities in English Learn with Worksheets and Quizzes\nhttps://www.learnenglish.com/vocabulary/nationalities/learn-nationalities-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual é a nacionalidade de quem é do Brasil, em inglês? Brazilian.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, pareie o país e a nacionalidade.",
     "sources": [
@@ -2243,21 +2289,22 @@
         "id": "exemplo",
         "front": "Qual é a nacionalidade de quem é do Brasil, em inglês?",
         "back": "Brazilian",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Nacionalidades\"?",
         "back": "https://www.learnenglish.com/vocabulary/nationalities/learn-nationalities-in-english/",
-        "deck": "Natureza",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Natureza"
   },
   {
     "title": "Lugares da cidade",
-    "deck": "Cidade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear lugares a que se vai na cidade.\n\nSequência: etapa 48 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Places in a City in English ️ With Vocabulary Activities\nhttps://www.learnenglish.com/vocabulary/city-life/learn-city-life-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual lugar guarda e mostra obras? a museum.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga o lugar e o que a pessoa faz lá.",
     "sources": [
@@ -2291,21 +2338,22 @@
         "id": "exemplo",
         "front": "Qual lugar guarda e mostra obras?",
         "back": "a museum",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Lugares da cidade\"?",
         "back": "https://www.learnenglish.com/vocabulary/city-life/learn-city-life-vocabulary-in-english/",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Cidade"
   },
   {
     "title": "A rua",
-    "deck": "Cidade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que se vê na rua, com vocabulário americano.\n\nSequência: etapa 49 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Names of Common Street Objects in English\nhttps://www.learnenglish.com/vocabulary/street/learn-steert-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual é a palavra americana para a calçada? sidewalk.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, nomeie o que fica na via, na calçada e no cruzamento.",
     "sources": [
@@ -2339,21 +2387,22 @@
         "id": "exemplo",
         "front": "Qual é a palavra americana para a calçada?",
         "back": "sidewalk",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"A rua\"?",
         "back": "https://www.learnenglish.com/vocabulary/street/learn-steert-vocabulary-in-english/",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Cidade"
   },
   {
     "title": "Transporte",
-    "deck": "Cidade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear meios de transporte.\n\nSequência: etapa 50 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Transportation and Names of Vehicles in English with Images\nhttps://www.learnenglish.com/vocabulary/transportation/learn-transportation-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o ônibus? bus.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga como a pessoa entra e para onde esse transporte vai.",
     "sources": [
@@ -2387,21 +2436,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o ônibus?",
         "back": "bus",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Transporte\"?",
         "back": "https://www.learnenglish.com/vocabulary/transportation/learn-transportation-vocabulary-in-english/",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Cidade"
   },
   {
     "title": "Partes do carro",
-    "deck": "Cidade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear partes do carro.\n\nSequência: etapa 51 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Learn Car Parts in English\nhttps://www.learnenglish.com/vocabulary/car-parts/learn-car-parts-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a roda? wheel.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga a parte e para que ela serve no carro.",
     "sources": [
@@ -2435,21 +2485,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a roda?",
         "back": "wheel",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Partes do carro\"?",
         "back": "https://www.learnenglish.com/vocabulary/car-parts/learn-car-parts-vocabulary-in-english/",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Cidade"
   },
   {
     "title": "Viagem",
-    "deck": "Cidade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Falar do que se usa e se faz numa viagem.\n\nSequência: etapa 52 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Travel Words to Learn in English\nhttps://www.learnenglish.com/vocabulary/travel/learn-travel-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual documento esta etapa usa como exemplo de viagem? a passport.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, ordene as palavras do trajeto: sair, ir e chegar.",
     "sources": [
@@ -2483,21 +2534,22 @@
         "id": "exemplo",
         "front": "Qual documento esta etapa usa como exemplo de viagem?",
         "back": "a passport",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Viagem\"?",
         "back": "https://www.learnenglish.com/vocabulary/travel/learn-travel-vocabulary-in-english/",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Cidade"
   },
   {
     "title": "Compras",
-    "deck": "Cidade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Falar de lojas e de comprar, no uso americano.\n\nSequência: etapa 53 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Shopping Vocabulary Examples Tests Images\nhttps://www.learnenglish.com/vocabulary/shopping/learn-shopping-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra americana esta etapa usa para loja? store.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, monte uma frase de compra com o nome do lugar e do produto.",
     "sources": [
@@ -2531,21 +2583,22 @@
         "id": "exemplo",
         "front": "Qual palavra americana esta etapa usa para loja?",
         "back": "store",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Compras\"?",
         "back": "https://www.learnenglish.com/vocabulary/shopping/learn-shopping-vocabulary-in-english/",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Cidade"
   },
   {
     "title": "Férias e feriados",
-    "deck": "Cidade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Distinguir vacation e holiday no uso americano.\n\nSequência: etapa 54 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Holiday Vocabulary in English\nhttps://www.learnenglish.com/vocabulary/holiday/learn-holiday-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nO título da fonte diz holiday. Para um período de folga, o uso americano comum é vacation. Holiday aparece mais para um feriado ou uma data festiva.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra americana nomeia um período de folga? vacation.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, marque o que é viagem de folga e o que é data festiva.",
     "sources": [
@@ -2579,21 +2632,22 @@
         "id": "exemplo",
         "front": "Qual palavra americana nomeia um período de folga?",
         "back": "vacation",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Férias e feriados\"?",
         "back": "https://www.learnenglish.com/vocabulary/holiday/learn-holiday-vocabulary-in-english/",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Cidade"
   },
   {
     "title": "Festas e celebrações",
-    "deck": "Cidade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear festas e o que acontece nelas.\n\nSequência: etapa 55 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Festivals and Celebrations Vocabulary in English\nhttps://www.learnenglish.com/vocabulary/festivals-celebrations/learn-festivals-and-celebrations-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia um desfile? parade.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga a festa e uma ação que acontece nela.",
     "sources": [
@@ -2627,21 +2681,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia um desfile?",
         "back": "parade",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Festas e celebrações\"?",
         "back": "https://www.learnenglish.com/vocabulary/festivals-celebrations/learn-festivals-and-celebrations-vocabulary-in-english/",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Cidade"
   },
   {
     "title": "O litoral",
-    "deck": "Cidade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que há à beira-mar.\n\nSequência: etapa 56 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Words about Seaside in English – With Pictures and Quizzes\nhttps://www.learnenglish.com/vocabulary/seaside/learn-seaside-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a praia? beach.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe paisagem, objeto e atividade do litoral.",
     "sources": [
@@ -2675,21 +2730,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a praia?",
         "back": "beach",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"O litoral\"?",
         "back": "https://www.learnenglish.com/vocabulary/seaside/learn-seaside-vocabulary-in-english/",
-        "deck": "Cidade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Cidade"
   },
   {
     "title": "Verbos",
-    "deck": "Língua",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Reconhecer verbos de ação.\n\nSequência: etapa 57 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Verbs in English – Learn with Games and Activities\nhttps://www.learnenglish.com/vocabulary/verbs/learn-verbs-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual destas palavras é verbo? go.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, use o verbo numa frase curta com I.",
     "sources": [
@@ -2723,21 +2779,22 @@
         "id": "exemplo",
         "front": "Qual destas palavras é verbo?",
         "back": "go",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Verbos\"?",
         "back": "https://www.learnenglish.com/vocabulary/verbs/learn-verbs-vocabulary-in-english/",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Língua"
   },
   {
     "title": "Verbos irregulares",
-    "deck": "Língua",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Lembrar a forma do passado de verbos irregulares.\n\nSequência: etapa 58 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Irregular verbs in English – Learn with Game and Flashcards\nhttps://www.learnenglish.com/vocabulary/irregular-verbs/irregular-verbs-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual é o passado de go? went.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, cubra o passado, diga a forma e depois confira.",
     "sources": [
@@ -2771,21 +2828,22 @@
         "id": "exemplo",
         "front": "Qual é o passado de go?",
         "back": "went",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Verbos irregulares\"?",
         "back": "https://www.learnenglish.com/vocabulary/irregular-verbs/irregular-verbs-in-english/",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Língua"
   },
   {
     "title": "Adjetivos",
-    "deck": "Língua",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Reconhecer palavras que descrevem.\n\nSequência: etapa 59 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Adjectives: Learn with Worksheets\nhttps://www.learnenglish.com/vocabulary/adjectives/learn-adjectives-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra é adjetivo? big.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, ponha o adjetivo antes de um substantivo.",
     "sources": [
@@ -2819,21 +2877,22 @@
         "id": "exemplo",
         "front": "Qual palavra é adjetivo?",
         "back": "big",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Adjetivos\"?",
         "back": "https://www.learnenglish.com/vocabulary/adjectives/learn-adjectives-vocabulary-in-english/",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Língua"
   },
   {
     "title": "Preposições",
-    "deck": "Língua",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Dizer a relação de lugar ou tempo.\n\nSequência: etapa 60 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Prepositions in English with Pictures and Exercises\nhttps://www.learnenglish.com/vocabulary/prepositions/learn-prepositions-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual preposição cabe em in the kitchen? in.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, desenhe a relação: dentro, sobre, ao lado.",
     "sources": [
@@ -2867,21 +2926,22 @@
         "id": "exemplo",
         "front": "Qual preposição cabe em in the kitchen?",
         "back": "in",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Preposições\"?",
         "back": "https://www.learnenglish.com/vocabulary/prepositions/learn-prepositions-vocabulary-in-english/",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Língua"
   },
   {
     "title": "Conjunções",
-    "deck": "Língua",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Juntar ideias com uma palavra de ligação.\n\nSequência: etapa 61 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Conjunctions in English with Worksheets\nhttps://www.learnenglish.com/vocabulary/conjunctions/learn-conjunctions-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra junta duas partes em I like tea and coffee? and.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, classifique a conjunção: soma, contraste ou alternativa.",
     "sources": [
@@ -2915,21 +2975,22 @@
         "id": "exemplo",
         "front": "Qual palavra junta duas partes em I like tea and coffee?",
         "back": "and",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Conjunções\"?",
         "back": "https://www.learnenglish.com/vocabulary/conjunctions/learn-conjunctions-vocabulary-in-english/",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Língua"
   },
   {
     "title": "Termos de gramática",
-    "deck": "Língua",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear termos que classificam palavras.\n\nSequência: etapa 62 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Grammar Terminology in English\nhttps://www.learnenglish.com/vocabulary/grammar-vocabulary/learn-grammar-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: O que um noun nomeia? Uma pessoa, um lugar ou uma coisa..\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, dê um exemplo seu para cada termo.",
     "sources": [
@@ -2963,21 +3024,22 @@
         "id": "exemplo",
         "front": "O que um noun nomeia?",
         "back": "Uma pessoa, um lugar ou uma coisa.",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Termos de gramática\"?",
         "back": "https://www.learnenglish.com/vocabulary/grammar-vocabulary/learn-grammar-vocabulary-in-english/",
-        "deck": "Língua",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Língua"
   },
   {
     "title": "Esportes",
-    "deck": "Lazer",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear esportes com o termo americano quando os dois existirem.\n\nSequência: etapa 63 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Types of Sports in English Pictures Quizzes Flashcards\nhttps://www.learnenglish.com/vocabulary/sport-types/learn-types-of-sports-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual nome americano este curso usa para o jogo em que se chuta a bola no gol? soccer.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga o esporte e o objeto principal: bola, raquete ou outro.",
     "sources": [
@@ -3011,21 +3073,22 @@
         "id": "exemplo",
         "front": "Qual nome americano este curso usa para o jogo em que se chuta a bola no gol?",
         "back": "soccer",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Esportes\"?",
         "back": "https://www.learnenglish.com/vocabulary/sport-types/learn-types-of-sports-vocabulary-in-english/",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Lazer"
   },
   {
     "title": "Condicionamento",
-    "deck": "Lazer",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear ações de exercício.\n\nSequência: etapa 64 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Most Used Fitness Words in English\nhttps://www.learnenglish.com/vocabulary/fitness/learn-fitness-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: O que significa to stretch? Alongar o corpo..\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, ligue o exercício à parte do corpo que trabalha.",
     "sources": [
@@ -3059,21 +3122,22 @@
         "id": "exemplo",
         "front": "O que significa to stretch?",
         "back": "Alongar o corpo.",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Condicionamento\"?",
         "back": "https://www.learnenglish.com/vocabulary/fitness/learn-fitness-vocabulary-in-english/",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Lazer"
   },
   {
     "title": "Brinquedos e jogos",
-    "deck": "Lazer",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear brinquedos e jogos.\n\nSequência: etapa 65 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Toys and Games Vocabulary with online activities\nhttps://www.learnenglish.com/vocabulary/toys-games/learn-toys-and-games-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a bola? ball.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga se o item é brinquedo, jogo de mesa ou jogo ao ar livre.",
     "sources": [
@@ -3107,21 +3171,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a bola?",
         "back": "ball",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Brinquedos e jogos\"?",
         "back": "https://www.learnenglish.com/vocabulary/toys-games/learn-toys-and-games-vocabulary-in-english/",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Lazer"
   },
   {
     "title": "Música",
-    "deck": "Lazer",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear instrumentos e palavras da música.\n\nSequência: etapa 66 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Music and Names of Musical Instruments with Images\nhttps://www.learnenglish.com/vocabulary/music/learn-music-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o piano? piano.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga se o instrumento se toca com a mão, o sopro ou a baqueta.",
     "sources": [
@@ -3155,21 +3220,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o piano?",
         "back": "piano",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Música\"?",
         "back": "https://www.learnenglish.com/vocabulary/music/learn-music-vocabulary-in-english/",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Lazer"
   },
   {
     "title": "Arte",
-    "deck": "Lazer",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear palavras de artes visuais.\n\nSequência: etapa 67 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Art Phrases in English\nhttps://www.learnenglish.com/vocabulary/art/learn-art-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia uma pintura? painting.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe a obra, o material e quem faz a obra.",
     "sources": [
@@ -3203,21 +3269,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia uma pintura?",
         "back": "painting",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Arte\"?",
         "back": "https://www.learnenglish.com/vocabulary/art/learn-art-vocabulary-in-english/",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Lazer"
   },
   {
     "title": "Cinema",
-    "deck": "Lazer",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Falar de filmes com o vocabulário americano.\n\nSequência: etapa 68 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Films and Cinema Terms in English\nhttps://www.learnenglish.com/vocabulary/films-cinema/learn-films-and-cinema-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nO título da fonte diz films. No dia a dia dos Estados Unidos, movie é o termo mais comum; film também se entende.\n\nExemplo deste repositório, não tirado da página ligada: Qual é o termo americano mais comum para filme? movie.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, troque film por movie quando estiver nomeando a obra.",
     "sources": [
@@ -3251,21 +3318,22 @@
         "id": "exemplo",
         "front": "Qual é o termo americano mais comum para filme?",
         "back": "movie",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Cinema\"?",
         "back": "https://www.learnenglish.com/vocabulary/films-cinema/learn-films-and-cinema-vocabulary-in-english/",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Lazer"
   },
   {
     "title": "Livros",
-    "deck": "Lazer",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear partes e tipos de livro.\n\nSequência: etapa 69 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Books and Literature Terminology in English\nhttps://www.learnenglish.com/vocabulary/books-literature/learn-books-and-literature-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia um romance? novel.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diferencie o livro, o capítulo e quem escreve.",
     "sources": [
@@ -3299,21 +3367,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia um romance?",
         "back": "novel",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Livros\"?",
         "back": "https://www.learnenglish.com/vocabulary/books-literature/learn-books-and-literature-vocabulary-in-english/",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Lazer"
   },
   {
     "title": "Fotografia",
-    "deck": "Lazer",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que se usa para fotografar.\n\nSequência: etapa 70 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Words Related to Photography\nhttps://www.learnenglish.com/vocabulary/photography/learn-photography-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual aparelho tira a foto neste exemplo? a camera.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga o aparelho e um ajuste ou uma parte que a fonte mostrar.",
     "sources": [
@@ -3347,21 +3416,22 @@
         "id": "exemplo",
         "front": "Qual aparelho tira a foto neste exemplo?",
         "back": "a camera",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Fotografia\"?",
         "back": "https://www.learnenglish.com/vocabulary/photography/learn-photography-vocabulary-in-english/",
-        "deck": "Lazer",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Lazer"
   },
   {
     "title": "Aparelhos eletrônicos",
-    "deck": "Telas e trabalho",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear aparelhos do dia a dia.\n\nSequência: etapa 71 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Electronic Devices in English with Images and Quizzes\nhttps://www.learnenglish.com/vocabulary/electronic-devices/learn-electronic-devices-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o telefone? phone.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga o aparelho e uma ação que se faz com ele.",
     "sources": [
@@ -3395,21 +3465,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o telefone?",
         "back": "phone",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Aparelhos eletrônicos\"?",
         "back": "https://www.learnenglish.com/vocabulary/electronic-devices/learn-electronic-devices-vocabulary-in-english/",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Telas e trabalho"
   },
   {
     "title": "Internet",
-    "deck": "Telas e trabalho",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que se usa na internet.\n\nSequência: etapa 72 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Internet Vocabulary – 80 Common Words in English\nhttps://www.learnenglish.com/vocabulary/internet/learn-internet-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia um site? website.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, o título anuncia dezenas de palavras; anote as que você já usa e as novas.",
     "sources": [
@@ -3443,21 +3514,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia um site?",
         "back": "website",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Internet\"?",
         "back": "https://www.learnenglish.com/vocabulary/internet/learn-internet-vocabulary-in-english/",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Telas e trabalho"
   },
   {
     "title": "Tecnologia",
-    "deck": "Telas e trabalho",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear palavras gerais de tecnologia.\n\nSequência: etapa 73 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Common Technology Words to Learn in English\nhttps://www.learnenglish.com/vocabulary/technology/learn-technology-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a tela? screen.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe aparelho, ação e problema técnico.",
     "sources": [
@@ -3491,21 +3563,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a tela?",
         "back": "screen",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Tecnologia\"?",
         "back": "https://www.learnenglish.com/vocabulary/technology/learn-technology-vocabulary-in-english/",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Telas e trabalho"
   },
   {
     "title": "Peças do computador",
-    "deck": "Telas e trabalho",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o hardware.\n\nSequência: etapa 74 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Computer Parts (Hardware) Vocabulary: Pictures Audio\nhttps://www.learnenglish.com/vocabulary/computer-parts/learn-computer-parts-hardware-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual peça se usa para digitar? keyboard.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, aponte a peça no computador e diga o nome.",
     "sources": [
@@ -3539,21 +3612,22 @@
         "id": "exemplo",
         "front": "Qual peça se usa para digitar?",
         "back": "keyboard",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Peças do computador\"?",
         "back": "https://www.learnenglish.com/vocabulary/computer-parts/learn-computer-parts-hardware-vocabulary-in-english/",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Telas e trabalho"
   },
   {
     "title": "Programas",
-    "deck": "Telas e trabalho",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear software, não as peças.\n\nSequência: etapa 75 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Computer and Software Vocabulary\nhttps://www.learnenglish.com/vocabulary/computer-software/learn-computer-and-software-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra americana nomeia um programa de uso comum? app.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diferencie o programa da peça física.",
     "sources": [
@@ -3587,21 +3661,22 @@
         "id": "exemplo",
         "front": "Qual palavra americana nomeia um programa de uso comum?",
         "back": "app",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Programas\"?",
         "back": "https://www.learnenglish.com/vocabulary/computer-software/learn-computer-and-software-vocabulary-in-english/",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Telas e trabalho"
   },
   {
     "title": "Jogos de computador",
-    "deck": "Telas e trabalho",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que se faz num jogo.\n\nSequência: etapa 76 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Computer Games Expressions\nhttps://www.learnenglish.com/vocabulary/computer-games/learn-computer-games-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia quem joga? player.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, use a palavra numa frase sobre uma partida.",
     "sources": [
@@ -3635,21 +3710,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia quem joga?",
         "back": "player",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Jogos de computador\"?",
         "back": "https://www.learnenglish.com/vocabulary/computer-games/learn-computer-games-vocabulary-in-english/",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Telas e trabalho"
   },
   {
     "title": "Equipamento de escritório",
-    "deck": "Telas e trabalho",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que há num escritório.\n\nSequência: etapa 77 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Office Equipment in English\nhttps://www.learnenglish.com/vocabulary/office-equipment/learn-office-equipments-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual aparelho imprime? printer.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga o equipamento e o trabalho que ele faz.",
     "sources": [
@@ -3683,21 +3759,22 @@
         "id": "exemplo",
         "front": "Qual aparelho imprime?",
         "back": "printer",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Equipamento de escritório\"?",
         "back": "https://www.learnenglish.com/vocabulary/office-equipment/learn-office-equipments-vocabulary-in-english/",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Telas e trabalho"
   },
   {
     "title": "Comunicação",
-    "deck": "Telas e trabalho",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear jeitos de enviar e receber uma mensagem.\n\nSequência: etapa 78 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Communication Terms and Expressions in English\nhttps://www.learnenglish.com/vocabulary/communication/learn-communication-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia uma mensagem? message.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga o meio e o que se envia por ele.",
     "sources": [
@@ -3731,21 +3808,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia uma mensagem?",
         "back": "message",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Comunicação\"?",
         "back": "https://www.learnenglish.com/vocabulary/communication/learn-communication-vocabulary-in-english/",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Telas e trabalho"
   },
   {
     "title": "Inglês de negócios",
-    "deck": "Telas e trabalho",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear palavras de uma reunião de trabalho.\n\nSequência: etapa 79 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Top 140 Business English Vocabulary With Tests and Exercises\nhttps://www.learnenglish.com/vocabulary/top-business-english/learn-business-english-vocabulary/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia uma reunião? meeting.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, o título anuncia uma lista longa; escolha palavras de uma reunião e de um acordo.",
     "sources": [
@@ -3779,21 +3857,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia uma reunião?",
         "back": "meeting",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Inglês de negócios\"?",
         "back": "https://www.learnenglish.com/vocabulary/top-business-english/learn-business-english-vocabulary/",
-        "deck": "Telas e trabalho",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Telas e trabalho"
   },
   {
     "title": "Matemática",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear operações com o termo americano math.\n\nSequência: etapa 80 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Maths Vocabulary\nhttps://www.learnenglish.com/vocabulary/maths/learn-maths-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nO título da fonte escreve maths. Nos Estados Unidos o nome escolar comum é math.\n\nExemplo deste repositório, não tirado da página ligada: Quanto é two plus two neste exemplo? four.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, leia o símbolo e diga a operação em inglês.",
     "sources": [
@@ -3827,21 +3906,22 @@
         "id": "exemplo",
         "front": "Quanto é two plus two neste exemplo?",
         "back": "four",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Matemática\"?",
         "back": "https://www.learnenglish.com/vocabulary/maths/learn-maths-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "Ciências",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que se faz numa experiência.\n\nSequência: etapa 81 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Common Science Terms in English\nhttps://www.learnenglish.com/vocabulary/science/learn-science-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia um experimento? experiment.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe o que se observa, o que se mede e o que se conclui.",
     "sources": [
@@ -3875,21 +3955,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia um experimento?",
         "back": "experiment",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Ciências\"?",
         "back": "https://www.learnenglish.com/vocabulary/science/learn-science-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "Física",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear uma ideia básica da física.\n\nSequência: etapa 82 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Physics Terms with Memory Cards\nhttps://www.learnenglish.com/vocabulary/physics/learn-physics-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a gravidade neste exemplo? gravity.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga o termo e o que ele descreve no mundo físico.",
     "sources": [
@@ -3923,21 +4004,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a gravidade neste exemplo?",
         "back": "gravity",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Física\"?",
         "back": "https://www.learnenglish.com/vocabulary/physics/learn-physics-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "Geografia",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear o que se lê num mapa.\n\nSequência: etapa 83 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Geography Expressions\nhttps://www.learnenglish.com/vocabulary/geography/learn-geography-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o mapa? map.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, aponte no mapa o que a palavra nomeia.",
     "sources": [
@@ -3971,21 +4053,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o mapa?",
         "back": "map",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Geografia\"?",
         "back": "https://www.learnenglish.com/vocabulary/geography/learn-geography-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "História",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Falar do passado com o vocabulário do tema.\n\nSequência: etapa 84 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: History Expressions in English\nhttps://www.learnenglish.com/vocabulary/history/learn-history-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: História, nesta etapa, trata principalmente de the past.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, ligue a palavra a uma pessoa, uma data ou um lugar do passado.",
     "sources": [
@@ -4019,21 +4102,22 @@
         "id": "exemplo",
         "front": "História, nesta etapa, trata principalmente de",
         "back": "the past",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"História\"?",
         "back": "https://www.learnenglish.com/vocabulary/history/learn-history-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "Meio ambiente",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear cuidados com o ambiente.\n\nSequência: etapa 85 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Environment Vocabulary\nhttps://www.learnenglish.com/vocabulary/environment/learn-environment-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: O que significa to recycle? Separar material para reaproveitar..\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, classifique a palavra como problema ou como cuidado.",
     "sources": [
@@ -4067,21 +4151,22 @@
         "id": "exemplo",
         "front": "O que significa to recycle?",
         "back": "Separar material para reaproveitar.",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Meio ambiente\"?",
         "back": "https://www.learnenglish.com/vocabulary/environment/learn-environment-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "Sistema solar",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear corpos do espaço.\n\nSequência: etapa 86 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Solar System and Space Vocabulary with Activities\nhttps://www.learnenglish.com/vocabulary/solar-system-space/learn-solar-system-and-space-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a Lua? the Moon.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga se o corpo é planeta, estrela ou satélite quando a fonte distinguir.",
     "sources": [
@@ -4115,21 +4200,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a Lua?",
         "back": "the Moon",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Sistema solar\"?",
         "back": "https://www.learnenglish.com/vocabulary/solar-system-space/learn-solar-system-and-space-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "Saúde e mal-estar",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Dizer como a pessoa se sente quando não está bem.\n\nSequência: etapa 87 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Learn illnesses and Health Terms in English with Worksheets\nhttps://www.learnenglish.com/vocabulary/health-illnesses/learn-health-and-illnesses-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a dor de cabeça? headache.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diferencie o sintoma e o que se faz para cuidar.",
     "sources": [
@@ -4163,21 +4249,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a dor de cabeça?",
         "back": "headache",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Saúde e mal-estar\"?",
         "back": "https://www.learnenglish.com/vocabulary/health-illnesses/learn-health-and-illnesses-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "Hospital",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear pessoas e lugares do cuidado médico.\n\nSequência: etapa 88 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Most Used Medical Expressions in English\nhttps://www.learnenglish.com/vocabulary/medicine-hospital/learn-medicine-and-hospital-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia a enfermeira ou o enfermeiro? nurse.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, diga quem faz o quê no hospital.",
     "sources": [
@@ -4211,21 +4298,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia a enfermeira ou o enfermeiro?",
         "back": "nurse",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Hospital\"?",
         "back": "https://www.learnenglish.com/vocabulary/medicine-hospital/learn-medicine-and-hospital-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "Lei e ordem",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear papéis de um caso.\n\nSequência: etapa 89 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Law and Order Terms in English\nhttps://www.learnenglish.com/vocabulary/law-order/learn-law-and-order-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o juiz? judge.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, ordene as palavras do caso sem copiar um texto jurídico.",
     "sources": [
@@ -4259,21 +4347,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o juiz?",
         "back": "judge",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Lei e ordem\"?",
         "back": "https://www.learnenglish.com/vocabulary/law-order/learn-law-and-order-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "Forças armadas",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear um papel básico das forças armadas.\n\nSequência: etapa 90 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Military Expressions in English\nhttps://www.learnenglish.com/vocabulary/military/learn-military-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia o soldado? soldier.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, separe pessoa, lugar e ação.",
     "sources": [
@@ -4307,21 +4396,22 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia o soldado?",
         "back": "soldier",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Forças armadas\"?",
         "back": "https://www.learnenglish.com/vocabulary/military/learn-military-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   },
   {
     "title": "Religiões e crenças",
-    "deck": "Estudos e sociedade",
+    "deck": "Vocabulário em inglês",
     "status": "A estudar",
     "description": "Objetivo: Nomear práticas com respeito e sem detalhe de uma fé só.\n\nSequência: etapa 91 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.\n\nFonte: Religion and Beliefs Vocabulary in English\nhttps://www.learnenglish.com/vocabulary/religions-beliefs/learn-religion-and-beliefs-vocabulary-in-english/\n\nO índice foi lido em https://www.learnenglish.com/english-vocabulary-page/. A página ligada não foi copiada. Texto, imagens e exercícios daquele endereço continuam no site. Este arquivo guarda a ordem de estudo e um exemplo original.\n\nExemplo deste repositório, não tirado da página ligada: Qual palavra nomeia uma prece? prayer.\n\nPrática: abra a fonte, estude o tema e anote três outras palavras em inglês americano com o sentido em português. Na fonte, use as palavras para descrever uma prática, sem tratar uma crença como regra.",
     "sources": [
@@ -4355,16 +4445,17 @@
         "id": "exemplo",
         "front": "Qual palavra nomeia uma prece?",
         "back": "prayer",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "Exemplo original deste repositório"
       },
       {
         "id": "fonte",
         "front": "Qual página estudar em \"Religiões e crenças\"?",
         "back": "https://www.learnenglish.com/vocabulary/religions-beliefs/learn-religion-and-beliefs-vocabulary-in-english/",
-        "deck": "Estudos e sociedade",
+        "deck": "Vocabulário em inglês",
         "source": "https://www.learnenglish.com/english-vocabulary-page/"
       }
-    ]
+    ],
+    "chapter": "Estudos e sociedade"
   }
 ]

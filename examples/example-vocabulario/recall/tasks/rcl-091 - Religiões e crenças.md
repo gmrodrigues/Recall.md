@@ -2,7 +2,7 @@
 id: RCL-91
 title: Religiões e crenças
 status: A estudar
-deck: Estudos e sociedade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:15.788Z
 updated: 2026-11-21T15:44:15.788Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia uma prece?
     back: prayer
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Religiões e crenças"?
     back: https://www.learnenglish.com/vocabulary/religions-beliefs/learn-religion-and-beliefs-vocabulary-in-english/
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear práticas com respeito e sem detalhe de uma fé só.
 
-Sequência: etapa 91 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 91 de 91, capítulo Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Religion and Beliefs Vocabulary in English
 https://www.learnenglish.com/vocabulary/religions-beliefs/learn-religion-and-beliefs-vocabulary-in-english/

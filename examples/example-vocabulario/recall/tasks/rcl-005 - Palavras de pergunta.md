@@ -2,7 +2,7 @@
 id: RCL-5
 title: Palavras de pergunta
 status: A estudar
-deck: Base
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.344Z
 updated: 2026-11-21T15:44:12.344Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra pede uma coisa?
     back: what
-    deck: Base
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Palavras de pergunta"?
     back: https://www.learnenglish.com/vocabulary/question-words/learn-question-words-in-english/
-    deck: Base
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Escolher a palavra que abre cada tipo de pergunta.
 
-Sequência: etapa 5 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 5 de 91, capítulo Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Question words (Wh- questions) in English
 https://www.learnenglish.com/vocabulary/question-words/learn-question-words-in-english/

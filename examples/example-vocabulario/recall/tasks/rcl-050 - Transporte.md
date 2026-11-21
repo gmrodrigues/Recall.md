@@ -2,7 +2,7 @@
 id: RCL-50
 title: Transporte
 status: A estudar
-deck: Cidade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.455Z
 updated: 2026-11-21T15:44:13.455Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o ônibus?
     back: bus
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Transporte"?
     back: https://www.learnenglish.com/vocabulary/transportation/learn-transportation-vocabulary-in-english/
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear meios de transporte.
 
-Sequência: etapa 50 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 50 de 91, capítulo Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Transportation and Names of Vehicles in English with Images
 https://www.learnenglish.com/vocabulary/transportation/learn-transportation-vocabulary-in-english/

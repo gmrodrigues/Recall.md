@@ -2,7 +2,7 @@
 id: RCL-27
 title: O jardim
 status: A estudar
-deck: Casa
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.691Z
 updated: 2026-11-21T15:44:12.691Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: O que cresce no jardim e tem pétalas?
     back: a flower
-    deck: Casa
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "O jardim"?
     back: https://www.learnenglish.com/vocabulary/garden/learn-garden-vocabulary-in-english/
-    deck: Casa
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear o que há no jardim.
 
-Sequência: etapa 27 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 27 de 91, capítulo Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Names of Things around Garden in English
 https://www.learnenglish.com/vocabulary/garden/learn-garden-vocabulary-in-english/

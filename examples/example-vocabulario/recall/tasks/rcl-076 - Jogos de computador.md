@@ -2,7 +2,7 @@
 id: RCL-76
 title: Jogos de computador
 status: A estudar
-deck: Telas e trabalho
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.780Z
 updated: 2026-11-21T15:44:14.780Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia quem joga?
     back: player
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Jogos de computador"?
     back: https://www.learnenglish.com/vocabulary/computer-games/learn-computer-games-vocabulary-in-english/
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear o que se faz num jogo.
 
-Sequência: etapa 76 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 76 de 91, capítulo Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Computer Games Expressions
 https://www.learnenglish.com/vocabulary/computer-games/learn-computer-games-vocabulary-in-english/

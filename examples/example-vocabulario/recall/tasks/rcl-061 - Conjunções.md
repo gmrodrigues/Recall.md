@@ -2,7 +2,7 @@
 id: RCL-61
 title: Conjunções
 status: A estudar
-deck: Língua
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.946Z
 updated: 2026-11-21T15:44:13.946Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra junta duas partes em I like tea and coffee?
     back: and
-    deck: Língua
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Conjunções"?
     back: https://www.learnenglish.com/vocabulary/conjunctions/learn-conjunctions-vocabulary-in-english/
-    deck: Língua
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Juntar ideias com uma palavra de ligação.
 
-Sequência: etapa 61 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 61 de 91, capítulo Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Conjunctions in English with Worksheets
 https://www.learnenglish.com/vocabulary/conjunctions/learn-conjunctions-vocabulary-in-english/

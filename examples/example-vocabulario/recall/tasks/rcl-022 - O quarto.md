@@ -2,7 +2,7 @@
 id: RCL-22
 title: O quarto
 status: A estudar
-deck: Casa
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.583Z
 updated: 2026-11-21T15:44:12.583Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Onde a pessoa dorme?
     back: a bed
-    deck: Casa
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "O quarto"?
     back: https://www.learnenglish.com/vocabulary/bedroom/learn-bedroom-vocabulary-in-english/
-    deck: Casa
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear objetos do quarto.
 
-Sequência: etapa 22 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 22 de 91, capítulo Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Bedroom Objects Vocabulary ️ with Pictures
 https://www.learnenglish.com/vocabulary/bedroom/learn-bedroom-vocabulary-in-english/

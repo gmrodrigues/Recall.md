@@ -2,7 +2,7 @@
 id: RCL-74
 title: Peças do computador
 status: A estudar
-deck: Telas e trabalho
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.658Z
 updated: 2026-11-21T15:44:14.658Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual peça se usa para digitar?
     back: keyboard
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Peças do computador"?
     back: https://www.learnenglish.com/vocabulary/computer-parts/learn-computer-parts-hardware-vocabulary-in-english/
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear o hardware.
 
-Sequência: etapa 74 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 74 de 91, capítulo Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Computer Parts (Hardware) Vocabulary: Pictures Audio
 https://www.learnenglish.com/vocabulary/computer-parts/learn-computer-parts-hardware-vocabulary-in-english/

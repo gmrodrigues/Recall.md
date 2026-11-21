@@ -2,7 +2,7 @@
 id: RCL-10
 title: Família
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.391Z
 updated: 2026-11-21T15:44:12.391Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a mãe?
     back: mother
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Família"?
     back: https://www.learnenglish.com/vocabulary/family-members/learn-family-members-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear pessoas da família.
 
-Sequência: etapa 10 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 10 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Family Members Vocabulary in English
 https://www.learnenglish.com/vocabulary/family-members/learn-family-members-in-english/

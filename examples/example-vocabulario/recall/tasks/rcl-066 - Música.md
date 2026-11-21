@@ -2,7 +2,7 @@
 id: RCL-66
 title: Música
 status: A estudar
-deck: Lazer
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.200Z
 updated: 2026-11-21T15:44:14.200Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o piano?
     back: piano
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Música"?
     back: https://www.learnenglish.com/vocabulary/music/learn-music-vocabulary-in-english/
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear instrumentos e palavras da música.
 
-Sequência: etapa 66 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 66 de 91, capítulo Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Music and Names of Musical Instruments with Images
 https://www.learnenglish.com/vocabulary/music/learn-music-vocabulary-in-english/

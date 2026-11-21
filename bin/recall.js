@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import { parseArgs } from 'node:util';
-import { Store, STATUSES, ensure } from '../src/core.js';
+import { Store, STATUSES, ensure, text } from '../src/core.js';
 import { backlogContext, synchronize, autoLink } from '../src/backlog.js';
 import { serve } from '../src/server.js';
 import { startTui } from '../src/tui.js';
@@ -51,14 +51,24 @@ try {
       ensure(!o.id, 'Use --id apenas com uma ficha individual.');
       ensure(document.length > 0 && document.every(unit => unit && typeof unit === 'object' && !Array.isArray(unit)),
         'O arquivo deve conter uma lista de fichas.');
+      const chapterNames = document.map(unit => unit.chapter === undefined ? null : text(unit.chapter, 'Nome do capítulo', 1000));
+      const chapters = new Map();
       const imported = [];
-      for (const unit of document) {
+      for (const [index, unit] of document.entries()) {
         try {
-          imported.push(autoLink(store, store.save(unit)));
+          const saved = store.save(unit);
+          imported.push(autoLink(store, saved));
+          const name = chapterNames[index];
+          if (name) {
+            const key = JSON.stringify([saved.deck, name]);
+            if (!chapters.has(key)) chapters.set(key, { name, units: [] });
+            chapters.get(key).units.push(saved.id);
+          }
         } catch (error) {
           throw new Error(`Ficha ${imported.length + 1}: ${error.message} (${imported.length} já importadas).`);
         }
       }
+      for (const chapter of chapters.values()) store.saveMilestone(store.scheduleSnapshot().revision, chapter);
       output(imported);
     } else {
       output(autoLink(store, store.save(document, o.id)));

@@ -2,7 +2,7 @@
 id: RCL-88
 title: Hospital
 status: A estudar
-deck: Estudos e sociedade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:15.570Z
 updated: 2026-11-21T15:44:15.570Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a enfermeira ou o enfermeiro?
     back: nurse
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Hospital"?
     back: https://www.learnenglish.com/vocabulary/medicine-hospital/learn-medicine-and-hospital-vocabulary-in-english/
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear pessoas e lugares do cuidado médico.
 
-Sequência: etapa 88 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 88 de 91, capítulo Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Most Used Medical Expressions in English
 https://www.learnenglish.com/vocabulary/medicine-hospital/learn-medicine-and-hospital-vocabulary-in-english/

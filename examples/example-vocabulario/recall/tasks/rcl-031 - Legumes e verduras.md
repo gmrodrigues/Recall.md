@@ -2,7 +2,7 @@
 id: RCL-31
 title: Legumes e verduras
 status: A estudar
-deck: Comida
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.800Z
 updated: 2026-11-21T15:44:12.800Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a cenoura?
     back: carrot
-    deck: Comida
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Legumes e verduras"?
     back: https://www.learnenglish.com/vocabulary/vegetables/learn-vegetables-vocabulary-in-english/
-    deck: Comida
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear legumes e verduras.
 
-Sequência: etapa 31 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 31 de 91, capítulo Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Names of Vegetables in English with Pictures and Flashcards
 https://www.learnenglish.com/vocabulary/vegetables/learn-vegetables-vocabulary-in-english/

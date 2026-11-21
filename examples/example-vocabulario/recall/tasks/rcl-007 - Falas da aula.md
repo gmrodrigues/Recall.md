@@ -2,7 +2,7 @@
 id: RCL-7
 title: Falas da aula
 status: A estudar
-deck: Base
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.358Z
 updated: 2026-11-21T15:44:12.358Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual frase pede repetição?
     back: Can you repeat that, please?
-    deck: Base
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Falas da aula"?
     back: https://www.learnenglish.com/vocabulary/classroom-language/learn-classroom-language-in-english/
-    deck: Base
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Pedir e responder durante uma aula.
 
-Sequência: etapa 7 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 7 de 91, capítulo Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Classroom Language: Learn how to speak during a lesson
 https://www.learnenglish.com/vocabulary/classroom-language/learn-classroom-language-in-english/

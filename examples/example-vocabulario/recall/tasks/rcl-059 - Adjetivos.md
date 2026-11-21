@@ -2,7 +2,7 @@
 id: RCL-59
 title: Adjetivos
 status: A estudar
-deck: Língua
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.849Z
 updated: 2026-11-21T15:44:13.849Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra é adjetivo?
     back: big
-    deck: Língua
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Adjetivos"?
     back: https://www.learnenglish.com/vocabulary/adjectives/learn-adjectives-vocabulary-in-english/
-    deck: Língua
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Reconhecer palavras que descrevem.
 
-Sequência: etapa 59 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 59 de 91, capítulo Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Adjectives: Learn with Worksheets
 https://www.learnenglish.com/vocabulary/adjectives/learn-adjectives-vocabulary-in-english/

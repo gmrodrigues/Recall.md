@@ -2,7 +2,7 @@
 id: RCL-25
 title: A sala de jantar
 status: A estudar
-deck: Casa
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.646Z
 updated: 2026-11-21T15:44:12.646Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Em que móvel se come?
     back: a table
-    deck: Casa
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "A sala de jantar"?
     back: https://www.learnenglish.com/vocabulary/dining-room/learn-dining-room-vocabulary-in-english/
-    deck: Casa
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear o que se usa na refeição.
 
-Sequência: etapa 25 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 25 de 91, capítulo Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Dining Room Items in English
 https://www.learnenglish.com/vocabulary/dining-room/learn-dining-room-vocabulary-in-english/

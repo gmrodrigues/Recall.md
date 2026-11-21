@@ -2,7 +2,7 @@
 id: RCL-1
 title: O alfabeto
 status: A estudar
-deck: Base
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.315Z
 updated: 2026-11-21T15:44:12.315Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Quantas letras tem o alfabeto inglês usado nos Estados Unidos?
     back: "26"
-    deck: Base
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "O alfabeto"?
     back: https://www.learnenglish.com/vocabulary/alphabet/learn-english-alphabet-online/
-    deck: Base
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Reconhecer as 26 letras e o nome de cada uma.
 
-Sequência: etapa 1 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 1 de 91, capítulo Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: English Alphabet – Letters with Pronunciations and Games
 https://www.learnenglish.com/vocabulary/alphabet/learn-english-alphabet-online/

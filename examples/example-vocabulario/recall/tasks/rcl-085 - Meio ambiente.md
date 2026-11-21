@@ -2,7 +2,7 @@
 id: RCL-85
 title: Meio ambiente
 status: A estudar
-deck: Estudos e sociedade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:15.361Z
 updated: 2026-11-21T15:44:15.361Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: O que significa to recycle?
     back: Separar material para reaproveitar.
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Meio ambiente"?
     back: https://www.learnenglish.com/vocabulary/environment/learn-environment-vocabulary-in-english/
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear cuidados com o ambiente.
 
-Sequência: etapa 85 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 85 de 91, capítulo Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Environment Vocabulary
 https://www.learnenglish.com/vocabulary/environment/learn-environment-vocabulary-in-english/

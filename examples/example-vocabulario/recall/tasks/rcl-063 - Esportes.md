@@ -2,7 +2,7 @@
 id: RCL-63
 title: Esportes
 status: A estudar
-deck: Lazer
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.046Z
 updated: 2026-11-21T15:44:14.046Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual nome americano este curso usa para o jogo em que se chuta a bola no gol?
     back: soccer
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Esportes"?
     back: https://www.learnenglish.com/vocabulary/sport-types/learn-types-of-sports-vocabulary-in-english/
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear esportes com o termo americano quando os dois existirem.
 
-Sequência: etapa 63 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 63 de 91, capítulo Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Types of Sports in English Pictures Quizzes Flashcards
 https://www.learnenglish.com/vocabulary/sport-types/learn-types-of-sports-vocabulary-in-english/

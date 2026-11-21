@@ -2,7 +2,7 @@
 id: RCL-33
 title: Ervas e temperos
 status: A estudar
-deck: Comida
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.855Z
 updated: 2026-11-21T15:44:12.855Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual erva é o manjericão?
     back: basil
-    deck: Comida
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Ervas e temperos"?
     back: https://www.learnenglish.com/vocabulary/herbs-spices/learn-herbs-spices-vocabulary-in-english/
-    deck: Comida
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear ervas e temperos.
 
-Sequência: etapa 33 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 33 de 91, capítulo Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: List of Herbs and Spices in English
 https://www.learnenglish.com/vocabulary/herbs-spices/learn-herbs-spices-vocabulary-in-english/

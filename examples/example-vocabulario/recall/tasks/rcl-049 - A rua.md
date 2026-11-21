@@ -2,7 +2,7 @@
 id: RCL-49
 title: A rua
 status: A estudar
-deck: Cidade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.414Z
 updated: 2026-11-21T15:44:13.414Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual é a palavra americana para a calçada?
     back: sidewalk
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "A rua"?
     back: https://www.learnenglish.com/vocabulary/street/learn-steert-vocabulary-in-english/
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear o que se vê na rua, com vocabulário americano.
 
-Sequência: etapa 49 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 49 de 91, capítulo Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Names of Common Street Objects in English
 https://www.learnenglish.com/vocabulary/street/learn-steert-vocabulary-in-english/

@@ -2,7 +2,7 @@
 id: RCL-43
 title: Natureza
 status: A estudar
-deck: Natureza
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.168Z
 updated: 2026-11-21T15:44:13.168Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o rio?
     back: river
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Natureza"?
     back: https://www.learnenglish.com/vocabulary/nature/learn-nature-vocabulary-in-english/
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear elementos da paisagem natural.
 
-Sequência: etapa 43 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 43 de 91, capítulo Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Words Related to Nature in English
 https://www.learnenglish.com/vocabulary/nature/learn-nature-vocabulary-in-english/

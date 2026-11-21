@@ -2,7 +2,7 @@
 id: RCL-34
 title: Comida rápida
 status: A estudar
-deck: Comida
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.882Z
 updated: 2026-11-21T15:44:12.882Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o hambúrguer?
     back: hamburger
-    deck: Comida
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Comida rápida"?
     back: https://www.learnenglish.com/vocabulary/fast-food/learn-fast-food-vocabulary-in-english/
-    deck: Comida
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear lanches comuns nos Estados Unidos.
 
-Sequência: etapa 34 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 34 de 91, capítulo Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Fast Food Vocabulary with Activities and Images
 https://www.learnenglish.com/vocabulary/fast-food/learn-fast-food-vocabulary-in-english/

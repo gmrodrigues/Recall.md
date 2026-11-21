@@ -2,7 +2,7 @@
 id: RCL-58
 title: Verbos irregulares
 status: A estudar
-deck: Língua
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.803Z
 updated: 2026-11-21T15:44:13.803Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual é o passado de go?
     back: went
-    deck: Língua
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Verbos irregulares"?
     back: https://www.learnenglish.com/vocabulary/irregular-verbs/irregular-verbs-in-english/
-    deck: Língua
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Lembrar a forma do passado de verbos irregulares.
 
-Sequência: etapa 58 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 58 de 91, capítulo Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Irregular verbs in English – Learn with Game and Flashcards
 https://www.learnenglish.com/vocabulary/irregular-verbs/irregular-verbs-in-english/

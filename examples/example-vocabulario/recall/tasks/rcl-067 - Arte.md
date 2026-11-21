@@ -2,7 +2,7 @@
 id: RCL-67
 title: Arte
 status: A estudar
-deck: Lazer
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.254Z
 updated: 2026-11-21T15:44:14.254Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia uma pintura?
     back: painting
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Arte"?
     back: https://www.learnenglish.com/vocabulary/art/learn-art-vocabulary-in-english/
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear palavras de artes visuais.
 
-Sequência: etapa 67 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 67 de 91, capítulo Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Art Phrases in English
 https://www.learnenglish.com/vocabulary/art/learn-art-vocabulary-in-english/

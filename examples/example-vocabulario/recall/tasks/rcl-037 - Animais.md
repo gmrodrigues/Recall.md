@@ -2,7 +2,7 @@
 id: RCL-37
 title: Animais
 status: A estudar
-deck: Natureza
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.969Z
 updated: 2026-11-21T15:44:12.969Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o leão?
     back: lion
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Animais"?
     back: https://www.learnenglish.com/vocabulary/animals/learn-animals-vocabulary-in-english/
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear animais.
 
-Sequência: etapa 37 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 37 de 91, capítulo Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Names of Animals in English: Flashcards Tests Pronunciations
 https://www.learnenglish.com/vocabulary/animals/learn-animals-vocabulary-in-english/

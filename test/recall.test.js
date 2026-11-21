@@ -129,7 +129,7 @@ test('CLI: init, criação, edição e criação de flashcard do gabarito', t =>
   const help = run(['instructions']); assert.equal(help.status, 0, help.stderr); assert.match(help.stdout, /Gerar um percurso/);
 });
 
-test('CLI: importa o estudo de vocabulário como uma lista ordenada', t => {
+test('CLI: importa o vocabulário em um plano com dez capítulos', t => {
   const s = fixture(t), cli = new URL('../bin/recall.js', import.meta.url).pathname;
   const source = new URL('../examples/example-vocabulario/vocabulario-ingles.json', import.meta.url).pathname;
   const run = (...args) => spawnSync(process.execPath, [cli, '--cwd', s.cwd, ...args], { encoding: 'utf8' });
@@ -147,6 +147,13 @@ test('CLI: importa o estudo de vocabulário como uma lista ordenada', t => {
   assert.equal(results.at(-1).unit.id, 'RCL-91');
   assert.equal(s.get('RCL-1').questions[0].answer, 0);
   assert.equal(s.get('RCL-1').cards[0].back, '26');
+  assert.deepEqual(s.deckCatalog().map(deck => deck.name), ['Vocabulário em inglês']);
+  assert.ok(s.reviewQueue().every(card => card.deck === 'Vocabulário em inglês'));
+  const chapters = s.schedule().milestones;
+  assert.equal(chapters.length, 10);
+  assert.equal(chapters[0].name, 'Base');
+  assert.equal(chapters[0].units.length, 9);
+  assert.deepEqual(chapters.flatMap(chapter => chapter.units), results.map(result => result.unit.id));
 
   const bad = path.join(s.cwd, 'bad.json');
   fs.writeFileSync(bad, JSON.stringify([{ title: 'Ficha válida' }, {}]));

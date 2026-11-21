@@ -2,7 +2,7 @@
 id: RCL-41
 title: Animais do mar
 status: A estudar
-deck: Natureza
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.099Z
 updated: 2026-11-21T15:44:13.099Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a baleia?
     back: whale
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Animais do mar"?
     back: https://www.learnenglish.com/vocabulary/sea-animals/learn-sea-animals-vocabulary-in-english/
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear animais do mar.
 
-Sequência: etapa 41 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 41 de 91, capítulo Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Sea Animals in English: Pictures Tests Examples
 https://www.learnenglish.com/vocabulary/sea-animals/learn-sea-animals-vocabulary-in-english/

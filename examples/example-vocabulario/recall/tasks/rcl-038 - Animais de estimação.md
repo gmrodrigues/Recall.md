@@ -2,7 +2,7 @@
 id: RCL-38
 title: Animais de estimação
 status: A estudar
-deck: Natureza
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.000Z
 updated: 2026-11-21T15:44:13.000Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual animal de estimação late?
     back: a dog
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Animais de estimação"?
     back: https://www.learnenglish.com/vocabulary/pets/learn-pets-vocabulary-in-english/
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear animais que vivem em casa.
 
-Sequência: etapa 38 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 38 de 91, capítulo Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Pets in English
 https://www.learnenglish.com/vocabulary/pets/learn-pets-vocabulary-in-english/

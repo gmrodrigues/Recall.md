@@ -2,7 +2,7 @@
 id: RCL-26
 title: Utensílios de cozinha
 status: A estudar
-deck: Casa
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.668Z
 updated: 2026-11-21T15:44:12.668Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual utensílio corta?
     back: a knife
-    deck: Casa
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Utensílios de cozinha"?
     back: https://www.learnenglish.com/vocabulary/kitchen-utensils/learn-kitchen-utensils-vocabulary-in-english/
-    deck: Casa
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear ferramentas de cozinhar e comer.
 
-Sequência: etapa 26 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 26 de 91, capítulo Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Kitchen Tools in English with Worksheets
 https://www.learnenglish.com/vocabulary/kitchen-utensils/learn-kitchen-utensils-vocabulary-in-english/

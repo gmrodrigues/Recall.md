@@ -2,7 +2,7 @@
 id: RCL-69
 title: Livros
 status: A estudar
-deck: Lazer
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.363Z
 updated: 2026-11-21T15:44:14.363Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia um romance?
     back: novel
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Livros"?
     back: https://www.learnenglish.com/vocabulary/books-literature/learn-books-and-literature-vocabulary-in-english/
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear partes e tipos de livro.
 
-Sequência: etapa 69 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 69 de 91, capítulo Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Books and Literature Terminology in English
 https://www.learnenglish.com/vocabulary/books-literature/learn-books-and-literature-vocabulary-in-english/

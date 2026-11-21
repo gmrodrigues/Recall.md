@@ -2,7 +2,7 @@
 id: RCL-6
 title: Objetos da sala
 status: A estudar
-deck: Base
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.351Z
 updated: 2026-11-21T15:44:12.351Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: O que se usa para escrever à mão?
     back: a pen
-    deck: Base
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Objetos da sala"?
     back: https://www.learnenglish.com/vocabulary/classroom-objects/learn-classroom-objects-vocabulary-in-english/
-    deck: Base
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear objetos usados na sala de aula.
 
-Sequência: etapa 6 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 6 de 91, capítulo Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Classroom Objects Vocabulary in English with Games
 https://www.learnenglish.com/vocabulary/classroom-objects/learn-classroom-objects-vocabulary-in-english/

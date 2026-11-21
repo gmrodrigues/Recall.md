@@ -2,7 +2,7 @@
 id: RCL-82
 title: Física
 status: A estudar
-deck: Estudos e sociedade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:15.160Z
 updated: 2026-11-21T15:44:15.160Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a gravidade neste exemplo?
     back: gravity
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Física"?
     back: https://www.learnenglish.com/vocabulary/physics/learn-physics-vocabulary-in-english/
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear uma ideia básica da física.
 
-Sequência: etapa 82 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 82 de 91, capítulo Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Physics Terms with Memory Cards
 https://www.learnenglish.com/vocabulary/physics/learn-physics-vocabulary-in-english/

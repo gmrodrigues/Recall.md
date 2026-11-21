@@ -2,7 +2,7 @@
 id: RCL-80
 title: Matemática
 status: A estudar
-deck: Estudos e sociedade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:15.031Z
 updated: 2026-11-21T15:44:15.031Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Quanto é two plus two neste exemplo?
     back: four
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Matemática"?
     back: https://www.learnenglish.com/vocabulary/maths/learn-maths-vocabulary-in-english/
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear operações com o termo americano math.
 
-Sequência: etapa 80 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 80 de 91, capítulo Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Maths Vocabulary
 https://www.learnenglish.com/vocabulary/maths/learn-maths-vocabulary-in-english/

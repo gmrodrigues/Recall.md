@@ -2,7 +2,7 @@
 id: RCL-14
 title: Roupas
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.441Z
 updated: 2026-11-21T15:44:12.441Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia uma camisa?
     back: shirt
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Roupas"?
     back: https://www.learnenglish.com/vocabulary/clothes/learn-clothes-vocabulary-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear peças de roupa.
 
-Sequência: etapa 14 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 14 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Clothes Vocabulary in English Learn with Images and Flashcards
 https://www.learnenglish.com/vocabulary/clothes/learn-clothes-vocabulary-in-english/

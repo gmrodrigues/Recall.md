@@ -2,7 +2,7 @@
 id: RCL-15
 title: Acessórios
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.456Z
 updated: 2026-11-21T15:44:12.456Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia os óculos?
     back: glasses
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Acessórios"?
     back: https://www.learnenglish.com/vocabulary/accessories/learn-accessories-vocabulary-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear o que se usa junto da roupa.
 
-Sequência: etapa 15 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 15 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Accessories Vocabulary Exercises Pictures Audio
 https://www.learnenglish.com/vocabulary/accessories/learn-accessories-vocabulary-in-english/

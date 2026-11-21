@@ -2,7 +2,7 @@
 id: RCL-28
 title: Ferramentas
 status: A estudar
-deck: Casa
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.714Z
 updated: 2026-11-21T15:44:12.714Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual ferramenta bate no prego?
     back: a hammer
-    deck: Casa
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Ferramentas"?
     back: https://www.learnenglish.com/vocabulary/tools-equipment/learn-tools-and-equipments-vocabulary-in-english/
-    deck: Casa
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear ferramentas de trabalho manual.
 
-Sequência: etapa 28 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 28 de 91, capítulo Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Tools and Equipment Word List with Images
 https://www.learnenglish.com/vocabulary/tools-equipment/learn-tools-and-equipments-vocabulary-in-english/

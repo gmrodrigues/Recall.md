@@ -2,7 +2,7 @@
 id: RCL-56
 title: O litoral
 status: A estudar
-deck: Cidade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.712Z
 updated: 2026-11-21T15:44:13.712Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a praia?
     back: beach
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "O litoral"?
     back: https://www.learnenglish.com/vocabulary/seaside/learn-seaside-vocabulary-in-english/
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear o que há à beira-mar.
 
-Sequência: etapa 56 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 56 de 91, capítulo Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Words about Seaside in English – With Pictures and Quizzes
 https://www.learnenglish.com/vocabulary/seaside/learn-seaside-vocabulary-in-english/

@@ -2,7 +2,7 @@
 id: RCL-78
 title: Comunicação
 status: A estudar
-deck: Telas e trabalho
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.904Z
 updated: 2026-11-21T15:44:14.904Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia uma mensagem?
     back: message
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Comunicação"?
     back: https://www.learnenglish.com/vocabulary/communication/learn-communication-vocabulary-in-english/
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear jeitos de enviar e receber uma mensagem.
 
-Sequência: etapa 78 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 78 de 91, capítulo Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Communication Terms and Expressions in English
 https://www.learnenglish.com/vocabulary/communication/learn-communication-vocabulary-in-english/

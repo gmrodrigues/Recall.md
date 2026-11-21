@@ -2,7 +2,7 @@
 id: RCL-60
 title: Preposições
 status: A estudar
-deck: Língua
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.897Z
 updated: 2026-11-21T15:44:13.898Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual preposição cabe em in the kitchen?
     back: in
-    deck: Língua
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Preposições"?
     back: https://www.learnenglish.com/vocabulary/prepositions/learn-prepositions-vocabulary-in-english/
-    deck: Língua
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Dizer a relação de lugar ou tempo.
 
-Sequência: etapa 60 de 91, deck Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 60 de 91, capítulo Língua. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Prepositions in English with Pictures and Exercises
 https://www.learnenglish.com/vocabulary/prepositions/learn-prepositions-vocabulary-in-english/

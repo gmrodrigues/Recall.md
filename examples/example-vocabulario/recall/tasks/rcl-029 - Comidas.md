@@ -2,7 +2,7 @@
 id: RCL-29
 title: Comidas
 status: A estudar
-deck: Comida
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.745Z
 updated: 2026-11-21T15:44:12.745Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o pão?
     back: bread
-    deck: Comida
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Comidas"?
     back: https://www.learnenglish.com/vocabulary/foods/learn-foods-vocabulary-in-english/
-    deck: Comida
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear comidas.
 
-Sequência: etapa 29 de 91, deck Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 29 de 91, capítulo Comida. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Food Names in English with Pictures and Pronunciation
 https://www.learnenglish.com/vocabulary/foods/learn-foods-vocabulary-in-english/

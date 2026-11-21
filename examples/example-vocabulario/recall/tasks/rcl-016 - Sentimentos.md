@@ -2,7 +2,7 @@
 id: RCL-16
 title: Sentimentos
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.472Z
 updated: 2026-11-21T15:44:12.472Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra diz que a pessoa está feliz?
     back: happy
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Sentimentos"?
     back: https://www.learnenglish.com/vocabulary/feelings/learn-feelings-and-emotions-vocabulary-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear sentimentos comuns.
 
-Sequência: etapa 16 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 16 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Feelings and Emotions with Images and Pronunciations
 https://www.learnenglish.com/vocabulary/feelings/learn-feelings-and-emotions-vocabulary-in-english/

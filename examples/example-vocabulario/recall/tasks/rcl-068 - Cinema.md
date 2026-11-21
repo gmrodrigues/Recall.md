@@ -2,7 +2,7 @@
 id: RCL-68
 title: Cinema
 status: A estudar
-deck: Lazer
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.308Z
 updated: 2026-11-21T15:44:14.308Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual é o termo americano mais comum para filme?
     back: movie
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Cinema"?
     back: https://www.learnenglish.com/vocabulary/films-cinema/learn-films-and-cinema-vocabulary-in-english/
-    deck: Lazer
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Falar de filmes com o vocabulário americano.
 
-Sequência: etapa 68 de 91, deck Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 68 de 91, capítulo Lazer. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Films and Cinema Terms in English
 https://www.learnenglish.com/vocabulary/films-cinema/learn-films-and-cinema-vocabulary-in-english/

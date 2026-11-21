@@ -2,7 +2,7 @@
 id: RCL-53
 title: Compras
 status: A estudar
-deck: Cidade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.581Z
 updated: 2026-11-21T15:44:13.581Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra americana esta etapa usa para loja?
     back: store
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Compras"?
     back: https://www.learnenglish.com/vocabulary/shopping/learn-shopping-vocabulary-in-english/
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Falar de lojas e de comprar, no uso americano.
 
-Sequência: etapa 53 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 53 de 91, capítulo Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Shopping Vocabulary Examples Tests Images
 https://www.learnenglish.com/vocabulary/shopping/learn-shopping-vocabulary-in-english/

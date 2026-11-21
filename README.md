@@ -10,7 +10,7 @@ A **AppImage para Linux x86_64** inclui Node.js, CLI, TUI e a interface web comp
 
 ### Primeiro exemplo · Vocabulário em inglês
 
-Comece pelo estudo de vocabulário em inglês de **Marcelo Henrique Goncalves (@billmask)**. Ele reúne 91 fichas com material, quizzes e cartões de memorização. [Estudo incluído no Recall.md](examples/example-vocabulario/README.md) · [Contribuição original](https://github.com/billmask/Recall.md/tree/7ea324a987e14d08ecc3501f0d2a125dc65ae061/example-vocabulario)
+Comece pelo estudo de vocabulário em inglês de **Marcelo Henrique Goncalves (@billmask)**. São 91 fichas com material, quizzes e cartões de memorização em um único plano, **Vocabulário em inglês**, dividido em dez capítulos. [Estudo incluído no Recall.md](examples/example-vocabulario/README.md) · [Contribuição original](https://github.com/billmask/Recall.md/tree/7ea324a987e14d08ecc3501f0d2a125dc65ae061/example-vocabulario)
 
 Instale a AppImage com o comando abaixo e crie uma pasta vazia para o estudo.
 
@@ -32,7 +32,7 @@ Rode a primeira linha novamente para atualizar. A URL fixa a revisão do instala
 
 Se faltar FUSE, execute `export APPIMAGE_EXTRACT_AND_RUN=1` no mesmo terminal antes de rodar os comandos `recall-appimage`.
 
-Abra **http://127.0.0.1:6421**. No **Quadro de estudos**, abra **O alfabeto** e confira as abas **Material**, **Quiz** e **Cartões de memorização**. Para testar a gravação, responda ao quiz, reinicie o servidor na mesma pasta e consulte a aba **Tentativas**. Encerre com Ctrl+C. Se a porta estiver ocupada, use `recall-appimage browser --port 6422` e abra **http://127.0.0.1:6422**.
+Abra **http://127.0.0.1:6421**. No **Quadro de estudos**, selecione o plano **Vocabulário em inglês** e o capítulo **Base**. Abra **O alfabeto** e confira as abas **Material**, **Quiz** e **Cartões de memorização**. Para testar a gravação, responda ao quiz, reinicie o servidor na mesma pasta e consulte a aba **Tentativas**. Encerre com Ctrl+C. Se a porta estiver ocupada, use `recall-appimage browser --port 6422` e abra **http://127.0.0.1:6422**.
 
 ### Criar um estudo próprio
 

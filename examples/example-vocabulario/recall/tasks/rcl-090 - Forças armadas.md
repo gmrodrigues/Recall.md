@@ -2,7 +2,7 @@
 id: RCL-90
 title: Forças armadas
 status: A estudar
-deck: Estudos e sociedade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:15.716Z
 updated: 2026-11-21T15:44:15.716Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o soldado?
     back: soldier
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Forças armadas"?
     back: https://www.learnenglish.com/vocabulary/military/learn-military-vocabulary-in-english/
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear um papel básico das forças armadas.
 
-Sequência: etapa 90 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 90 de 91, capítulo Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Military Expressions in English
 https://www.learnenglish.com/vocabulary/military/learn-military-vocabulary-in-english/

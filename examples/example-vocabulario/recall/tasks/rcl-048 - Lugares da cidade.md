@@ -2,7 +2,7 @@
 id: RCL-48
 title: Lugares da cidade
 status: A estudar
-deck: Cidade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.374Z
 updated: 2026-11-21T15:44:13.374Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual lugar guarda e mostra obras?
     back: a museum
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Lugares da cidade"?
     back: https://www.learnenglish.com/vocabulary/city-life/learn-city-life-vocabulary-in-english/
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear lugares a que se vai na cidade.
 
-Sequência: etapa 48 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 48 de 91, capítulo Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Places in a City in English ️ With Vocabulary Activities
 https://www.learnenglish.com/vocabulary/city-life/learn-city-life-vocabulary-in-english/

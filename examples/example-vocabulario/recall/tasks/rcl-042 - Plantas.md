@@ -2,7 +2,7 @@
 id: RCL-42
 title: Plantas
 status: A estudar
-deck: Natureza
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.133Z
 updated: 2026-11-21T15:44:13.133Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a folha?
     back: leaf
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Plantas"?
     back: https://www.learnenglish.com/vocabulary/plants/learn-plants-vocabulary-in-english/
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear partes e tipos de planta.
 
-Sequência: etapa 42 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 42 de 91, capítulo Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Common Words about Plants in English
 https://www.learnenglish.com/vocabulary/plants/learn-plants-vocabulary-in-english/

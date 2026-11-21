@@ -2,7 +2,7 @@
 id: RCL-54
 title: Férias e feriados
 status: A estudar
-deck: Cidade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.624Z
 updated: 2026-11-21T15:44:13.624Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra americana nomeia um período de folga?
     back: vacation
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Férias e feriados"?
     back: https://www.learnenglish.com/vocabulary/holiday/learn-holiday-vocabulary-in-english/
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Distinguir vacation e holiday no uso americano.
 
-Sequência: etapa 54 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 54 de 91, capítulo Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Holiday Vocabulary in English
 https://www.learnenglish.com/vocabulary/holiday/learn-holiday-vocabulary-in-english/

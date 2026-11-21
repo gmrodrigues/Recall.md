@@ -2,7 +2,7 @@
 id: RCL-89
 title: Lei e ordem
 status: A estudar
-deck: Estudos e sociedade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:15.642Z
 updated: 2026-11-21T15:44:15.642Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia o juiz?
     back: judge
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Lei e ordem"?
     back: https://www.learnenglish.com/vocabulary/law-order/learn-law-and-order-vocabulary-in-english/
-    deck: Estudos e sociedade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear papéis de um caso.
 
-Sequência: etapa 89 de 91, deck Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 89 de 91, capítulo Estudos e sociedade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Law and Order Terms in English
 https://www.learnenglish.com/vocabulary/law-order/learn-law-and-order-vocabulary-in-english/

@@ -2,7 +2,7 @@
 id: RCL-4
 title: Dias, meses e estações
 status: A estudar
-deck: Base
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.337Z
 updated: 2026-11-21T15:44:12.337Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Quantos dias tem uma semana?
     back: seven
-    deck: Base
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Dias, meses e estações"?
     back: https://www.learnenglish.com/vocabulary/days-months-seasons/learn-days-months-and-seasons-in-english/
-    deck: Base
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Dizer os dias, os meses e as quatro estações.
 
-Sequência: etapa 4 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 4 de 91, capítulo Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Days Months and Seasons in English
 https://www.learnenglish.com/vocabulary/days-months-seasons/learn-days-months-and-seasons-in-english/

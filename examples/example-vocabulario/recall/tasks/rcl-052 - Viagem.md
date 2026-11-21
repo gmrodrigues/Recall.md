@@ -2,7 +2,7 @@
 id: RCL-52
 title: Viagem
 status: A estudar
-deck: Cidade
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:13.540Z
 updated: 2026-11-21T15:44:13.540Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual documento esta etapa usa como exemplo de viagem?
     back: a passport
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Viagem"?
     back: https://www.learnenglish.com/vocabulary/travel/learn-travel-vocabulary-in-english/
-    deck: Cidade
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Falar do que se usa e se faz numa viagem.
 
-Sequência: etapa 52 de 91, deck Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 52 de 91, capítulo Cidade. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Travel Words to Learn in English
 https://www.learnenglish.com/vocabulary/travel/learn-travel-vocabulary-in-english/

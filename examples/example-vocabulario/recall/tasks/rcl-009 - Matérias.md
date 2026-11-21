@@ -2,7 +2,7 @@
 id: RCL-9
 title: Matérias
 status: A estudar
-deck: Base
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.380Z
 updated: 2026-11-21T15:44:12.380Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual é o nome americano usual da matemática na escola?
     back: math
-    deck: Base
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Matérias"?
     back: https://www.learnenglish.com/vocabulary/school-subjects/learn-school-subjects-vocabulary/
-    deck: Base
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear matérias com o termo americano quando houver.
 
-Sequência: etapa 9 de 91, deck Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 9 de 91, capítulo Base. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Names of School Subjects in English with Flashcards
 https://www.learnenglish.com/vocabulary/school-subjects/learn-school-subjects-vocabulary/

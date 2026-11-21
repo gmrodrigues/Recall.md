@@ -2,7 +2,7 @@
 id: RCL-24
 title: A sala de estar
 status: A estudar
-deck: Casa
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.624Z
 updated: 2026-11-21T15:44:12.624Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual móvel é o sofá?
     back: a sofa
-    deck: Casa
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "A sala de estar"?
     back: https://www.learnenglish.com/vocabulary/living-room/learn-living-room-vocabulary-in-english/
-    deck: Casa
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear móveis da sala de estar.
 
-Sequência: etapa 24 de 91, deck Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 24 de 91, capítulo Casa. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Living Room Vocabulary with Pronunciations and Worksheets
 https://www.learnenglish.com/vocabulary/living-room/learn-living-room-vocabulary-in-english/

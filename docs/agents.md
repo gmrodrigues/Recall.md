@@ -17,7 +17,7 @@ Não há conector de modelo ou envio automático de material a provedores. O age
 
 ## Importação
 
-Uma unidade por objeto JSON. Para criar várias fichas em ordem, passe uma lista de objetos sem `--id`. Se uma ficha falhar, a CLI informa a posição e o total já importado. Campos: `title`, `description`, `deck`, `status`, `sources`, `material`, `questions`, `cards`, `file` (opcional na criação). `questions` e `cards` são listas completas quando fornecidas; não acrescente item enviando uma lista parcial que apague os anteriores. Use o JSON de origem revisado ou os dados dos arquivos de estudo; `unit view` omite respostas para a prática.
+Uma unidade por objeto JSON. Para criar várias fichas em ordem, passe uma lista de objetos sem `--id`. Na lista, use `deck` para o plano de estudo e `chapter` para o capítulo. Após importar a lista, a CLI agrupa as fichas que têm o mesmo plano e capítulo e cria os capítulos no Quadro de estudos. Se uma ficha falhar, a CLI informa a posição e o total já importado. Campos: `title`, `description`, `deck`, `status`, `sources`, `material`, `questions`, `cards`, `file` (opcional na criação). `questions` e `cards` são listas completas quando fornecidas; não acrescente item enviando uma lista parcial que apague os anteriores. Use o JSON de origem revisado ou os dados dos arquivos de estudo; `unit view` omite respostas para a prática.
 
 Material: lista de páginas com `id`, `title` e `sections`. Cada seção pode ter `title`, `text` e `links`. Um link inclui `url` e pode ter `label` e `type` (`auto`, `link`, `image` ou `video`). Preserve IDs de páginas existentes para manter o progresso associado.
 

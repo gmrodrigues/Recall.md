@@ -2,7 +2,7 @@
 id: RCL-36
 title: O tempo
 status: A estudar
-deck: Natureza
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.939Z
 updated: 2026-11-21T15:44:12.939Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a chuva?
     back: rain
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "O tempo"?
     back: https://www.learnenglish.com/vocabulary/weather/learn-weather-vocabulary-in-english/
-    deck: Natureza
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Descrever o tempo lá fora.
 
-Sequência: etapa 36 de 91, deck Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 36 de 91, capítulo Natureza. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Weather Vocabulary in English How to say air conditions
 https://www.learnenglish.com/vocabulary/weather/learn-weather-vocabulary-in-english/

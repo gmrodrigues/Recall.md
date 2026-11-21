@@ -2,7 +2,7 @@
 id: RCL-73
 title: Tecnologia
 status: A estudar
-deck: Telas e trabalho
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:14.598Z
 updated: 2026-11-21T15:44:14.598Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual palavra nomeia a tela?
     back: screen
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Tecnologia"?
     back: https://www.learnenglish.com/vocabulary/technology/learn-technology-vocabulary-in-english/
-    deck: Telas e trabalho
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Nomear palavras gerais de tecnologia.
 
-Sequência: etapa 73 de 91, deck Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 73 de 91, capítulo Telas e trabalho. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Common Technology Words to Learn in English
 https://www.learnenglish.com/vocabulary/technology/learn-technology-vocabulary-in-english/

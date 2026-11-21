@@ -2,7 +2,7 @@
 id: RCL-19
 title: Tempo livre
 status: A estudar
-deck: Pessoas
+deck: Vocabulário em inglês
 created: 2026-11-21T15:44:12.527Z
 updated: 2026-11-21T15:44:12.527Z
 sources:
@@ -28,18 +28,18 @@ cards:
   - id: exemplo
     front: Qual frase fala de leitura no tempo livre?
     back: I read.
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: Exemplo original deste repositório
   - id: fonte
     front: Qual página estudar em "Tempo livre"?
     back: https://www.learnenglish.com/vocabulary/free-time-activities/learn-free-time-activities-in-english/
-    deck: Pessoas
+    deck: Vocabulário em inglês
     source: https://www.learnenglish.com/english-vocabulary-page/
 ---
 
 Objetivo: Dizer o que a pessoa faz no tempo livre.
 
-Sequência: etapa 19 de 91, deck Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
+Sequência: etapa 19 de 91, capítulo Pessoas. A ordem é deste repositório. O índice do site lista os mesmos links noutra ordem.
 
 Fonte: Free Time Activities in English with Flashcards Quizzes Audio
 https://www.learnenglish.com/vocabulary/free-time-activities/learn-free-time-activities-in-english/
