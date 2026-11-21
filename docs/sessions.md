@@ -38,3 +38,12 @@ Glauber solicitou commit e push após concluir a TUI. Mesma sessão Codex regist
 - Card local GMR-28, projeto Recall.md; relação de acompanhamento em docs/repositorios-externos.json do gmr-planning.
 - Dockerfile com base oficial fixada por digest, usuário não root e contexto em allowlist. Escuta 0.0.0.0 só por opção explícita; portas publicadas no localhost.
 - Build e testes usam dados sintéticos temporários, não o diretório local recall/.
+
+## 19/11/2026 — publicação das alterações pendentes
+
+- Ferramenta: Codex; sessão 01a1f27a-65f8-7de0-b765-a0a13d61d450.
+- Origem: CODEX_THREAD_ID e CODEX_SESSION_ID conferidos no ambiente; pedido do usuário por conversa de voz para commit e push das alterações pendentes.
+- Escopo: sessões de estudo web, preservação de rascunhos, histórico, recarregamento de desenvolvimento, documentação e testes existentes. Dados locais de estudo em recall/ preservados fora do commit, conforme escopo público documentado.
+- Validação automatizada nesta publicação: npm run check passou; npm test passou com 39 aprovados, 1 ignorado e 0 falhas, com permissão para servidores locais.
+- Ensaio adicional Chrome: scripts/smoke-study-browser.mjs falhou na asserção da linha 64 (false em vez de true). Publicação não afirma aprovação desse ensaio nem revisão visual manual.
+- Execução remota do produto e publicação de contêiner não verificadas nesta sessão; destino Git: origin/main.

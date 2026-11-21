@@ -242,7 +242,7 @@ recall/tasks/back-12 - Autenticacao.md
 
 Crie a etapa com `--file 'back-12 - Autenticacao.md'`, informe o arquivo no formulário web ou no JSON de importação. Os IDs de aprendizagem e tarefa continuam independentes. Também são aceitas subpastas simétricas.
 
-Ao criar/editar pela CLI ou web, ou iniciar `recall browser`, Recall.md reconhece a correspondência e tenta criar os vínculos. `recall sync` repete a sincronização, inclusive para arquivos criados manualmente. Se a CLI do Backlog.md estiver ausente, a etapa é salva e aparece um aviso; o contexto continua legível. Reexecute `sync` após instalar/configurar a CLI. A web relê os arquivos a cada segundo enquanto visível e ao recuperar o foco, atualizando cards, estados, tentativas e decks sem recarregar a página. Ela não interrompe formulários, uma revisão em andamento nem um quiz com rascunho; nesses casos, o detalhe é atualizado quando for seguro reabri-lo.
+Ao criar/editar pela CLI ou web, ou iniciar `recall browser`, Recall.md reconhece a correspondência e tenta criar os vínculos. `recall sync` repete a sincronização, inclusive para arquivos criados manualmente. Se a CLI do Backlog.md estiver ausente, a etapa é salva e aparece um aviso; o contexto continua legível. Reexecute `sync` após instalar/configurar a CLI. A web relê os arquivos a cada segundo enquanto visível e ao recuperar o foco, atualizando cards, estados, tentativas e decks sem recarregar a página. Ela não interrompe formulários, uma revisão em andamento nem um quiz com rascunho; alternar entre quiz, flashcards e material preserva o rascunho até o envio. Quando a atualização externa não puder substituir o detalhe com segurança, ela é adiada até a próxima reabertura segura. Na aba Quiz, “Conferir suas tentativas anteriores”, ao lado de “Conferir respostas”, abre a aba Tentativas da etapa; o histórico fica nessa aba e o rascunho é preservado ao voltar ao Quiz.
 
 O link de retorno é registrado pelo comando oficial:
 
@@ -262,6 +262,18 @@ Na web, o painel mostra ID, título, descrição, status, critérios de aceite e
 
 Limites: a versão inicial usa as raízes `backlog/tasks` e `recall/tasks`; não busca outros repositórios, branches ou arquivos arquivados. IDs duplicados impedem a vinculação. Tarefa removida ou renomeada fica indisponível até reconciliar os caminhos; não há migração automática. Se o mesmo caminho passar a conter outro ID, a associação é recusada. Links não sincronizam status, conteúdo ou respostas. Renomear uma unidade já existente não é suportado pela CLI inicial.
 
+## Sessões de estudo na web
+
+Abrir uma etapa ou iniciar prática começa uma sessão compartilhada entre abas do mesmo projeto/browser/endereço. O painel global à direita acompanha o registro e pode ser recolhido pelo relógio. Navegação, scroll e digitação contam como interação; polling e segundo plano não renovam o prazo de atividade.
+
+Só o card aberto visível acumula tempo: reaberturas somam e, com **10 segundos acumulados**, todo o tempo e as ações entram no registro. Quiz e flashcards dentro dele têm somente hora transacional, sem duração individual. Flashcards estudados fora de uma etapa acumulam seu próprio tempo com o mesmo limiar. O tempo do deck une intervalos sobrepostos, sem exigir igualdade com a soma de seus cards.
+
+**Encerrar sessão** no painel oferece salvar ou descartar. Após mais de uma hora sem interação, a sessão anterior é encerrada na última interação; ao atingir oito horas, encerra automaticamente, mantendo a confirmação antes de gravar. Fechar etapa ou trocar abas não salva isoladamente. Descartar o estudo não desfaz respostas, revisões ou alterações já salvas no material.
+
+Registros confirmados aparecem em **Sessões de estudos** e **Tempo de estudo**, com tempo por deck/card, quantidades de aberturas/fechamentos derivadas dos horários e links de retorno. Cada sessão ocupa um único JSON minificado em `recall/sessions/`; rascunhos ficam no navegador. Sem armazenamento IndexedDB disponível, o registro não funciona; o restante do estudo permanece disponível. O recurso não comprova aprendizagem e não publica dados automaticamente. Veja o [formato](docs/format.md).
+
+Ensaio Chrome com duas abas e material sintético: `node scripts/smoke-study-browser.mjs`. Ele cobre limiares, confirmação/descarte, retry, JSON compacto, navegação e flashcard independente; limites longos usam relógio controlado.
+
 ## Dados e revisão
 
 ```text
@@ -277,6 +289,14 @@ Veja [formato e exemplos](docs/format.md). Esses arquivos podem ser versionados 
 
 A agenda é simples: **Repetir** em 10 minutos; **Difícil** em 1 dia; **Lembrei** em pelo menos 2 dias, dobrando o intervalo; **Fácil** em pelo menos 4 dias, triplicando o intervalo. Alterar frente/verso recoloca o cartão na fila de novos conteúdos, preservando o histórico anterior. Não é uma implementação de FSRS nem uma alegação de eficácia pedagógica validada.
 
+## Desenvolvimento com recarregamento automático
+
+Com dependências instaladas, execute `node --watch bin/recall.js --cwd /caminho/do/estudo browser --dev-reload`. Mudanças nos módulos reiniciam o servidor; alterações em arquivos HTML/JS/CSS de `web/`, incluindo salvamento por substituição, recarregam a página. O servidor fecha conexões SSE ao encerrar. Sem `--dev-reload`, esse mecanismo fica desativado; a atualização dos dados de estudo continua funcionando.
+
+No modo de desenvolvimento, o rascunho do quiz fica no `sessionStorage` da aba, isolado por projeto/unidade. Após reload, a unidade, aba e respostas de questões que continuam iguais são restauradas. Questões alteradas/removidas são descartadas e envio bem-sucedido limpa o rascunho. Não são geradas tentativas automaticamente. Exige armazenamento de sessão disponível; fechar a aba pode descartar esse rascunho e outros formulários não são restaurados.
+
+Ensaio de desenvolvimento em Chrome e cópia temporária do produto: `node scripts/smoke-dev-browser.mjs /caminho/gmr-planning/abrir-recall.sh`. O script testa substituições consecutivas, reinício do servidor, rascunhos e encerramento com SSE aberto, sem modificar o checkout original ou histórico pessoal.
+
 ## Verificar
 
 ```bash
@@ -290,7 +310,7 @@ node scripts/smoke-web-browser.mjs /caminho/do/chrome
 RECALL_IMAGE=recall-md:local node scripts/smoke-web-browser.mjs /caminho/do/chrome
 ```
 
-Testes incluem controlador da TUI e um ensaio em pseudo-terminal POSIX real (requer Python 3) com redimensionamento, navegação, formulário, quiz, revisão, Ctrl+C/SIGTERM e restauração dos atributos do terminal, além de quatro ensaios DOM dos formulários, quiz, autoavaliação, persistência, atualização ao vivo e revisão da web. Também cobrem histórico, conflitos, CLI, HTTP e integração idempotente com a CLI real do Backlog.md quando fornecida. O servidor escuta por padrão em `127.0.0.1`; `--host 0.0.0.0` é uma opção explícita para o contêiner, cuja porta deve ser publicada no localhost. Não há autenticação para acesso remoto. O smoke no Chrome valida interação e persistência, inclusive no Docker, mas não substitui revisão visual do layout.
+Testes incluem controlador da TUI e um ensaio em pseudo-terminal POSIX real (requer Python 3) com redimensionamento, navegação, formulário, quiz, revisão, Ctrl+C/SIGTERM e restauração dos atributos do terminal, além de cinco ensaios DOM dos formulários, quiz, autoavaliação, persistência, alternância de abas com rascunho, atualização ao vivo e revisão da web. Também cobrem histórico, conflitos, CLI, HTTP e integração idempotente com a CLI real do Backlog.md quando fornecida. O servidor escuta por padrão em `127.0.0.1`; `--host 0.0.0.0` é uma opção explícita para o contêiner, cuja porta deve ser publicada no localhost. Não há autenticação para acesso remoto. O smoke no Chrome valida interação, persistência e alternância quiz/flashcard, inclusive no Docker, mas não substitui revisão visual do layout.
 
 Referência de produto: [Backlog.md](https://github.com/MrLesk/Backlog.md). Recall.md é uma implementação independente, sem importar seus módulos internos.
 

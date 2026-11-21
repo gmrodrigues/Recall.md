@@ -3,6 +3,7 @@ import path from 'node:path';
 import { randomUUID, createHash } from 'node:crypto';
 import YAML from 'yaml';
 import { materialResources, materialURL } from './material.js';
+import { compactSession } from '../web/study-model.js';
 
 export const STATUSES = ['A estudar', 'Estudando', 'Praticando', 'Em revisão', 'Concluído'];
 export class RecallError extends Error {
@@ -168,6 +169,14 @@ export class Store {
     const file = inside(this.root, 'config.yml');
     ensure(fs.existsSync(file), 'Execute recall init neste diretório primeiro.');
     return YAML.parse(fs.readFileSync(file, 'utf8'));
+  }
+  projectIdentity() {
+    const existing = this.config().projectId;
+    if (existing) { ensure(typeof existing === 'string' && /^[a-f0-9-]{36}$/.test(existing), 'Identidade de projeto inválida.'); return existing; }
+    return this.mutate(() => {
+      const config = this.config(); config.projectId ||= randomUUID();
+      atomic(inside(this.root, 'config.yml'), YAML.stringify(config)); return config.projectId;
+    });
   }
   mutate(fn) {
     this.config();
@@ -429,6 +438,31 @@ export class Store {
       data.backlog = context;
       atomic(inside(this.tasks, file), render(data, description));
       return this.get(id);
+    });
+  }
+  studySessions() {
+    this.config(); const dir = inside(this.root, 'sessions');
+    if (!fs.existsSync(dir)) return [];
+    return fs.readdirSync(dir, { withFileTypes: true }).filter(entry => {
+      ensure(!entry.isSymbolicLink(), 'Links simbólicos não são aceitos no armazenamento.');
+      return entry.isFile() && entry.name.endsWith('.json');
+    }).map(entry => {
+      let session; try { session = JSON.parse(fs.readFileSync(inside(this.root, `sessions/${entry.name}`), 'utf8')); }
+      catch { throw new RecallError('Registro de sessão inválido.', 500); }
+      ensure(session.version === 1 && entry.name === `${session.id}.json` && session.projectId === this.projectIdentity(), 'Identidade do registro de sessão inválida.', 500);
+      return session;
+    }).sort((a,b) => b.startedAt - a.startedAt);
+  }
+  saveStudySession(provisional) {
+    const projectId = this.projectIdentity(); let record;
+    try { record = compactSession(provisional, projectId); }
+    catch (e) { throw new RecallError(e.message); }
+    const encoded = JSON.stringify(record), file = inside(this.root, `sessions/${record.id}.json`);
+    return this.mutate(() => {
+      if (fs.existsSync(file)) {
+        ensure(fs.readFileSync(file, 'utf8') === encoded, 'Este UUID já possui outro registro de sessão.', 409); return record;
+      }
+      atomic(file, encoded); return record;
     });
   }
   events(kind, unit) {

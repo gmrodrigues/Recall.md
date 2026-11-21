@@ -403,4 +403,3 @@ export function comparisonGraph(before, after, beforeZone, afterZone, { beforeAg
   };
   return { nodes, edges: shownEdges, pagination, restBefore, restAfter, canvas };
 }
-

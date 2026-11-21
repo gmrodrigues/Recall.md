@@ -6,21 +6,7 @@ import path from 'node:path';
 import { JSDOM } from 'jsdom';
 import { Store } from '../src/core.js';
 import { serve } from '../src/server.js';
-import { confirmedSessions, sessionStatus, stageStatus } from '../web/flow/model.js';
-
-import { DEFAULT_LINK_MINUTES, materialLinkIdentity, materialPageLinks, materialPages } from '../src/material.js';
-import { editReading, playMaterial, renderMaterial, renderStudyTime } from '../web/material-view.js';
-import { readingProgress } from '../web/reading-progress.js';
-import { probeVideo, sampleVideoDurations } from '../web/video-metadata.js';
-
-function runApp(window) {
-  const source = fs.readFileSync(new URL('../web/app.js', import.meta.url), 'utf8');
-  const script = source.replace(/^import .*;\n/gm, '');
-  const imports = { confirmedSessions, sessionStatus, stageStatus, DEFAULT_LINK_MINUTES, materialLinkIdentity, materialPageLinks, materialPages, editReading,
-    playMaterial, renderMaterial, renderStudyTime, readingProgress, probeVideo, sampleVideoDurations };
-  return window.eval('(async (' + Object.keys(imports).join(', ') + ') => { ' + script + '\n})')(
-    ...Object.values(imports));
-}
+import { runApp } from './run-web-app.js';
 
 test('Web DOM: criar etapa, adicionar quiz, responder errado, criar cartão e revisar deck', async t => {
   const cwd = fs.mkdtempSync(path.join(os.tmpdir(), 'recall-web-'));
@@ -84,10 +70,19 @@ test('Web DOM: contexto da tarefa, quiz de texto e autoavaliação preservam a t
   $('#quiz-form').dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true }));
   await until(() => $('[data-assess]'));
   assert.match($('#quiz-feedback').textContent, /A regra decide o comportamento/);
-  $('[data-assess][data-correct="false"]').click(); await until(() => store.events('assessments').length === 1);
+  $('[data-assess][data-correct="true"]').click();
+  await until(() => $('#quiz-feedback [data-result-status]')?.textContent === '✓ Correta · autoavaliação');
+  assert.equal($('[data-tab="quiz"]').classList.contains('active'), true);
+  $('[data-tab="history"]').click();
+  const attempt = $('#unit-body details');
+  attempt.open = true;
+  attempt.querySelector('[data-assess][data-correct="false"]').click();
+  await until(() => attempt.querySelector('[data-result-status]').textContent === '↻ Retomar este conceito · autoavaliação');
+  assert.equal(attempt.open, true);
+  assert.equal(attempt.isConnected, true);
   assert.equal(store.events('attempts', unit.id)[0].results[0].answer, 'Minha explicação');
   assert.equal(store.events('attempts', unit.id)[0].results[0].correct, null);
-  assert.equal(store.events('assessments')[0].correct, false);
+  assert.deepEqual(store.events('assessments').map(entry => [entry.question, entry.correct]), [['regra', true], ['regra', false]]);
 });
 
 test('Web DOM: tentativa, correção e estado sobrevivem a reabrir a página', async t => {
@@ -132,6 +127,107 @@ test('Web DOM: tentativa, correção e estado sobrevivem a reabrir a página', a
   assert.deepEqual(store.events('attempts', unit.id)[0].results.map(r => r.correct), [false, null]);
 });
 
+test('Web DOM: botão do Quiz abre a aba Tentativas sem perder o rascunho', async t => {
+  const cwd = fs.mkdtempSync(path.join(os.tmpdir(), 'recall-web-quiz-history-'));
+  const store = new Store(cwd); store.init();
+  const unit = store.save({ title: 'Histórico no quiz', deck: 'Histórico', questions: [
+    { id: 'escolha', type: 'choice', prompt: 'Escolha uma alternativa.', options: ['Errada', 'Certa'], answer: 1 },
+    { id: 'texto', type: 'text', prompt: 'Escreva uma resposta.', answer: 'Referência histórica.' }
+  ] });
+  store.attempt(unit.id, { escolha: 0, texto: 'Primeira tentativa' });
+  store.attempt(unit.id, { escolha: 1, texto: 'Segunda tentativa' });
+  const server = await serve(store, 0), base = `http://127.0.0.1:${server.address().port}`;
+  const dom = new JSDOM(fs.readFileSync(new URL('../web/index.html', import.meta.url), 'utf8'), { url: base, runScripts: 'outside-only', pretendToBeVisual: true });
+  const w = dom.window; w.fetch = (url, opts) => fetch(base + url, opts);
+  w.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
+  w.HTMLDialogElement.prototype.close = function () { this.open = false; this.dispatchEvent(new w.Event('close')); };
+  t.after(async () => { w.close(); await new Promise(r => server.close(r)); fs.rmSync(cwd, { recursive: true, force: true }); });
+  await runApp(w);
+  const $ = s => w.document.querySelector(s);
+  const until = async p => { const start = Date.now(); while (!p()) { if (Date.now() - start > 5000) throw new Error('Tempo esgotado: ' + $('#toast').textContent); await new Promise(r => setTimeout(r, 10)); } };
+  await until(() => $('.study-card'));
+  $('.study-card').click(); await until(() => $('[data-tab="quiz"]'));
+  $('[data-tab="quiz"]').click();
+  assert.equal($('#quiz-history'), null);
+  assert.equal(w.document.querySelectorAll('#unit-body details').length, 0);
+  const button = $('#quiz-form button[data-tab="history"]');
+  assert.equal(button.textContent, 'Conferir suas tentativas anteriores');
+  assert.equal(button.type, 'button');
+  assert.match(button.previousElementSibling.textContent, /Conferir respostas/);
+  $('#quiz-form input[value="0"]').checked = true;
+  $('#quiz-form textarea').value = 'Rascunho com histórico separado';
+  button.click();
+  await until(() => $('.tabs [data-tab="history"]').classList.contains('active'));
+  assert.equal($('#quiz-form'), null);
+  assert.equal(w.document.querySelectorAll('#unit-body details.content-card').length, 2);
+  const newest = $('#unit-body details.content-card');
+  newest.open = true;
+  assert.match(newest.textContent, /Segunda tentativa/);
+  assert.match(newest.textContent, /Referência: Referência histórica/);
+  assert.match(newest.textContent, /Criar cartão de memorização do gabarito atual/);
+  assert.ok(newest.querySelector('[data-assess]'));
+  store.attempt(unit.id, { escolha: 1, texto: 'Terceira tentativa' });
+  await until(() => w.document.querySelectorAll('#unit-body details.content-card').length === 3);
+  $('[data-tab="quiz"]').click();
+  assert.equal($('#quiz-form input[value="0"]').checked, true);
+  assert.equal($('#quiz-form textarea').value, 'Rascunho com histórico separado');
+  assert.equal($('#quiz-history'), null);
+  $('[data-tab="cards"]').click();
+  $('[data-tab="quiz"]').click();
+  assert.equal($('#quiz-form input[value="0"]').checked, true);
+  assert.equal($('#quiz-form textarea').value, 'Rascunho com histórico separado');
+  $('#quiz-form').dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true }));
+  await until(() => $('#quiz-feedback .result'));
+  assert.equal($('#quiz-history'), null);
+  assert.equal(w.document.querySelectorAll('#unit-body details.content-card').length, 0);
+  $('#quiz-form button[data-tab="history"]').click();
+  await until(() => w.document.querySelectorAll('#unit-body details.content-card').length === 4);
+  assert.match($('#unit-body details.content-card').textContent, /Rascunho com histórico separado/);
+
+});
+
+test('Web DOM: alternar quiz, flashcard e quiz preserva respostas em rascunho', async t => {
+  const cwd = fs.mkdtempSync(path.join(os.tmpdir(), 'recall-web-tabs-'));
+  const store = new Store(cwd); store.init();
+  const unit = store.save({ title: 'Alternar sem perder', deck: 'Rascunho', questions: [
+    { id: 'escolha', type: 'choice', prompt: 'Qual alternativa você escolhe?', options: ['Primeira', 'Segunda'], answer: 1 },
+    { id: 'texto', type: 'text', prompt: 'Escreva um rascunho.', answer: 'Referência de comparação.' }
+  ], cards: [{ id: 'cartao', front: 'Frente do cartão', back: 'Verso do cartão' }] });
+  const server = await serve(store, 0), base = `http://127.0.0.1:${server.address().port}`;
+  const dom = new JSDOM(fs.readFileSync(new URL('../web/index.html', import.meta.url), 'utf8'), { url: base, runScripts: 'outside-only', pretendToBeVisual: true });
+  const w = dom.window; w.fetch = (url, opts) => fetch(base + url, opts);
+  w.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
+  w.HTMLDialogElement.prototype.close = function () { this.open = false; this.dispatchEvent(new w.Event('close')); };
+  t.after(async () => { w.close(); await new Promise(r => server.close(r)); fs.rmSync(cwd, { recursive: true, force: true }); });
+  await runApp(w);
+  const $ = s => w.document.querySelector(s);
+  const until = async p => { const start = Date.now(); while (!p()) { if (Date.now() - start > 5000) throw new Error('Tempo esgotado: ' + $('#toast').textContent); await new Promise(r => setTimeout(r, 10)); } };
+  await until(() => $('.study-card'));
+  $('.study-card').click(); await until(() => $('[data-tab="quiz"]'));
+  $('[data-tab="quiz"]').click();
+  $('#quiz-form input[value="1"]').checked = true;
+  $('#quiz-form textarea').value = 'Rascunho preservado entre abas';
+  $('#quiz-form button[data-tab="history"]').click();
+  assert.match($('#unit-body').textContent, /Suas tentativas aparecerão aqui/);
+  assert.equal(store.events('attempts', unit.id).length, 0);
+  $('[data-tab="quiz"]').click();
+  assert.equal($('#quiz-form input[value="1"]').checked, true);
+  assert.equal($('#quiz-form textarea').value, 'Rascunho preservado entre abas');
+  $('[data-tab="cards"]').click();
+  assert.match($('#unit-body').textContent, /Frente do cartão/);
+  assert.equal(w.document.querySelector('#quiz-form'), null);
+  $('[data-tab="quiz"]').click();
+  assert.equal($('#quiz-form input[value="1"]').checked, true);
+  assert.equal($('#quiz-form textarea').value, 'Rascunho preservado entre abas');
+  $('#quiz-form').dispatchEvent(new w.Event('submit', { bubbles: true, cancelable: true }));
+  await until(() => $('#quiz-feedback .result'));
+  assert.equal(store.events('attempts', unit.id).length, 1);
+  $('[data-tab="cards"]').click();
+  $('[data-tab="quiz"]').click();
+  assert.equal($('#quiz-form input[value="1"]').checked, false);
+  assert.equal($('#quiz-form textarea').value, '');
+});
+
 test('Web DOM: alterações externas atualizam cards sem apagar rascunho do quiz', async t => {
   const cwd = fs.mkdtempSync(path.join(os.tmpdir(), 'recall-web-live-'));
   const store = new Store(cwd); store.init();
@@ -162,4 +258,64 @@ test('Web DOM: alterações externas atualizam cards sem apagar rascunho do quiz
   store.save({ cards: [...current.cards, { id: 'detalhe', front: 'Cartão no detalhe', back: 'Atualização visível' }] }, unit.id);
   await until(() => $('#unit-body').textContent.includes('Cartão no detalhe'));
   assert.equal(w.document.querySelectorAll('#unit-body .content-card').length, 4);
+});
+
+test('Servidor: dev-reload injeta meta, envia boot SSE e reload ao alterar arquivo observado', async t => {
+  const cwd = fs.mkdtempSync(path.join(os.tmpdir(), 'recall-dev-'));
+  const watchDir = fs.mkdtempSync(path.join(os.tmpdir(), 'recall-watch-'));
+  fs.writeFileSync(path.join(watchDir, 'app.js'), 'v1');
+  const store = new Store(cwd); store.init();
+  const plain = await serve(new Store(fs.mkdtempSync(path.join(os.tmpdir(), 'recall-plain-'))), 0);
+  const plainBase = `http://127.0.0.1:${plain.address().port}`;
+  const plainHtml = await (await fetch(plainBase + '/')).text();
+  assert.doesNotMatch(plainHtml, /recall-dev-reload/);
+  await new Promise(r => plain.close(r));
+  const server = await serve(store, 0, '127.0.0.1', { devReload: watchDir });
+  const base = `http://127.0.0.1:${server.address().port}`;
+  t.after(async () => { await new Promise(r => server.close(r)); fs.rmSync(cwd, { recursive: true, force: true }); fs.rmSync(watchDir, { recursive: true, force: true }); });
+  const html = await (await fetch(base + '/')).text();
+  assert.match(html, /recall-dev-reload/);
+  const events = [];
+  const controller = new AbortController();
+  const stream = await fetch(base + '/api/dev-reload', { signal: controller.signal });
+  assert.match(stream.headers.get('content-type'), /text\/event-stream/);
+  const reader = stream.body.getReader();
+  const decoder = new TextDecoder();
+  const push = setInterval(() => {}, 1000);
+  const readEvents = (async () => {
+    let buffer = '';
+    while (events.length < 2) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      for (const chunk of buffer.split('\n\n')) {
+        if (!chunk.startsWith('data: ')) continue;
+        events.push(JSON.parse(chunk.slice(6)));
+        buffer = '';
+      }
+    }
+  })();
+  fs.writeFileSync(path.join(watchDir, 'app.js'), 'v2');
+  await readEvents;
+  clearInterval(push);
+  controller.abort();
+  assert.equal(events[0].type, 'boot'); assert.ok(events[0].id);
+  assert.deepEqual(events[1], { type: 'reload' });
+});
+
+
+test('Web DOM: fechamento tardio do detalhe não apaga uma revisão já iniciada', async t => {
+ const cwd=fs.mkdtempSync(path.join(os.tmpdir(),'recall-close-race-'));const store=new Store(cwd);store.init();store.save({title:'Card',deck:'D',cards:[{id:'c',front:'Frente',back:'Verso'}]});
+ const server=await serve(store,0),base=`http://127.0.0.1:${server.address().port}`;
+ const w=new JSDOM(fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8'),{url:base,runScripts:'outside-only',pretendToBeVisual:true}).window;
+ w.fetch=(url,opts)=>fetch(base+url,opts);w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};
+ w.HTMLDialogElement.prototype.close=function(){this.open=false;};
+ t.after(async()=>{w.close();await new Promise(r=>server.close(r));fs.rmSync(cwd,{recursive:true,force:true});});
+  await runApp(w);
+ const $=s=>w.document.querySelector(s);const until=async f=>{const end=Date.now()+4000;while(!f()){assert.ok(Date.now()<end);await new Promise(r=>setTimeout(r,10));}};
+ $('.study-card').click();await until(()=>$('#detail').open);
+ $('[data-page="review"]').click();await until(()=>$('[data-review-deck]'));
+ $('[data-review-deck]').click();await until(()=>$('#reveal'));
+ $('#detail').dispatchEvent(new w.Event('close'));
+ assert.ok($('#reveal'));$('#reveal').click();assert.equal($('#card-back').hidden,false);
 });

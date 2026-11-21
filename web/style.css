@@ -380,3 +380,10 @@ dialog.schedule-wizard, #schedule-preview { width: min(940px, 94vw); max-width: 
     pointer-events: none;
   }
 }
+
+/* Global session panel: a sibling of the study detail, never a child dialog. */
+.study-panel{position:fixed;right:16px;top:75px;bottom:16px;width:330px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;z-index:8;box-shadow:0 8px 24px #0001;font-size:12px}.study-panel{transition:transform .24s ease,opacity .24s ease,visibility 0s;transform:translateX(0);opacity:1;visibility:visible}.study-panel[hidden]{display:block;transform:translateX(calc(100% + 24px));opacity:0;visibility:hidden;pointer-events:none;transition:transform .24s ease,opacity .24s ease,visibility 0s .24s}.study-heading-actions{display:flex;align-items:center;gap:12px}.study-toggle{min-width:38px}.study-panel{bottom:auto}@media(prefers-reduced-motion:reduce){.study-panel,.study-panel[hidden]{transition:none}}.study-panel header{display:flex;align-items:center;justify-content:space-between}.study-panel h2{font-size:16px}.study-panel h3{font-size:13px}.study-entity{border-bottom:1px solid var(--line);padding:12px 0}.study-entity li{overflow-wrap:anywhere;margin:5px 0}.study-toggle{position:relative;z-index:9;font-size:20px;padding:6px 12px}.study-panel .pill{display:block;margin-top:6px}@media(max-width:900px){.study-panel{width:min(330px,calc(100vw - 32px));top:115px}}
+
+.study-confirm{display:flex;flex-wrap:wrap;gap:8px}.study-confirm p{width:100%}.content-card dd{margin:6px 0 14px;overflow-wrap:anywhere}.content-card dd a{display:block;width:fit-content;margin-top:6px}
+
+.detail-dialog[open]:not(:modal){position:fixed;inset:5vh 0 auto;margin:0 auto;z-index:6;box-shadow:0 12px 48px #0003;overflow:auto}

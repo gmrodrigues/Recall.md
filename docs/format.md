@@ -169,3 +169,17 @@ o vínculo continua registrado e a interface informa que a origem foi removida.
 Ao escolher **Não concluí**, as anotações também são gravadas sob o hash
 do link. A leitura permanece pendente e o tempo de conclusão só é gravado
 ao escolher **Concluí**.
+
+## Sessões de estudo — JSON compacto, versão 1
+
+A web mantém o provisório em IndexedDB, isolado pela identidade persistente `projectId` de `recall/config.yml`. Abas do mesmo projeto/browser/origem compartilham a sessão; origens/portas e navegadores diferentes não compartilham o provisório. Configurações anteriores recebem identidade na primeira leitura de estado da web, preservando os campos existentes.
+
+Somente confirmação escreve `recall/sessions/<uuid>.json`, sem indentação. O arquivo tem `version`, `id`, `projectId`, `startedAt`, `endedAt`, `reason` (`manual`, `inactivity`, `limit`) e `decks`. Tempos são inteiros epoch em milissegundos, durações são milissegundos. Cada deck tem `durationMs`, `cards` e `flashcards`. Cards são indexados por ID da unidade; flashcards independentes usam como chave a serialização JSON do par `[unitId,cardId]`, sem repetir essas identidades no objeto.
+
+Cada card/flashcard guarda `title` (descritor), `durationMs` e `actions`: cada chave de ação/alvo tem uma lista de horários transacionais. `open`/`close` registram aberturas/fechamentos; contagens são derivadas das listas. `hidden`/`visible` marcam pausa/retomada da visualização; `close_inferred` distingue encerramento estimado pelo último checkpoint de uma aba que não respondeu. Não são persistidos eventos individuais, intervalos provisórios, contadores, duração da sessão ou duração por ação. Campos de respostas de quiz não são copiados para esse registro.
+
+O limiar por card/flashcard independente é >=10000ms visíveis acumulados, incluindo reaberturas. Ao qualificar, entram tempo desde abertura e ações anteriores na sessão. Flashcards internos são ações do card, sem tempo próprio. Intervalos sobrepostos da mesma entidade são unidos; duração do deck é a união dos intervalos das entidades qualificadas, podendo diferir da soma dos cards.
+
+A API aceita o provisório encerrado em `POST /api/sessions`, valida e recalcula a compactação. `GET /api/sessions` lista somente confirmadas e `GET /api/sessions/:id` consulta uma. Mesmo UUID e mesmo conteúdo canônico não duplicam arquivo; conteúdo divergente retorna409. A gravação usa o lock e a troca atômica existentes. Falha mantém o provisório; descarte não altera tentativas, revisões ou material já salvo. Arquivos de sessão existentes não são sobrescritos.
+
+Este registro mede exposição/interações da interface, não atenção, compreensão ou eficácia pedagógica. Fechamento inesperado pode depender do último checkpoint; a ação inferida é identificada, sem prometer timestamp exato da queda do navegador.

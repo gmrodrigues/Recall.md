@@ -84,9 +84,26 @@ try {
   await until(`document.querySelector('#detail').open && document.querySelector('[data-tab="quiz"]')`);
   await evaluate(`document.querySelector('[data-tab="quiz"]').click()`);
   await until(`document.querySelector('#quiz-form')`);
-  await evaluate(`document.querySelector('#quiz-form input[value="0"]').checked = true; document.querySelector('#quiz-form textarea').value = 'Resposta sintética preservada'; document.querySelector('#quiz-form').requestSubmit()`);
+  await evaluate(`document.querySelector('#quiz-form input[value="0"]').checked = true; document.querySelector('#quiz-form textarea').value = 'Resposta sintética preservada'; document.querySelector('[data-tab="cards"]').click()`);
+  await until(`document.querySelector('#unit-body').textContent.includes('Cartão inicial') && !document.querySelector('#quiz-form')`);
+  await evaluate(`document.querySelector('[data-tab="quiz"]').click()`);
+  assert.equal(await evaluate(`document.querySelector('#quiz-form input[value="0"]').checked`), true);
+  assert.equal(await evaluate(`document.querySelector('#quiz-form textarea').value`), 'Resposta sintética preservada');
+  await evaluate(`document.querySelector('#quiz-form button[data-tab="history"]').click()`);
+  await until(`document.querySelector('#unit-body').textContent.includes('Suas tentativas aparecerão aqui') && !document.querySelector('#quiz-form')`);
+  assert.equal(store.events('attempts').length, 0);
+  await evaluate(`document.querySelector('.tabs [data-tab="quiz"]').click()`);
+  assert.equal(await evaluate(`document.querySelector('#quiz-form input[value="0"]').checked`), true);
+  assert.equal(await evaluate(`document.querySelector('#quiz-form textarea').value`), 'Resposta sintética preservada');
+  await evaluate(`document.querySelector('#quiz-form').requestSubmit()`);
   await until(`document.querySelector('#quiz-feedback .wrong') && document.querySelector('[data-assess]')`);
   assert.deepEqual(store.events('attempts')[0].results.map(result => result.correct), [false, null]);
+  assert.equal(await evaluate(`document.querySelector('#quiz-history')`), null);
+  await evaluate(`document.querySelector('#quiz-form button[data-tab="history"]').click()`);
+  await until(`document.querySelectorAll('#unit-body details.content-card').length === 1`);
+  await evaluate(`document.querySelector('#unit-body details.content-card').open = true`);
+  assert.match(await evaluate(`document.querySelector('#unit-body').textContent`), /Resposta sintética preservada/);
+  assert.match(await evaluate(`document.querySelector('#unit-body').textContent`), /Criar flashcard do gabarito atual/);
   await evaluate(`document.querySelector('[data-action="edit-unit"]').click()`);
   await until(`document.querySelector('#editor').open`);
   await evaluate(`document.querySelector('#edit-form').elements.status.value = 'Estudando'; document.querySelector('#edit-form').requestSubmit()`);
@@ -117,7 +134,7 @@ try {
   await until(`document.querySelector('#unit-body').textContent.includes('Cartão no detalhe')`);
   assert.equal(await evaluate(`document.querySelectorAll('#unit-body .content-card').length`), 4);
   assert.deepEqual(exceptions, []);
-  console.log(JSON.stringify({ tentativaPersistida: true, correcao: [false, null], estadoAposRecarregar: 'Estudando', liveUpdate: 'Praticando; 2 cartões', rascunhoPreservado: true, detalheAtualizado: 4, excecoes: exceptions.length }, null, 2));
+  console.log(JSON.stringify({ tentativaPersistida: true, correcao: [false, null], alternanciaQuizFlashcard: true, historicoQuiz: 1, estadoAposRecarregar: 'Estudando', liveUpdate: 'Praticando; 2 cartões', rascunhoPreservado: true, detalheAtualizado: 4, excecoes: exceptions.length }, null, 2));
 } finally {
   ws?.close();
   if (chrome.exitCode === null && chrome.signalCode === null) { chrome.kill('SIGTERM'); await once(chrome, 'exit'); }

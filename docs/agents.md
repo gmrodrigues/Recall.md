@@ -32,3 +32,7 @@ Para vincular ao Backlog.md, `file` deve ser o caminho relativo do arquivo da ta
 ## Interface interativa
 
 `recall tui` abre a interface humana no terminal. Ela usa Store e os mesmos arquivos. Para automação, continue usando os comandos estruturados; a TUI exige TTY e não aceita --json. Atalhos e comportamento de cancelamento estão no README. Não simule respostas ou avaliações pessoais pela TUI em nome do estudante sem fonte explícita.
+
+## Sessões da interface web
+
+Sessões de estudo são diferentes da sessão do agente. A web inicia na primeira ação, mantém provisório compartilhado em IndexedDB e só persiste um JSON compacto após confirmação. Tempo é por card visível (ou flashcard independente), com >=10s acumulados; ações internas guardam só hora transacional. Consulte docs/format.md para os limites e o formato. Não crie sessões/ações em nome do estudante nem salve/descartе seu registro sem autorização. Use apenas fixtures temporárias para testes.

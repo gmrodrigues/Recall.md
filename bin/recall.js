@@ -5,7 +5,7 @@ import { Store, STATUSES, ensure } from '../src/core.js';
 import { backlogContext, synchronize, autoLink } from '../src/backlog.js';
 import { serve } from '../src/server.js';
 import { startTui } from '../src/tui.js';
-const usage = `Recall.md • aprendizagem com fichas de conteúdo
+const usage = `Recall.md • aprendizagem com fichas de conteúdo\nModo desenvolvimento: browser --dev-reload (recarrega ao alterar web/).
 
 recall init                                  Inicializa recall/ no diretório atual
 recall unit create --title "Assunto" --deck "Deck" [--description "..."] [--file "mesmo-nome.md"]
@@ -33,7 +33,8 @@ try {
     cwd: { type: 'string' }, json: { type: 'boolean' }, help: { type: 'boolean', short: 'h' },
     title: { type: 'string' }, description: { type: 'string' }, deck: { type: 'string' }, file: { type: 'string' },
     status: { type: 'string' }, id: { type: 'string' }, answers: { type: 'string' }, question: { type: 'string' },
-    correct: { type: 'string' }, card: { type: 'string' }, rating: { type: 'string' }, due: { type: 'boolean' }, milestone: { type: 'string' }, port: { type: 'string' }, host: { type: 'string' }
+    correct: { type: 'string' }, card: { type: 'string' }, rating: { type: 'string' }, due: { type: 'boolean' }, milestone: { type: 'string' }, port: { type: 'string' }, host: { type: 'string' },
+    'dev-reload': { type: 'boolean' }
   } });
   if (o.help || !a.length) { console.log(usage); process.exit(0); }
   const store = new Store(o.cwd);
@@ -69,7 +70,7 @@ try {
     const port = Number(o.port || 6421); ensure(Number.isInteger(port) && port >= 0 && port <= 65535, 'Porta inválida.');
     store.config();
     for (const unit of store.list()) { const result = autoLink(store, unit); if (result.warning) console.error(result.warning); }
-    const server = await serve(store, port, o.host || '127.0.0.1');
+    const server = await serve(store, port, o.host || '127.0.0.1', { devReload: o['dev-reload'] || false });
     console.log(`Recall.md: http://127.0.0.1:${server.address().port}\nProjeto: ${store.cwd}\nCtrl+C para encerrar.`);
     for (const signal of ['SIGTERM', 'SIGINT']) process.on(signal, () => server.close(() => process.exit(0)));
   } else { console.error(usage); process.exitCode = 1; }
