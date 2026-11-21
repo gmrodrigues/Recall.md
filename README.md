@@ -15,7 +15,7 @@ Comece pelo estudo de vocabulário em inglês de **Marcelo Henrique Goncalves (@
 Instale a AppImage com o comando abaixo e crie uma pasta vazia para o estudo.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/22a10c01a99a3b0d91e730e835c4fdc3cd5ac85b/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/gmrodrigues/Recall.md/261d64a653b1e37869cc104eb11dba6ff16eb2f5/install.sh | sh
 export PATH="$HOME/.local/bin:$PATH"
 
 mkdir -p "$HOME/estudos/vocabulario-ingles"
@@ -40,7 +40,7 @@ Crie outra pasta e rode `recall-appimage init` nela. Crie um único plano de est
 
 #### Prompt 1 · Como funciona o Recall.md
 
-> Quero estudar como o Recall.md organiza fichas, quizzes e cartões. Parta de uma pasta vazia e leia estas fontes públicas diretamente pelas URLs raw, sem clonar o repositório:
+> Quero estudar como o Recall.md organiza fichas, quizzes e cartões. O repositório público oficial é https://github.com/gmrodrigues/Recall.md. Parta de uma pasta vazia e leia os arquivos desse repositório pelos links raw abaixo, sem clonar:
 > - Guia para agentes: https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/AGENTS.md
 > - Instalação e uso: https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md
 > - Formato das fichas: https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/docs/format.md
@@ -54,7 +54,7 @@ Crie outra pasta e rode `recall-appimage init` nela. Crie um único plano de est
 
 > Quero criar um estudo no Recall.md sobre **toda a documentação estável do Godot** em https://docs.godotengine.org/en/stable/. Use o índice oficial para mapear as seções, incluindo tutoriais e referência da API, e registre a versão do Godot indicada pela documentação. Mantenha um único plano **Godot — documentação estável** e divida o percurso em capítulos temáticos, com fichas de tamanho manejável. Use o mesmo `deck` em todas as fichas e indique o capítulo em `chapter`. Acompanhe quais seções já foram cobertas e quais faltam.
 >
-> Parta de uma pasta vazia e leia o [guia para agentes](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/AGENTS.md), o [README](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md), o [formato das fichas](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/docs/format.md) e o [modelo JSON](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/primeira-etapa.json) pelas URLs públicas raw. Instale a AppImage conforme as instruções no início do README. Crie `~/estudos/godot-documentacao`, entre nessa pasta e execute `recall-appimage init`.
+> O repositório público oficial do Recall.md é https://github.com/gmrodrigues/Recall.md. Parta de uma pasta vazia e leia o [guia para agentes](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/AGENTS.md), o [README](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md), o [formato das fichas](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/docs/format.md) e o [modelo JSON](https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/primeira-etapa.json) pelas URLs públicas raw, sem clonar. Instale a AppImage conforme as instruções no início do README. Crie `~/estudos/godot-documentacao`, entre nessa pasta e execute `recall-appimage init`.
 >
 > Para cada ficha, escreva um objetivo, um resumo, questões com gabarito explicado e cartões de memorização. Cite as URLs e as seções oficiais. Salve as fichas em listas JSON na pasta do estudo. Se importar em lotes, coloque todas as fichas de cada capítulo no mesmo lote. Importe com `recall-appimage unit import arquivo.json` e confira os capítulos no Quadro de estudos. Confirme os IDs com `recall-appimage unit list` e abra o navegador com `recall-appimage browser`. Informe a URL local e o progresso da cobertura. Eu vou responder aos quizzes.
 
@@ -257,7 +257,8 @@ mostra o tempo previsto e o realizado para a ficha.
 A tela **Cronogramas** mostra a agenda acima da lista quando há cronogramas.
 Use a engrenagem para editar as configurações gerais e **Sessões** para acompanhar
 e confirmar estudos. Em **Novo cronograma**, a primeiro passo mostra a agenda
-compartilhada já preenchida. No passo **Conteúdo**, selecione os planos de estudo ou capítulos e informe os minutos-base por ficha em cada linha. Informe nome, prioridade, início e prazo no último passo antes da revisão.
+compartilhada já preenchida. No passo **Conteúdo**, selecione os planos de estudo ou capítulos e informe os minutos-base por ficha em cada linha. A previsão começa em 5 minutos-base por ficha quando o valor está vazio ou abaixo do mínimo. Páginas, links e vídeos podem aumentar o total. Informe nome, prioridade, início e prazo no último passo antes da revisão.
+No exemplo de vocabulário, configure as janelas semanais para encaixar sessões na agenda.
 Se nenhum capítulo servir ao conteúdo, aplicar a prévia cria um capítulo com o
 nome do cronograma. Use **Novo capítulo** ou o filtro de capítulos no quadro. Ao incluir
 uma ficha em um plano de estudo agendado, selecione a fase a que ela pertence. Cada ficha do quadro é uma unidade de planejamento, com a própria estimativa.

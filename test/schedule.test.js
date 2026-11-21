@@ -31,6 +31,27 @@ test('grupos sequenciais e round robin preservam ordem e eliminam sobreposição
   assert.deepEqual(resolveGroups(item, config, cards).flat().map(c => c.id), ['a1', 'b1', 'a2', 'b2']);
 });
 
+test('cronograma aplica cinco minutos base quando a estimativa está ausente ou é menor', () => {
+  const cards = [
+    card('missing', 'A'),
+    { ...card('low', 'B'), materialPageCount: 1 },
+  ];
+  const config = data([], [window(4, '12:00', '12:20')]);
+  editSchedule(config, cards, {
+    name: 'Estudo', deadline: today, mode: 'sequential', priority: 0,
+    groups: [group('A'), { ...group('B'), minutes: 1 }],
+  });
+  assert.deepEqual(config.schedules[0].groups.map(row => row.minutes), [5, 5]);
+  const first = planSchedule(config, cards, now);
+  assert.deepEqual(first.summary[0].estimates.map(entry => entry.estimatedMinutes), [5, 10]);
+  assert.deepEqual(first.data.sessions.map(session => session.end - session.start), [5, 10]);
+
+  const legacy = data([schedule('Legado', [group('A')], 1, {
+    studyEstimates: [{ unit: 'missing', estimatedMinutes: 1 }],
+  })], [window(4, '12:00', '12:20')]);
+  assert.equal(projectSchedule(legacy, cards, now).studyTimes[0].estimatedMinutes, 5);
+});
+
 test('prazo mais próximo obtém a primeira janela se ambos couberem', () => {
   const config = data([
     schedule('alta', [group('A')], 5, { priority: 9, deadline: '2026-11-20' }),
@@ -134,11 +155,11 @@ test('horas extras confirmadas consomem o saldo da mesma semana no replanejament
 });
 
 test('fases de cada etapa e a ordem entre grupos aparecem nas sessões', () => {
-  const phases = [{ name: 'Em estudo', minutes: 1 }, { name: 'Revisão', minutes: 1 }];
+  const phases = [{ name: 'Em estudo', minutes: 5 }, { name: 'Revisão', minutes: 1 }];
   const cards = [card('a1', 'A'), card('a2', 'A'), card('b1', 'B')];
   for (const [mode, order] of [['sequential', ['a1', 'a2', 'b1']], ['round-robin', ['a1', 'b1', 'a2']]]) {
-    const config = data([schedule('S', [group('A'), group('B')], 1, { mode, phases })],
-      [window(4, '12:00', '12:06')]);
+    const config = data([schedule('S', [group('A'), group('B')], 5, { mode, phases })],
+      [window(4, '12:00', '12:18')]);
     const result = planSchedule(config, cards, now);
     assert.deepEqual(result.data.sessions.map(session => [session.card.id, session.phase]),
       order.flatMap(id => phases.map(phase => [id, phase.name])));

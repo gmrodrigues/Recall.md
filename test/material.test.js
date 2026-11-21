@@ -9,6 +9,7 @@ import { materialPages, materialResources } from '../src/material.js';
 import { configureSchedule, confirmScheduleSession, planSchedule, projectSchedule, suggestScheduleDeadline, typicalDurations } from '../src/schedule.js';
 import { serve } from '../src/server.js';
 import { sampleVideoDurations } from '../web/video-metadata.js';
+import { renderStudyTime } from '../web/material-view.js';
 
 function fixture(t) {
   const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'recall-material-'));
@@ -27,6 +28,12 @@ const draft = {
   name: 'Estudo', priority: 0, groups: [{ type: 'deck', id: 'D' }], mode: 'sequential',
   startDate: day, deadline: day, phases: [{ name: 'Em estudo', minutes: 10 }],
 };
+
+test('material exibe previsão mínima antes de agendar e preserva o tempo realizado', () => {
+  assert.match(renderStudyTime(), /5 min previstos/);
+  assert.match(renderStudyTime({ estimatedMinutes: 2, actualMinutes: 1 }), /5 min previstos · 1 min realizados/);
+  assert.match(renderStudyTime({ estimatedMinutes: 12 }), /12 min previstos/);
+});
 
 test('material preserva descrição anterior e identifica mídia sem cobrar leitura duplicada', t => {
   const store = fixture(t);

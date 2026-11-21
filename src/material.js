@@ -1,4 +1,5 @@
 export const FIRST_PAGE = 'material';
+export const MIN_STUDY_MINUTES = 5;
 
 export function materialPages(unit) {
   return unit.material?.length ? unit.material : [{

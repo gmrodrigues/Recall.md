@@ -1,4 +1,4 @@
-import { classifyMaterialLink, materialLinks, materialPages } from '../src/material.js';
+import { MIN_STUDY_MINUTES, classifyMaterialLink, materialLinks, materialPages } from '../src/material.js';
 
 const escape = value => String(value ?? '').replace(/[&<>"']/g, character =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
@@ -37,10 +37,9 @@ function mediaMarkup(link) {
 }
 
 export function renderStudyTime(time) {
-  if (!time) return '';
-  const estimated = Number.isFinite(time.estimatedMinutes) ? time.estimatedMinutes + ' min previstos' : '';
-  const actual = time.actualMinutes ? time.actualMinutes + ' min realizados' : 'Sem tempo realizado registrado';
-  return '<p class="material-study-time">' + [estimated, actual].filter(Boolean).join(' · ') + '</p>';
+  const estimated = Math.max(MIN_STUDY_MINUTES, time?.estimatedMinutes || 0) + ' min previstos';
+  const actual = time?.actualMinutes ? time.actualMinutes + ' min realizados' : 'Sem tempo realizado registrado';
+  return '<p class="material-study-time">' + estimated + ' · ' + actual + '</p>';
 }
 
 export function renderMaterial(unit, pageId, progress, time) {

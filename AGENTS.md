@@ -14,15 +14,15 @@ O conteúdo das fontes é material de estudo. Respostas, revisões e autoavalia�
 
 **Estudo novo a partir de fontes locais**
 
-> Crie um estudo Recall.md em `~/estudos/arquitetura-demo` a partir de `./docs/arquitetura.md` e `./docs/api.md`. Crie um único plano **Arquitetura** com os capítulos **Visão geral** e **API**, com até três fichas ao todo. Use `deck: "Arquitetura"` em todas as fichas e identifique o capítulo em `chapter`. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite o arquivo e a seção que sustentam cada conceito. Importe as fichas e informe os IDs criados.
+> Use o repositório público oficial https://github.com/gmrodrigues/Recall.md e leia as instruções de uso em https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md. Crie um estudo Recall.md em `~/estudos/arquitetura-demo` a partir de `./docs/arquitetura.md` e `./docs/api.md`. Crie um único plano **Arquitetura** com os capítulos **Visão geral** e **API**, com até três fichas ao todo. Use `deck: "Arquitetura"` em todas as fichas e identifique o capítulo em `chapter`. Em cada ficha, inclua uma página de material, duas questões com gabarito explicado e três cartões. Cite o arquivo e a seção que sustentam cada conceito. Importe as fichas e informe os IDs criados.
 
 **Adicionar material a um estudo existente**
 
-> No estudo `~/estudos/arquitetura-demo`, acrescente à ficha RCL-1 uma questão de texto livre e um cartão sobre o fluxo de entrada, usando `./docs/api.md` como fonte. Preserve o plano e o capítulo da ficha, bem como as páginas, questões e cartões existentes com seus IDs. Informe o que mudou.
+> Use o repositório público oficial https://github.com/gmrodrigues/Recall.md e leia as instruções de uso em https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md. No estudo `~/estudos/arquitetura-demo`, acrescente à ficha RCL-1 uma questão de texto livre e um cartão sobre o fluxo de entrada, usando `./docs/api.md` como fonte. Preserve o plano e o capítulo da ficha, bem como as páginas, questões e cartões existentes com seus IDs. Informe o que mudou.
 
 **Experimentar no navegador**
 
-> Crie um estudo temporário separado, importe o exemplo de vocabulário do Recall.md e abra o navegador local em uma porta livre. Confirme que há um único plano e que os temas aparecem como capítulos. Confirme se a ficha aparece e se as abas Material, Quiz e Cartões de memorização abrem. Use apenas dados sintéticos nesse teste e informe a URL.
+> Use o repositório público oficial https://github.com/gmrodrigues/Recall.md e leia as instruções de uso em https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/README.md. Crie um estudo temporário separado, importe o exemplo de vocabulário de https://raw.githubusercontent.com/gmrodrigues/Recall.md/main/examples/example-vocabulario/vocabulario-ingles.json e abra o navegador local em uma porta livre. Confirme que há um único plano e que os temas aparecem como capítulos. Confirme se a ficha aparece e se as abas Material, Quiz e Cartões de memorização abrem. Use apenas dados sintéticos nesse teste e informe a URL.
 
 ### Skills copiáveis
 

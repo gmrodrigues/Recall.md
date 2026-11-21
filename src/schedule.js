@@ -1,4 +1,4 @@
-import { DEFAULT_LINK_MINUTES, materialURL } from './material.js';
+import { DEFAULT_LINK_MINUTES, MIN_STUDY_MINUTES, materialURL } from './material.js';
 import { randomUUID } from 'node:crypto';
 import { ensure, milestoneContains, text } from './core.js';
 
@@ -9,6 +9,11 @@ export const phaseKey = (card, phase) => JSON.stringify([card.unit, card.id, pha
 function integer(value, min, max, label) {
   ensure(Number.isSafeInteger(value) && value >= min && value <= max, `${label} inválido.`);
   return value;
+}
+
+function studyMinutes(value) {
+  if (value == null || value === '') return MIN_STUDY_MINUTES;
+  return Math.max(MIN_STUDY_MINUTES, integer(value, 0, 1440, 'Minutos por ficha'));
 }
 
 function wallMinute(value) {
@@ -155,13 +160,13 @@ function estimateVideos(input, included, previous, sameScope) {
 export function editSchedule(data, cards, input) {
   ensure(input && ['sequential', 'round-robin'].includes(input.mode), 'Distribuição inválida.');
   ensure(Array.isArray(input.groups) && input.groups.length, 'Selecione planos de estudo ou capítulos.');
-  const modern = input.groups.some(group => group && Object.hasOwn(group, 'minutes'));
+  const modern = !input.phases?.length || input.groups.some(group => group && Object.hasOwn(group, 'minutes'));
   const groups = input.groups.map(group => {
     const exists = group?.type === 'deck' ? cards.some(card => card.deck === group.id)
       : group?.type === 'milestone' && data.milestones.some(milestone => milestone.id === group.id);
     ensure(exists, 'Plano de estudo ou capítulo indisponível.');
     return { type: group.type, id: group.id,
-      ...(modern ? { minutes: integer(group.minutes, 1, 1440, 'Minutos por ficha') } : {}) };
+      ...(modern ? { minutes: studyMinutes(group.minutes) } : {}) };
   });
   const name = text(input.name, 'Nome do cronograma', 1000);
   const included = resolveGroups({ groups, mode: input.mode }, data, cards).flat();
@@ -203,14 +208,14 @@ export function editSchedule(data, cards, input) {
     phases = input.phases.map(phase => {
       const milestone = candidates.find(item => item.id === (phase?.milestoneId || automatic?.id));
       ensure(milestone, 'Selecione um capítulo disponível para o conteúdo.');
-      return { name: milestone.name, milestoneId: milestone.id, minutes: integer(phase.minutes, 1, 1440, 'Minutos por ficha') };
+      return { name: milestone.name, milestoneId: milestone.id, minutes: studyMinutes(phase.minutes) };
     });
     ensure(new Set(phases.map(phase => phase.milestoneId)).size === phases.length, 'Selecione cada capítulo uma única vez.');
   } else {
     ensure(input.phases[0]?.name === STUDY, 'O primeiro capítulo deve ser Em estudo.');
     phases = input.phases.map(phase => ({
       name: text(phase?.name, 'Nome do capítulo', 80),
-      minutes: integer(phase?.minutes, 1, 1440, 'Minutos por ficha'),
+      minutes: phase?.name?.trim() === STUDY ? studyMinutes(phase.minutes) : integer(phase?.minutes, 1, 1440, 'Minutos por ficha'),
     }));
     ensure(new Set(phases.map(phase => phase.name)).size === phases.length, 'Os nomes dos capítulos devem ser únicos.');
   }
@@ -389,7 +394,8 @@ function buildWork(data, cards) {
         let dependencies = preceding;
         for (const phase of phases) {
           const key = phaseKey(card, phase.name);
-          const base = baseAverages.get(phase.name) ?? phase.minutes;
+          const minutes = baseAverages.get(phase.name) ?? phase.minutes;
+          const base = phase.name === STUDY ? Math.max(MIN_STUDY_MINUTES, Number.isFinite(minutes) ? minutes : 0) : minutes;
           const effort = studyEffort(card, phase.name, base, schedule.videoAverageSeconds, linkMinutes);
           const estimate = effort.estimatedMinutes;
           const task = tasks.get(key) || {
@@ -596,7 +602,7 @@ function stageStudyTimes(data, work) {
   const byUnit = new Map();
   const current = stageEstimates([...(work?.tasks.values() || [])]);
   const inScope = new Set(current.map(entry => entry.unit));
-  const saved = data.schedules.flatMap(schedule => schedule.studyEstimates || []).filter(entry => inScope.has(entry.unit));
+  const saved = data.schedules.flatMap(schedule => schedule.studyEstimates || []).filter(entry => inScope.has(entry.unit) && entry.estimatedMinutes >= MIN_STUDY_MINUTES);
   const savedUnits = new Set(saved.map(entry => entry.unit));
   const estimates = [...saved, ...current.filter(entry => !savedUnits.has(entry.unit))];
   for (const entry of estimates) {
@@ -607,7 +613,7 @@ function stageStudyTimes(data, work) {
   for (const entry of data.confirmations) {
     if (entry.card.kind !== 'unit' || entry.phase !== STUDY) continue;
     const unit = entry.card.unit;
-    const current = byUnit.get(unit) || { unit, estimatedMinutes: entry.targetMinutes };
+    const current = byUnit.get(unit) || { unit, estimatedMinutes: Math.max(MIN_STUDY_MINUTES, entry.targetMinutes || 0) };
     current.plannedMinutes = (current.plannedMinutes || 0) + entry.plannedMinutes;
     current.actualMinutes = (current.actualMinutes || 0) + entry.actualMinutes;
     byUnit.set(unit, current);

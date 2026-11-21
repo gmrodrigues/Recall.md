@@ -1,5 +1,5 @@
 import { confirmedSessions, sessionStatus, stageStatus } from './flow/model.js';
-import { DEFAULT_LINK_MINUTES, materialLinkIdentity, materialPageLinks, materialPages } from './src/material.js';
+import { DEFAULT_LINK_MINUTES, MIN_STUDY_MINUTES, materialLinkIdentity, materialPageLinks, materialPages } from './src/material.js';
 import { editReading, playMaterial, renderMaterial, renderStudyTime } from './material-view.js';
 import { readingProgress } from './reading-progress.js';
 import { probeVideo, sampleVideoDurations } from './video-metadata.js';
@@ -1747,7 +1747,7 @@ function scheduleGroup(group) {
   return `<div class="schedule-row schedule-content-row">
     <label>Plano de estudo ou capítulo<select name="group" required><option value="">Selecione</option>${options.map(option =>
       `<option value="${escape(groupKey(option))}" ${groupKey(option) === selected ? 'selected' : ''}>${escape(groupTitle(option))}</option>`).join('')}</select></label>
-    <label>Minutos por ficha<input name="groupMinutes" type="number" min="1" max="1440" required value="${escape(group?.minutes ?? 10)}"></label>
+    <label>Minutos por ficha<input name="groupMinutes" type="number" min="0" max="1440" value="${escape(Math.max(MIN_STUDY_MINUTES, group?.minutes ?? 0))}"></label>
     <button type="button" class="button secondary" data-move-row="-1" aria-label="Subir grupo">↑</button>
     <button type="button" class="button secondary" data-move-row="1" aria-label="Descer grupo">↓</button>
     <button type="button" class="button secondary" data-remove-row>Remover</button>
@@ -1784,7 +1784,7 @@ function refreshContentOptions() {
 function displayedGroups(item) {
   return item.groups.map(group => ({
     type: group.type, id: group.id,
-    minutes: group.minutes ?? item.phases.find(phase => phase.milestoneId === group.id)?.minutes ?? item.phases[0]?.minutes ?? 10,
+    minutes: Math.max(MIN_STUDY_MINUTES, group.minutes ?? item.phases.find(phase => phase.milestoneId === group.id)?.minutes ?? item.phases[0]?.minutes ?? 0),
   }));
 }
 
@@ -1930,7 +1930,7 @@ function checkAvailability(availability) {
 function scheduleEditor(item) {
   scheduleWizard = {
     schedule: item ? structuredClone(item) : {
-      name: '', deadline: '', startDate: '', priority: 0, groups: [], mode: 'sequential', phases: [{ minutes: 10 }],
+      name: '', deadline: '', startDate: '', priority: 0, groups: [], mode: 'sequential', phases: [{ minutes: MIN_STUDY_MINUTES }],
     },
     availability: structuredClone(scheduleView.data.availability),
     groupDraft: item ? displayedGroups(item) : [],
@@ -1960,7 +1960,7 @@ function stepFields(key, item, availability) {
     <label>Distribuição<select name="mode"><option value="sequential">Sequencial</option><option value="round-robin" ${item.mode === 'round-robin' ? 'selected' : ''}>Round robin</option></select></label>
     <p>Sequencial termina um grupo antes de começar o próximo. Round robin alterna uma ficha de cada grupo.</p>
     <fieldset><legend>Planos de estudo e capítulos</legend>
-      <p>Escolha o conteúdo e informe os minutos-base por ficha em cada linha. O cálculo soma páginas, vídeos e links.</p>
+      <p>Escolha o conteúdo e informe os minutos-base por ficha em cada linha. O mínimo é ${MIN_STUDY_MINUTES} minutos-base por ficha. O cálculo soma páginas, vídeos e links.</p>
       ${scheduleWizard.legacy ? '<p>Se você mantiver as linhas e valores, serão preservadas as estimativas já gravadas.</p>' : ''}
       <div id="schedule-groups">${(scheduleWizard.groupDraft.length ? scheduleWizard.groupDraft : [null]).map(scheduleGroup).join('')}</div>
       <button type="button" class="button secondary" data-add-row="group">Incluir plano de estudo ou capítulo</button>
@@ -2014,7 +2014,7 @@ function captureScheduleStep(fields) {
     const minutes = fields.getAll('groupMinutes');
     const rows = fields.getAll('group').map((value, index) => {
       const [type, id] = value ? JSON.parse(value) : [];
-      return { type, id, minutes: minutes[index] === '' ? '' : Number(minutes[index]) };
+      return { type, id, minutes: Math.max(MIN_STUDY_MINUTES, Number(minutes[index] || 0)) };
     });
     scheduleWizard.groupDraft = rows;
     const legacy = scheduleWizard.legacy;
