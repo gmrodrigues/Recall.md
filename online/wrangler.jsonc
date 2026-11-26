@@ -1,7 +1,7 @@
 {
   "name": "recall-online-pilot",
   "main": "worker.mjs",
-  "compatibility_date": "2026-11-26",
+  "compatibility_date": "2026-11-11",
   "workers_dev": false,
   "preview_urls": false,
   "routes": [
